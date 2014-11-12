@@ -6,6 +6,8 @@ body{
   font-family: 'Lato', sans-serif;
   /*font-size: 18px;*/
   color:#222;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 a{
@@ -19,6 +21,13 @@ a:hover{
 section{
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.navbar {
+  background-color: #fff;
+  border: none;
+  width: 100%;
+  height: 140px;
 }
 
 #main{
