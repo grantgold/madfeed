@@ -1,0 +1,47 @@
+/*
+Foundation
+*/
+
+body{
+  font-family: 'Lato', sans-serif;
+  /*font-size: 18px;*/
+  color:#222;
+}
+
+a{
+  color:#fb3346;
+  color:#fb5f67;
+}
+a:hover{
+ color:#fb5f67; 
+}
+
+section{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#main{
+  background: #efefef;
+}
+
+.color{
+  /*background: red;*/
+}
+
+
+#video{
+  background: #efefef;
+}
+
+#profile{}
+#profile .container{
+  max-width: 960px;
+}
+
+#related-posts{}
+#related-posts h4{
+  text-align: center;
+}
+
+
