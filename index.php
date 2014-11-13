@@ -3,7 +3,7 @@
 <section id="blog">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-11 col-sm-offset-1">
+			<div class="col-xs-12 col-sm-11">
 			<p>!Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

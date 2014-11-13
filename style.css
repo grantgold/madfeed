@@ -19,15 +19,25 @@ a:hover{
 }
 
 section{
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .navbar {
   background-color: #fff;
+  padding-top: 20px;
   border: none;
   width: 100%;
   height: 140px;
+}
+
+.navbar-nav {
+  padding-top: 30px;
+
+}
+
+.row {
+  padding-top: 20px;
 }
 
 #main{
