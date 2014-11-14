@@ -8,11 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-<<<<<<< Updated upstream
       <a class="navbar-brand" href="#"><img src="img/icons/logo-madfeed.jpg" height="80px" width="80px"></a>
-=======
-      <a class="navbar-brand" href="#"><img style="height:auto; width:auto; max-width:100px; max-height:100px;" src="img/icons/madfeed-logo.png"></a>
->>>>>>> Stashed changes
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
