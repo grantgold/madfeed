@@ -40,6 +40,12 @@ section{
   padding-top: 20px;
 }
 
+.navbar {
+  min-height: 140px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 #main{
   background: #efefef;
 }
