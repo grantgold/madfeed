@@ -8,18 +8,17 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="img/icons/logo-madfeed.jpg" height="80px" width="80px"></a>
-      </div>
+      <a class="navbar-brand" href="#"><div class="circle-text"><div>MAD</div></div></a>
+      <div id="mission">A community of chefs, cooks and farmers with an appetite for knowledge.</div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Watch</a></li>
-        <li><a href="#">Read</a></li>
-        <li><a href="#">Attend</a></li>
-        <li><a href="#">Symposiums</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#"><i class="fa fa-search"></i></a></li>
+        <li><a href="#">Watch</a>
+        <a href="#">Read</a>
+        <a href="#">Attend</a>
+        <a href="#">About</a></li>
+       <!-- <li><a href="#"><i class="fa fa-search"></i></a></li> -->
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
