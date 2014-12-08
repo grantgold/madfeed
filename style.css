@@ -19,12 +19,17 @@ a:hover{
  text-decoration: none;
 }
 
+p {
+  font-size: 18px;
+  font-weight: 300; 
+}
+
 section{
   padding-bottom: 20px;
 }
 
 .row {
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .navbar {
@@ -56,19 +61,22 @@ section{
 }
 
 .section-title {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   padding-top: 20px;
+  float: left;
+}
+.view-all {
+  font-size: 18px;
+  font-weight: regular;
+  padding-top: 32px;
+  float: right;
 }
 
 .author {
   font-size: 14px;
   color: #c0c0c0;
   font-style: italic;
-}
-
-.color{
-  /*background: red;*/
 }
 
 .home-grid-filter {
@@ -81,12 +89,35 @@ section{
   font-weight: bold;
 }
 
+.about-short {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
 #main{
   background: #efefef;
 }
 
 #video{
   background: #efefef;
+}
+
+.btn {
+  padding: 10px 40px;
+  font-size: 18px;
+  border: 2px solid transparent;
+  border-color: #303030;
+  border-radius: 40px;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #fff;
+  background-color: #255715;
+  text-decoration: none;
+  border-color: #255715;
 }
 
 .circle-text {
@@ -115,6 +146,10 @@ section{
     font-size: 32px;
 }
 
+.fa {
+  padding-left: 10px;
+}
+
 #mission {
   font-size: 36px;
   font-weight: bold;
@@ -123,11 +158,6 @@ section{
   padding-left: 8%;
   padding-top: 2%;
   width: 50%;
-}
-
-#profile{}
-#profile .container{
-  max-width: 960px;
 }
 
 #related-posts{}

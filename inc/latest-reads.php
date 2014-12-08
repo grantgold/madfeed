@@ -2,7 +2,9 @@
 	<div class="row">
 		<div class="col-xs-12">
 
-			<div class="section-title">Latest Reads</div>
+			<p class="section-title">Latest Reads</p>
+			<p class="view-all">View All</p>
+			<div style="clear: both;"></div>
 			<hr>
 
 			<!-- LOOP -->
