@@ -1,4 +1,4 @@
-<div class="col-sm-3">
+<div class="col-sm-6 col-md-3">
 	<div class="small-top-btm-padding">
 	<img src="http://placehold.it/600x300" class="img-responsive"/>
 	<h3>Exploring All the Ways to Write a Recipe</h3>
