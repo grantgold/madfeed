@@ -1,6 +1,6 @@
 <?php include('header.php'); ?>
 
-<section>
+<section class="hidden-xs">
 	<div class="container">
 		<div class="row">
 			<?php include( INC . 'topics.php' ); ?>
@@ -20,7 +20,7 @@
 	</div>
 </section>
 <section>
-	<div class="container">
+	<div class="container large-top-btm-padding">
 
 		<?php include( INC . 'latest-event.php' ); ?>
 

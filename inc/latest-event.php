@@ -14,7 +14,7 @@
 		</div>
 		<div class = "col-xs-12 col-md-6">
 			<h1>MAD 4/ What is Cooking? Featuring Alex Atala</h1>
-			<p>Let’s re-evaluate the fundamental techniques and 
+			<p class="medium-top-btm-padding">Let’s re-evaluate the fundamental techniques and 
 				responsibilities of the profession. Where does the 
 				food we cook come from and what’s in it? What will 
 				it become in the next century and how do we ensure 

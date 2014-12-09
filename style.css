@@ -28,6 +28,22 @@ section{
   padding-bottom: 20px;
 }
 
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 940px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1080px;
+  }
+}
+
 .row {
   padding-top: 30px;
 }
@@ -73,7 +89,7 @@ section{
   float: right;
 }
 
-.author {
+.byline {
   font-size: 14px;
   color: #c0c0c0;
   font-style: italic;
@@ -81,27 +97,11 @@ section{
 
 .home-grid-filter {
   margin: 0 18px;
-
 }
 
 .selected {
   color: #303030;
   font-weight: bold;
-}
-
-.about-short {
-  background-color: #f7f7f7;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 60px;
-}
-
-#main{
-  background: #efefef;
-}
-
-#video{
-  background: #efefef;
 }
 
 .btn {
@@ -163,6 +163,32 @@ section{
 #related-posts{}
 #related-posts h4{
   text-align: center;
+}
+
+/*
+
+Styling Classes
+
+*/
+
+.small-top-btm-padding {
+  padding: 8px 0px 12px 0px;
+}
+
+.medium-top-btm-padding {
+  padding: 20px 0px 30px 0px;
+}
+
+.large-top-btm-padding {
+  padding: 60px 0px 80px 0px;
+}
+
+.inset-left-right-padding {
+  padding: 0px 110px 0px 110px;
+}
+
+.background-grey {
+  background-color: #f8f8f8;
 }
 
 
