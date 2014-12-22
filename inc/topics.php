@@ -10,6 +10,5 @@
 			<a class="home-grid-filter" href="#">Environment</a>
 			<a class="home-grid-filter" href="#">Creativity</a>
 			<a class="home-grid-filter" href="#">Biodiversity</a>
-			<a class="home-grid-filter" href="#">Flavour</a>
 	</div>
 </section>

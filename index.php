@@ -29,7 +29,7 @@
 <section>
 	<div class="row">
 
-		<?php include( INC . 'about-small.php' ); ?>
+		<?php include( INC . 'about-summary.php' ); ?>
 	</div>
 </section>
 

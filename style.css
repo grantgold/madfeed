@@ -24,8 +24,20 @@ p {
   font-weight: 300; 
 }
 
+h4 {
+  margin-bottom: 4px;
+  margin-top: 0px;
+}
+
 section{
   padding-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #bbb;
+  padding-top: 16px;
+  margin-bottom: 0px;
 }
 
 .section-title {
@@ -82,16 +94,25 @@ section{
     font-size: 32px;
 }
 
+.brand-text {
+  float:left;
+  width: 100%;
+  margin-top: 0.1em;
+  font-family: futura;
+  font-size: 62px;
+  color: #303030;
+}
+
 
 
 #mission {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   line-height: 28px;
   float: left;
-  padding-left: 8%;
+  padding-left: 20%;
+  width: 65%;
   padding-top: 2%;
-  width: 50%;
 }
 
 #related-posts{}
@@ -117,7 +138,7 @@ Modified Bootstrap
   margin-bottom: 0px;
   border: none;
   width: 100%;
-  height: 200px;
+  height: 140px;
 }
 
 .navbar-brand {
@@ -137,12 +158,35 @@ Modified Bootstrap
   font-weight: bold;
 }
 
+.container-fluid .navbar-header {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pagination {
+  float: right;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  color: #303030;
+  border: 0px;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: #fff;
+  background-color: #ddd;
+}
+
 .fa {
   padding-left: 10px;
 }
 
 .btn {
-  padding: 10px 40px;
+  padding: 8px 30px;
   font-size: 18px;
   border: 2px solid transparent;
   border-color: #303030;
@@ -157,9 +201,45 @@ Modified Bootstrap
   border-color: #255715;
 }
 
+.dropdown-toggle {
+  margin-left: 12px;
+  border-radius: 6px;
+  height: 46px;
+  border: none;
+  margin-right: 20px;
+}
+
+.btn-toolbar {
+  width: 100%;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+.form-control {
+  display: block;
+  float: left;
+  width: 250px;
+  height: 46px;
+  padding: 10px 0px 12px 20px;
+  margin-right: 20px;
+  font-size: 22px;
+  line-height: 1.4;
+  color: #555;
+}
+
+.form-control::-moz-placeholder {
+  color: #e5e5e5;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #e5e5e5;
+}
+.form-control::-webkit-input-placeholder {
+  color: #e5e5e5;
+}
 /*
 
-Styling Classes
+Spacing / Color Classes
 
 */
 
@@ -180,7 +260,7 @@ Styling Classes
 }
 
 .background-grey {
-  background-color: #f8f8f8;
+  background-color: #F6F6F7;
 }
 
 /*
@@ -193,20 +273,36 @@ Media Queries
   .container {
     width: 720px;
   }
+  .navbar {
+    height: 160px;
+  }
 }
-@media (min-width: 992px) {
+@media (min-width: 990px) {
   .container {
     width: 940px;
   }
+  .navbar {
+    height: 200px;
+  }
+
+  .form-control {
+    width: 360px;
+}
   #mission {
     font-size: 36px;
     line-height: 44px;
+    padding-left: 8%;
+    width: 65%;
   }
 }
 @media (min-width: 1200px) {
   .container {
     width: 1060px;
   }
+
+  .form-control {
+    width: 500px;
+}
 }
 
 
