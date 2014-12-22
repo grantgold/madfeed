@@ -12,10 +12,10 @@ body{
 }
 
 a{
-  color:#c0c0c0;
+  color:#303030;
 }
 a:hover{
- color:#303030; 
+ color:#c0c0c0; 
  text-decoration: none;
 }
 
@@ -99,11 +99,17 @@ section{
   width: 100%;
   margin-top: 0.1em;
   font-family: futura;
-  font-size: 62px;
-  color: #303030;
+  font-size: 48px;
+  color: #255715;
 }
 
-
+.footer-brand-text {
+  float:left;
+  width: 100%;
+  font-family: futura;
+  font-size: 30px;
+  color: #255715;
+}
 
 #mission {
   font-size: 24px;
@@ -119,6 +125,11 @@ section{
 #related-posts h4{
   text-align: center;
 }
+
+#video {
+  background-color: #000;
+}
+
 
 /*
 
@@ -207,7 +218,14 @@ Modified Bootstrap
   height: 46px;
   border: none;
   margin-right: 20px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .075);
 }
+
+.btn > .caret,
+.dropup > .btn > .caret {
+  border-top-color: #ccc !important;
+  margin-left: 40px;
+  }
 
 .btn-toolbar {
   width: 100%;
@@ -221,6 +239,7 @@ Modified Bootstrap
   width: 250px;
   height: 46px;
   padding: 10px 0px 12px 20px;
+  margin-left: 10px;
   margin-right: 20px;
   font-size: 22px;
   line-height: 1.4;
@@ -286,7 +305,7 @@ Media Queries
   }
 
   .form-control {
-    width: 360px;
+    width: 290px;
 }
   #mission {
     font-size: 36px;
@@ -301,8 +320,8 @@ Media Queries
   }
 
   .form-control {
-    width: 500px;
-}
+    width: 400px;
+  }
 }
 
 

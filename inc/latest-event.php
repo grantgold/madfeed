@@ -2,8 +2,8 @@
 	<div class="row">
 		<div class="col-xs-12">
 
-			<p class="section-title">Symposiums &amp; Talks</p>
-			<p class="view-all">View All Events</p>
+			<p class="section-title"><a href="#">Symposiums &amp; Talks</a></p>
+			<p class="view-all"><a href="#">View All Events</a></p>
 			<div style="clear: both;"></div>
 			<hr>
 		</div>
