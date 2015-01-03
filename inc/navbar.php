@@ -16,7 +16,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/videos.php">Watch</a>
-        <a href="#">Read</a>
+        <a href="/reads.php">Read</a>
         <a href="#">Attend</a>
         <a href="#">About</a></li>
        <!-- <li><a href="#"><i class="fa fa-search"></i></a></li> -->
