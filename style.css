@@ -115,6 +115,24 @@ section{
   margin-top: 0px;
 }
 
+.entry-hed h1{
+  font-weight: 800;
+}
+
+.blogpost {
+  font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+  margin-top: 12px;
+  margin-right: 12px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.1599999964237213px;
+  text-rendering: optimizelegibility;
+  word-break: break-word;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
 #mission {
   font-size: 24px;
   font-weight: bold;
@@ -261,6 +279,11 @@ Modified Bootstrap
 .form-control::-webkit-input-placeholder {
   color: #e5e5e5;
 }
+
+.img-responsive .pull-right {
+  padding-left: 20px;
+}
+
 /*
 
 Spacing / Color Classes

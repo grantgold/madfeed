@@ -8,18 +8,39 @@
 				<article class="entry">
 					
 					<div class="entry-media">
-						<img src="http://placehold.it/1200x600" class="img-responsive"/>
+						<iframe src="//player.vimeo.com/video/114680357" width="100%" height="452" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
 
 					<div class="entry-hed">
-						<h1><?php echo get_grant(); ?></h1>
+						<h1>Choi and Patterson Announce First Location of Loco'l</h1>
 					</div>
 
 					<div class="entry-content">
-						THE_CONTENT
-						<img src="http://placehold.it/200x200" class="img-responsive pull-right"/>
-						<p>!Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<p>!Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<div class="byline">17 December 2014 • Gabe Ulla</div>
+						<div class="blogpost">
+							Chefs Daniel Patterson and Roy Choi have announced the first location of their 
+							fast food concept loco’l: it’ll be at 57 Taylor Street, in the Tenderloin neighborhood 
+							of San Francisco, one of the most dangerous areas of the city. They promise a late 
+							spring/early summer opening date.
+							<br>
+							<br>
+							<img src="http://placehold.it/200x200" class="img-responsive pull-right"/>
+							Choi and Patterson announced the project at MAD over the summer. In a statement 
+							published on this site in August, Patterson explained, “I needed to start a business 
+							that could grow quickly and supplant the fast-food chains and convenience stores that 
+							separate our youth from the taste of real food. I envisioned a new kind of fast-food 
+							restaurant that served real food in a nice environment, and which could contribute to 
+							the neighborhood around it in myriad ways. My answer lay to the south, in Los Angeles, 
+							where Roy Choi was bringing people together from all over the city around Kogi—food 
+							trucks that served tasty, hard-to-categorize food.” You can read Patterson’s complete 
+							thoughts on the genesis of loco’l here. 
+							<br>
+							<br>
+
+							Choi was a crucial inspiration for the project: at MAD3, he spoke of hunger, food 
+							deserts, and the need for high-end chefs to reach people that don’t get to try their 
+							restaurants. It is one of the most popular talks in the history of MAD.
+						</div>
 					</div>
 					
 					<div class="entry-meta">
