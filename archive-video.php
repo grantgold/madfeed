@@ -2,7 +2,7 @@
 
 <div class="row hidden-xs">
 
-	<?php include( 'INC' . '/search-filter.php' ); ?>
+	<?php include( INC . '/search-filter.php' ); ?>
 
 </div>
 
@@ -10,10 +10,8 @@
 	<div class="row">
 	<div class="col-xs-12">
 
-	<?php include( 'INC' . '/latest-videos.php' ); ?>
-	<?php include( 'INC' . '/latest-videos.php' ); ?>
-	<?php include( 'INC' . '/latest-videos.php' ); ?>
-	<?php include( 'INC' . '/latest-videos.php' ); ?>
+		<?php loop(); // for videos ?>
+
 	</div>
 	</div>
 

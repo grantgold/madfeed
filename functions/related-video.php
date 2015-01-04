@@ -14,6 +14,9 @@ function related_video( $post ) {
     #related_video_box label,
     #related_video_box input,
     #related_video_box small{}
+    #related_video_box small strong{
+      background: yellow;
+    }
     #related_video_box label{
       padding:0 2px;
     }
@@ -27,9 +30,9 @@ function related_video( $post ) {
   </style>
   <div id="related_video_box">
     <p>
-      <label for="related_video_url">URL</label><br />
+      <label for="related_video_url">Vimeo ID</label><br />
       <input type="text" name="related_video_url" id="related_video_url" value="<?php echo $url; ?>" /><br />
-      <small>e.g. http://nytimes.com/<?php echo date('Y'); ?>/<?php echo date('m'); ?>/<?php echo date('d'); ?>/the-future-is-bright</small>
+      <small>e.g. http://vimeo.com/<strong>114680357</strong></small>
     </p>
   </div><!-- #related_video_box -->
   

@@ -119,6 +119,16 @@ function custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
+
+
+// Get the Vimeo ID
+function vimeo_id(){
+  $id = get_post_meta( get_the_ID(), 'related_video_url', true );
+  return $id;
+}
+
+
+
 // Debugging Notes
 // echo INC;
 // print_r(INC);

@@ -1,6 +1,5 @@
 <?php include('header.php'); ?>
 
-MOOOO
 <section class="hidden-xs">
 	<div class="container">
 		<div class="row">
