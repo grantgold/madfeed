@@ -41,12 +41,7 @@
 		</div>
 	</section>
 
-
-
-	<!-- Le JS -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type='text/javascript' src='js/bootstrap.min.js?v=<?php echo V; ?>'></script>
-	<script type='text/javascript' src='js/common.js?v=<?php echo V; ?>'></script>
-
+	<?php wp_footer(); ?>
+	
 </body>
 </html>

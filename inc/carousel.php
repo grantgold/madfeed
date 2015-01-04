@@ -1,3 +1,3 @@
-<section>
-	<div><img src="img/videos-temp.png"></div>
+<section class="mf_carousel">
+	<div><img src="<?php echo THEME; ?>/img/videos-temp.png"></div>
 </section>

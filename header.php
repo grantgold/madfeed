@@ -1,24 +1,31 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Foundation</title>
-  <meta charset="UTF-8" />
+<html <?php language_attributes(); ?>>
+  <head>
+    <title><?php wp_title( '|', true, 'right' ); ?><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></title>
+    <meta charset="<?php bloginfo( 'charset' ); ?>" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css?v=<?php echo V; ?>'>"/>
-  
-  <!-- Le Font Awesome // http://fortawesome.github.io/Font-Awesome/icons -->
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css?v=<?php echo V; ?>'>"/>
-  
-  <!-- Custom CSS -->
-  <link rel="stylesheet" type="text/css" media="screen, print" href="style.css?v=<?php echo V; ?>'>"/>
 
-  <!-- Le Fonts: Lato -->
-  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <meta name="keywords" content="Park Slope Food Coop, Cooperative Design Process, Food Coop, Brooklyn, Cooperative" />
+    
+    <meta name="description" content="A member-owned cooperative in Brooklyn, New York." />
+
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts: Lato / http://www.latofonts.com/ -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Open Graph Tags -->
+    <?php include INC . 'open-graph.php'; ?>
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
+
+    <?php wp_head(); ?>
 
 </head>
 <body>
-  <?php include('functions.php'); ?>
-
-  <?php include( 'INC' . '/navbar.php' ); ?>
+  
+  <?php include( INC . 'navbar.php' ); ?>
   <?php //include( INC . 'head.php' ); ?>

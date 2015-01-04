@@ -4,29 +4,43 @@ ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
 error_reporting(-1);
 
-// This File stores all of your funcitons.
-// It should be included on your header.php file.
+include_once 'functions/wp_enqueue_script.php';
+
+include_once 'functions/beta.php';
+include_once 'functions/loop.php';
+// include_once 'functions/images.php';
+// include_once 'functions/related-link.php';
+// include_once 'functions/kicker.php';
+
+include_once 'functions/videos.php';
 
 
 
-// Include Path
-// All template files go in the /INC/ folder. 
-// Use this to call those files —
-// include_once( INC . 'filename.php' );
-$inc = $_SERVER["DOCUMENT_ROOT"] . $_SERVER["REQUEST_URI"] . 'inc/';
+// Variables
+$tdir = get_template_directory_uri();
+define('TDIR', $tdir);
+
+$theme = get_template_directory_uri();
+define('THEME', $theme);
+
+$root = get_template_directory();
+define('ROOT', $root);
+
+// Includes Path
+$inc = $root . '/inc/';
 define('INC', $inc);
 
 
+// Hide WP Admin Bar
+add_filter('show_admin_bar', '__return_false');
 
-function grant(){
-	$grant = 'Grant Gold';
-	echo $grant;
-}
 
-function get_grant(){
-	$grant = 'Grant Gold';
-	return $grant;
-}
+
+// Debugging Notes
+// echo INC;
+// print_r(INC);
+
+
 
 
 ?>
