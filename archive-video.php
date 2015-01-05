@@ -40,7 +40,6 @@
 	<?php numeric_posts_nav($the_query); ?>
 </div>
 
-
 <section>
 	<div class="row">
 
