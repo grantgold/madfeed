@@ -8,13 +8,29 @@
 
 <div class="container">
 	<div class="row">
-	<div class="col-xs-12">
+		<div class="col-xs-12">
+			<?php 
+				$i = 1;
+				if (have_posts()) {
+					while (have_posts()) {
+						the_post(); ?>
+						<?php
+							get_template_part('content', 'videos' ); // uses content-videos.php
+						
+							if ($i % 4 == 0){
+								echo "</div></div>";
+								echo "<div class='row'><div class='col-xs-12'>";
+							}
 
-		<?php loop(); // for videos ?>
-
+					$i++;
+					}
+					// include TDIR . '/nextprev.php';
+				} else {
+					// get_template_part( 'content', 'none' );
+				}
+			?>
+		</div>
 	</div>
-	</div>
-
 </div>
 
 <div class="container">

@@ -2,10 +2,8 @@
 
 function loop(){
 	$i = 0;
-	
 	$type = get_post_type( get_the_ID() );
 	// echo $type;
-
 	if (have_posts()) {
 		while (have_posts()) {
 			the_post(); ?>
