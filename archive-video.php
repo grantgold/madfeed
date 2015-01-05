@@ -11,9 +11,16 @@
 		<div class="col-xs-12">
 			<?php 
 				$i = 1;
-				if (have_posts()) {
-					while (have_posts()) {
-						the_post(); ?>
+				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+				$args = array(
+					'post_type' => 'video',
+					'posts_per_page' => 8,
+					'paged' => $paged
+				);
+				$the_query = new WP_Query($args);
+				if ( $the_query->have_posts() ) {
+					while ( $the_query->have_posts() ) {
+						$the_query->the_post(); ?>
 						<?php
 							get_template_part('content', 'videos' ); // uses content-videos.php
 						
@@ -24,20 +31,15 @@
 
 					$i++;
 					}
-					// include TDIR . '/nextprev.php';
 				} else {
 					// get_template_part( 'content', 'none' );
 				}
 			?>
 		</div>
 	</div>
+	<?php numeric_posts_nav($the_query); ?>
 </div>
 
-<div class="container">
-
-	<?php include( 'INC' . '/pagination.php' ); ?>
-
-</div>
 
 <section>
 	<div class="row">
