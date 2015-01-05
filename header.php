@@ -5,9 +5,9 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
 
 
-    <meta name="keywords" content="Park Slope Food Coop, Cooperative Design Process, Food Coop, Brooklyn, Cooperative" />
+    <meta name="keywords" content="MAD, MAD food, MAD feed, MAD Copenhagen, Food Symposium, Food, Symposium, Community, Organization, Archive" />
     
-    <meta name="description" content="A member-owned cooperative in Brooklyn, New York." />
+    <meta name="description" content="A community of chefs, cooks and farmers with an appetite for knowledge." />
 
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />

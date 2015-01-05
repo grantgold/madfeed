@@ -120,6 +120,8 @@ function custom_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 
+// Add Featured Image
+add_theme_support( 'post-thumbnails' ); 
 
 // Get the Vimeo ID
 function vimeo_id(){

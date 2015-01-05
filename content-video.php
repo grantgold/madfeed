@@ -21,7 +21,7 @@
         <img src="http://placehold.it/200x200" class="img-responsive pull-right"/>
       </div>
 
-      <!-- Profile Image -->
+      <!-- Content -->
       <div class="col-xs-12 col-sm-10">
 
         <article class="entry">
