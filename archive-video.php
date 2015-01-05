@@ -2,7 +2,7 @@
 
 <div class="row hidden-xs">
 
-	<?php include( INC . '/search-filter.php' ); ?>
+	<?php include( INC . 'search-filter.php' ); ?>
 
 </div>
 
@@ -35,14 +35,14 @@
 
 <div class="container">
 
-	<?php include( 'INC' . '/pagination.php' ); ?>
+	<?php include( INC . 'pagination.php' ); ?>
 
 </div>
 
 <section>
 	<div class="row">
 
-		<?php include( 'INC' . '/about-summary.php' ); ?>
+		<?php include( INC . 'about-summary.php' ); ?>
 
 	</div>
 </section>
