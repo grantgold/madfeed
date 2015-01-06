@@ -121,6 +121,12 @@ section{
   margin-top: 0px;
 }
 
+.video-feature-image img{
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+}
+
 .entry-hed h1{
   font-weight: 800;
 }
