@@ -147,6 +147,12 @@ section{
   -webkit-font-smoothing: antialiased;
 }
 
+.video-feature-image img {
+    width:100%;
+    max-width:650px;
+    height:auto;
+}
+
 #mission {
   font-size: 24px;
   font-weight: bold;

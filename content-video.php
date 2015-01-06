@@ -30,7 +30,7 @@
             <h1><?php the_title(); ?></h1>
           </div>
 
-          <div class="entry-content">
+          <div class="entry-content blogpost">
             <?php the_content(); ?>
           </div>
           
