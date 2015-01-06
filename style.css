@@ -71,6 +71,8 @@ section{
 .selected {
   color: #303030;
   font-weight: bold;
+  border-bottom: 1px solid black;
+  padding-bottom: 2px;
 }
 
 .circle-text {

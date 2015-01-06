@@ -2,12 +2,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-4 col-sm-3 col-md-2">
-					<a class="navbar-brand" href="#"><div class="footer-brand-text"><div>MAD</div></div></a>
+					<a class="navbar-brand" href="<?php echo get_site_url(); ?>"><div class="footer-brand-text"><div>MAD</div></div></a>
 				</div>
 				<div class="col-xs-4 col-sm-3 col-md-2 small-top-btm-padding"><b>This Site</b>
 					<ul class="list-unstyled">
 					<li><br></li>
-					<li><a href="/videos.php">WATCH</a></li>
+					<li><a href="<?php echo get_site_url(); ?>/video">WATCH</a></li>
 			        <li><a href="#">READ</a></li>
 			        <li><a href="#">ATTEND</a></li>
 			        <li><a href="#">ABOUT</a></li></ul>
