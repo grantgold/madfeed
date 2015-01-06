@@ -18,7 +18,7 @@
 
       <!-- Profile Image -->
       <div class="col-xs-12 col-sm-2">
-        <img src="http://placehold.it/200x200" class="img-responsive pull-right"/>
+        <img src="http://placehold.it/200x200" class="profile-image img-responsive"/>
       </div>
 
       <!-- Content -->

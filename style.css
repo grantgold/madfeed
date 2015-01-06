@@ -153,6 +153,10 @@ section{
     height:auto;
 }
 
+.profile-image img {
+  float: right !important;
+}
+
 #mission {
   font-size: 24px;
   font-weight: bold;
@@ -342,6 +346,10 @@ Media Queries
   }
   .navbar {
     height: 160px;
+  }
+  .profile-image img{
+    float: left;
+    text-align: left;
   }
 }
 @media (min-width: 990px) {
