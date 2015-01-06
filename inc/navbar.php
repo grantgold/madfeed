@@ -8,8 +8,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand hidden-xs hidden-sm" href="#"><div class="circle-text"><div>MAD</div></div></a>
-      <a class="navbar-brand hidden-md hidden-lg" href="#"><div class="brand-text"><div>MAD</div></div></a>
+      <a class="navbar-brand hidden-xs hidden-sm" href="<?php get_template_directory(); ?>"><div class="circle-text"><div>MAD</div></div></a>
+      <a class="navbar-brand hidden-md hidden-lg" href="<?php get_template_directory(); ?>"><div class="brand-text"><div>MAD</div></div></a>
       <div id="mission" class="hidden-xs">A community of chefs, cooks and farmers with an appetite for knowledge.</div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

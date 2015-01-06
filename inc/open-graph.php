@@ -10,8 +10,8 @@
 <!-- Twitter -->
 <link rel="me" href="https://twitter.com/foodcoop" />
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@foodcoop">
-<meta name="twitter:creator" content="@foodcoop">
+<meta name="twitter:site" content="@theMADFeed">
+<meta name="twitter:creator" content="@theMADFeed">
 <meta name="twitter:title" content="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> <?php wp_title( '|', true, 'left' ); ?>">
-<meta name="twitter:description" content="The @foodcoop is redesigning its website and you’re a part of it.">
+<meta name="twitter:description" content="The @theMADFeed is redesigning its website and you’re a part of it.">
 <meta property="og:image" content="<?php echo THEME . '/img/art/checkout.png'; ?>" />

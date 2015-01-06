@@ -9,6 +9,5 @@
 			<a class="home-grid-filter" href="#">Fermentation</a>
 			<a class="home-grid-filter" href="#">Environment</a>
 			<a class="home-grid-filter" href="#">Creativity</a>
-			<a class="home-grid-filter" href="#">Biodiversity</a>
 	</div>
 </section>
