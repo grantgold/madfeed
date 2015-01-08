@@ -12,7 +12,7 @@
 			viewable online, for free.</p>
 		</div>
 		<div class="text-center medium-top-btm-padding">
-			<button type="button" class="btn btn-default">More About MAD <i class="fa fa-angle-right"></i></button>
+			<a class="btn btn-primary" ref="#">More About MAD <i class="fa fa-angle-right"></i></a>
 		</div>
 	</div>
 </section>

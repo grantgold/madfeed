@@ -154,6 +154,7 @@ section{
 }
 
 .profile-image img {
+  margin-top: 22px;
   float: right !important;
 }
 
@@ -243,20 +244,79 @@ Modified Bootstrap
   padding-left: 10px;
 }
 
-.btn {
+.btn-primary {
   padding: 8px 30px;
   font-size: 18px;
   border: 2px solid transparent;
   border-color: #303030;
   border-radius: 40px;
+  background-color: #fff;
+  color: #303030;
 }
 
-.btn:hover,
-.btn:focus {
+.btn-primary:hover,
+.btn-primary:focus {
   color: #fff;
   background-color: #255715;
   text-decoration: none;
   border-color: #255715;
+}
+
+.btn-fb {
+  padding: 6px 12px 6px 6px;
+  font-size: 18px;
+  border: 2px solid transparent;
+  border-color: #303030;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #303030;
+  margin-right: 20px;
+}
+
+.btn-fb:hover,
+.btn-fb:focus {
+  color: #fff;
+  background-color: #3B5998;
+  text-decoration: none;
+  border-color: #3B5998;
+}
+
+.btn-twitter {
+  padding: 6px 12px 6px 6px;
+  font-size: 18px;
+  border: 2px solid transparent;
+  border-color: #303030;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #303030;
+  margin-right: 20px;
+}
+
+.btn-twitter:hover,
+.btn-twitter:focus {
+  color: #fff;
+  background-color: #4099FF;
+  text-decoration: none;
+  border-color: #4099FF;
+}
+
+.btn-tumblr {
+  padding: 6px 12px 6px 6px;
+  font-size: 18px;
+  border: 2px solid transparent;
+  border-color: #303030;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #303030;
+  margin-right: 20px;
+}
+
+.btn-tumblr:hover,
+.btn-tumblr:focus {
+  color: #fff;
+  background-color: #35465c;
+  text-decoration: none;
+  border-color: #35465c;
 }
 
 .dropdown-toggle {
@@ -268,7 +328,7 @@ Modified Bootstrap
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .075);
 }
 
-.btn > .caret,
+.btn-primary > .caret,
 .dropup > .btn > .caret {
   border-top-color: #ccc !important;
   margin-left: 40px;

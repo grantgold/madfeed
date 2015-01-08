@@ -5,7 +5,7 @@
 			<input type="text" class="form-control" placeholder="Search">
 		</div>
 		<div class="btn-group">
-				<button class="btn btn-default dropdown-toggle" id="topics" type="button" data-toggle="dropdown" aria-expanded="false">
+				<button class="btn btn-primary dropdown-toggle" id="topics" type="button" data-toggle="dropdown" aria-expanded="false">
 				    Topics <span class="caret"></span>
 			</button>
 				  <ul class="dropdown-menu" role="menu" aria-labelledby="topics">
@@ -21,7 +21,7 @@
 				  </ul>
 		</div>
 		<div class="btn-group hidden-xs">
-		    <button class="btn btn-default dropdown-toggle" id="events" type="button" data-toggle="dropdown" aria-expanded="false">
+		    <button class="btn btn-primary dropdown-toggle" id="events" type="button" data-toggle="dropdown" aria-expanded="false">
 					    Events <span class="caret"></span>
 			</button>
 					<ul class="dropdown-menu" role="menu" aria-labelledby="events">
@@ -35,7 +35,7 @@
 					</ul>
 		</div>
 		<div class="btn-group">
-			<button class="btn btn-default" type="button" >View All Speakers</button>
+			<button class="btn btn-primary" type="button" >View All Speakers</button>
 		</div>
 		</div>
 	</div>
