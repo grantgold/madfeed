@@ -255,7 +255,9 @@ Modified Bootstrap
 }
 
 .btn-primary:hover,
-.btn-primary:focus {
+.btn-primary:focus,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary{
   color: #fff;
   background-color: #255715;
   text-decoration: none;

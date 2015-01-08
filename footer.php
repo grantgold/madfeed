@@ -35,7 +35,7 @@
 		    	<div class="col-xs-4 col-sm-3 col-md-2 small-top-btm-padding">
 		    	<b>Get MAD email</b>
 		    	<p class="subtitle medium-top-btm-padding">Subscribe to receive email notifications about news or events</p>
-				<a href="http://eepurl.com/utvuX" target="_blank"><button class="btn btn-default" type="button" >Subscribe <i class="fa fa-angle-right"></i></button></a>
+				<a class="btn btn-primary" href="http://eepurl.com/utvuX" target="_blank">Subscribe <i class="fa fa-angle-right"></i></a>
 			</div>
 
 		</div>
