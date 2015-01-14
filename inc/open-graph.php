@@ -4,8 +4,7 @@
 <meta property="og:url" content="http://new.foodcoop.com/" />
 <meta property="og:site_name" content="Redesigning the Park Slope Food Coop" />
 <meta property="og:image" content="<?php echo THEME . '/img/art/building.png'; ?>" />
-<meta property="og:image" content="<?php echo THEME . '/img/art/checkout.png'; ?>" />
-<meta property="og:image" content="<?php echo THEME . '/img/art/cheese.png'; ?>" />
+
 
 <!-- Twitter -->
 <link rel="me" href="https://twitter.com/foodcoop" />

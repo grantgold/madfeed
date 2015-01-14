@@ -9,7 +9,6 @@ function scripts_styles() {
 	wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), $q, true );
 	wp_enqueue_script('moment-js', get_template_directory_uri() . '/js/moment.min.js', array( 'jquery' ), $q, true );
 	wp_enqueue_script('common', get_template_directory_uri() . '/js/common.js', array( 'jquery' ), $q, true );
-	
 
 
 	// Le CSS

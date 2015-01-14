@@ -34,7 +34,7 @@ h4 {
   margin-top: 16px;
 }
 
-section{
+section {
   padding-bottom: 20px;
 }
 
@@ -185,41 +185,14 @@ Modified Bootstrap
 
 */
 
+.navbar {
+  width: 100%;
+  height: 52px;
+  background-color: #fff;
+}
+
 .row {
   padding-top: 30px;
-}
-
-.navbar {
-  background-color: #fff;
-  padding-top: 20px;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-bottom: 0px;
-  border: none;
-  width: 100%;
-  height: 140px;
-}
-
-.navbar-brand {
-  height: 14%;
-  width: 14%;
-}
-
-.navbar-nav {
-  padding-top: 20px;
-}
-
-.navbar-nav > li > a {
-  padding-top: 0px;
-  text-transform: uppercase;
-  color: #4A4A4A;
-  text-align: right;
-  font-weight: bold;
-}
-
-.container-fluid .navbar-header {
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .pagination {
@@ -244,6 +217,16 @@ Modified Bootstrap
   padding-left: 10px;
 }
 
+.btn {
+  padding: 6px 16px 6px 6px;
+  font-size: 18px;
+  border: 2px solid transparent;
+  border-color: #303030;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #303030;
+}
+
 .btn-primary {
   padding: 8px 30px;
   font-size: 18px;
@@ -265,13 +248,7 @@ Modified Bootstrap
 }
 
 .btn-fb {
-  padding: 6px 12px 6px 6px;
-  font-size: 18px;
-  border: 2px solid transparent;
-  border-color: #303030;
-  border-radius: 2px;
-  background-color: #fff;
-  color: #303030;
+  border-radius: 40px;
   margin-right: 20px;
 }
 
@@ -284,13 +261,7 @@ Modified Bootstrap
 }
 
 .btn-twitter {
-  padding: 6px 12px 6px 6px;
-  font-size: 18px;
-  border: 2px solid transparent;
-  border-color: #303030;
-  border-radius: 2px;
-  background-color: #fff;
-  color: #303030;
+  border-radius: 40px;
   margin-right: 20px;
 }
 
@@ -303,13 +274,7 @@ Modified Bootstrap
 }
 
 .btn-tumblr {
-  padding: 6px 12px 6px 6px;
-  font-size: 18px;
-  border: 2px solid transparent;
-  border-color: #303030;
-  border-radius: 2px;
-  background-color: #fff;
-  color: #303030;
+  border-radius: 40px;
   margin-right: 20px;
 }
 
@@ -406,9 +371,6 @@ Media Queries
   .container {
     width: 720px;
   }
-  .navbar {
-    height: 160px;
-  }
   .profile-image img{
     float: left;
     text-align: left;
@@ -418,13 +380,9 @@ Media Queries
   .container {
     width: 940px;
   }
-  .navbar {
-    height: 200px;
-  }
-
   .form-control {
     width: 290px;
-}
+  }
   #mission {
     font-size: 36px;
     line-height: 44px;
@@ -436,7 +394,6 @@ Media Queries
   .container {
     width: 1060px;
   }
-
   .form-control {
     width: 400px;
   }
