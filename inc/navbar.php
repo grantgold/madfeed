@@ -1,23 +1,44 @@
-<div id="nav" class="navbar navbar-default">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and Mobile Nav -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsed-nav">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
+      <nav class="hidden-lg hidden-md hidden-sm">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsed-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-brand mobile-brand"><a class="brand-text" href="#">MAD</a></div>
+      </nav>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="collapsed-nav">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-      </ul>
+      <div class="navbar-brand circle-text hidden-xs"><a href="#">MAD</a></div>
+      <div id="mission" class="hidden-xs">A community of chefs, cooks and farmers with an appetite for knowledge.</div>
+
+
+
+      <div class="collapse navbar-collapse hidden-xs">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="<?php echo get_site_url(); ?>/video">Watch</a>
+            <a href="#">Read</a>
+            <a href="#">Attend</a>
+            <a href="#">About</a>
+          </li>
+        </ul>
       
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</div>
+      </div><!-- /.navbar-collapse -->
+
+    <!-- Hidden mobile nav -->
+      <div class="hidden-lg hidden-md hidden-sm collapse" id="collapsed-nav">
+        <ul class="mobile-nav">
+          <li><a href="<?php echo get_site_url(); ?>/video">Watch</a></li>
+            <li><a href="#">Read</a></li>
+            <li><a href="#">Attend</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+      
+      </div><!-- /.navbar-collapse -->
+
+    </div><!-- /.navbar-header -->
+  </div><!-- /.container -->
+</nav>
