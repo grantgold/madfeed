@@ -9,10 +9,10 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <div class="navbar-brand mobile-brand"><a class="brand-text" href="#">MAD</a></div>
+        <div class="navbar-brand mobile-brand"><a class="brand-text" href="<?php echo get_site_url(); ?>">MAD</a></div>
       </nav>
 
-      <div class="navbar-brand circle-text hidden-xs"><a href="#">MAD</a></div>
+      <div class="navbar-brand circle-text hidden-xs"><a href="<?php echo get_site_url(); ?>">MAD</a></div>
       <div id="mission" class="hidden-xs">A community of chefs, cooks and farmers with an appetite for knowledge.</div>
 
 
