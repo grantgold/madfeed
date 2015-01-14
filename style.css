@@ -230,6 +230,10 @@ Modified Bootstrap
   padding-right: 0;
 }
 
+.row {
+  padding-bottom: 20px;
+}
+
 .navbar {
   background-color: #fff;
   padding-top: 20px;
@@ -262,8 +266,6 @@ Modified Bootstrap
   box-shadow: 0 0 0 0;
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 }
-
-
 
 .pagination {
   float: right;
