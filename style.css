@@ -168,6 +168,10 @@ ul {
   height: auto;
 }
 
+.entry {
+  margin-top: 40px;
+}
+
 .entry-hed h1{
   font-weight: 800;
 }
@@ -192,9 +196,27 @@ ul {
     height:auto;
 }
 
+.profile {
+  margin-top: 100px;
+  margin-left: -30px;
+  font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+  font-size: 32px;
+  line-height: 36px;
+  font-style: italic;
+}
+
+.profile-name {
+}
+
+.profile-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-style: none;
+}
+
 .profile-image img {
-  margin-top: 22px;
-  float: right !important;
+  margin-top: 40px;
+  display: inline;
 }
 
 #mission {
@@ -215,6 +237,8 @@ ul {
 }
 
 #video {
+  margin-top: 20px;
+  padding-top: 30px;
   background-color: #000;
 }
 
@@ -407,6 +431,10 @@ Modified Bootstrap
   padding-left: 20px;
 }
 
+.embed-responsive-item {
+  height: 320px;
+}
+
 /*
 
 Spacing / Color Classes
@@ -443,10 +471,6 @@ Media Queries
   .container {
     width: 720px;
   }
-  .profile-image img{
-    float: left;
-    text-align: left;
-  }
 }
 @media (min-width: 860px) {
   .container {
@@ -463,6 +487,13 @@ Media Queries
   .circle-text a {
     font-size: 120%;
   }
+  .profile-image img{
+    float: left;
+    text-align: left;
+  }
+  .embed-responsive-item {
+  height: 500px;
+}
  
 }
 @media (min-width: 1040px) {
