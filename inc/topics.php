@@ -1,6 +1,6 @@
 <section class="topics">
 	<div class="container col-xs-12">
-			<i>Filter:</i>
+			<i>Featured:</i>
 			<a class="home-grid-filter selected" href="#">ALL</a>
 			<a class="home-grid-filter" href="#">Farming</a>
 			<a class="home-grid-filter" href="#">Chefs</a>
