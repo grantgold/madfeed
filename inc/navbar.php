@@ -13,7 +13,7 @@
       </nav>
 
       <div class="navbar-brand circle-text hidden-xs"><a href="<?php echo get_site_url(); ?>">MAD</a></div>
-      <div id="mission" class="hidden-xs">A community of chefs, cooks and farmers with an appetite for knowledge.</div>
+      <div id="mission" class="hidden-xs col-lg-8 col-sm-10">A community of chefs, cooks and farmers with an appetite for knowledge.</div>
 
 
 
