@@ -12,12 +12,14 @@
       } ?>
       
 
-      <div class="col-xs-12 col-sm-11 col-sm-offset-1">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-2">
         <?php loop(); ?>
       </div>
     </div>
   </div>
 </section>
+
+<?php include( INC . 'share-links.php' ); ?>
 
 <?php include( INC . 'related-posts.php' ); ?>
 

@@ -22,7 +22,7 @@
 			<p><?php //entry_excerpt(); ?></p>
 		</div><!-- .entry-summary -->
 
-		<div class="entry-content">
+		<div class="entry-content blogpost">
 			<?php the_content(); ?>
 		</div><!-- .entry-content -->
 	<?php endif; ?>
