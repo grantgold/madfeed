@@ -1,3 +1,7 @@
+<?php 
+	// This is the HOMEPAGE
+?>
+
 <?php include('header.php'); ?>
 
 <section class="hidden-xs">
