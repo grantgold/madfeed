@@ -12,7 +12,7 @@
 	</div>
 	<div class="row">
 
-			<?php include( INC . 'carousel.php' ); ?>
+		<?php include( INC . 'carousel.php' ); ?>
 
 	</div>
 </section>
