@@ -10,16 +10,19 @@
       <?php } else {
         madfeed_get_featured_image('large');
       } ?>
-      
+        <div class="col-xs-12">
+          <div class="col-xs-12 col-sm-2 vertical">
+            <?php include( INC . 'share-links.php' ); ?>
+          </div>
 
-      <div class="col-xs-12 col-sm-10 col-sm-offset-2">
-        <?php loop(); ?>
-      </div>
+          <div class="col-xs-12 col-sm-9">
+            <?php loop(); ?>
+          </div>
+        </div>
     </div>
   </div>
 </section>
 
-<?php include( INC . 'share-links.php' ); ?>
 
 <?php include( INC . 'related-posts.php' ); ?>
 

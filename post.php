@@ -3,7 +3,10 @@
 <section id="blog">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+			<div class="col-xs-12 col-sm-2">
+				<?php include( INC . 'share-links.php' ); ?>
+			</div>
+			<div class="col-xs-12 col-sm-10 col-sm-offset-2">
 
 				<article class="entry">
 					
@@ -50,7 +53,6 @@
 
 			</div>
 		</div>
-		<?php include( INC . 'share-links.php' ); ?>
 	</div>
 </section>
 

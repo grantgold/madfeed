@@ -1,11 +1,5 @@
 <?php include('header.php'); ?>
 
-<div class="row hidden-xs">
-
-	<?php include( INC . 'search-filter.php' ); ?>
-
-</div>
-
 <div class="container">
 	<div class="row">
 		<div class="col-xs-12">
@@ -13,7 +7,7 @@
 				$i = 1;
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 				$args = array(
-					'post_type' => 'video',
+					'post_type' => 'symposium',
 					'posts_per_page' => 8,
 					'paged' => $paged
 				);
@@ -22,7 +16,7 @@
 					while ( $the_query->have_posts() ) {
 						$the_query->the_post(); ?>
 						<?php
-							get_template_part('content', 'videos' ); // uses content-videos.php
+							get_template_part('content', 'symposiums' ); // uses content-symposiums.php
 						
 							if ($i % 4 == 0){
 								echo "</div></div>";

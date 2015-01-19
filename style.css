@@ -215,6 +215,10 @@ ul {
   padding-top: 1.4%;
 }
 
+.vertical > section {
+  margin-top: 100px;
+}
+
 #related-posts{}
 #related-posts h3{
   text-align: center;
@@ -326,6 +330,11 @@ Modified Bootstrap
   background-color: #255715;
   text-decoration: none;
   border-color: #255715;
+}
+
+.vertical > section > .btn-twitter,
+.vertical > section > .btn-tumblr {
+  margin-top: 30px;
 }
 
 .btn-fb {
