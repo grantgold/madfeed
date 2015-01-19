@@ -123,18 +123,6 @@ ul {
   font-size: 28px;
 }
 
-/*.mobile-nav-fixed {
-  width: 100%;
-  background-color: rgba(255,255,255, 0.9); 
-  position: fixed;
-  top: 0;
-  z-index: 20;
-  -webkit-background-clip: border-box;
-  -webkit-background-origin: padding-box;
-  -webkit-background-size: auto;
-  background-attachment: scroll;
-}*/
-
 .mobile-nav {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -185,6 +173,7 @@ ul {
   font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
   margin-top: 12px;
   margin-right: 12px;
+  padding-bottom: 20px;
   font-weight: 400;
   font-size: 22px;
   line-height: 33px;
@@ -202,7 +191,7 @@ ul {
 .profile > .profile-name {
   font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
   font-size: 32px;
-  line-height: 36px;
+  line-height: 38px;
   font-style: italic;
 }
 
@@ -222,8 +211,8 @@ ul {
   line-height: 38px;
   font-weight: bold;
   float: left;
-  padding-left: 8%;
-  padding-top: 2%;
+  padding-left: 6%;
+  padding-top: 1.4%;
 }
 
 #related-posts{}
@@ -491,8 +480,9 @@ Media Queries
     text-align: left;
   }
   .profile > .profile-name {
+    padding-top: 10px;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 28px;
   }
   .profile > .profile-title {
     font-size: 14px;
@@ -503,7 +493,9 @@ Media Queries
   }
 }
 @media (min-width: 1040px) {
-
+  .container {
+    width: 1020;
+  }
 }
 @media (min-width: 1200px) {
   .container {

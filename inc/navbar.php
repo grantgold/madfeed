@@ -1,5 +1,5 @@
 <nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
+  <div class="container-fluid col-xs-12">
     <!-- Brand and Mobile Nav -->
     <div class="navbar-header">
       <nav class="hidden-lg hidden-md hidden-sm">
@@ -12,9 +12,8 @@
         <div class="navbar-brand mobile-brand"><a class="brand-text" href="<?php echo get_site_url(); ?>">MAD</a></div>
       </nav>
 
-      <div class="navbar-brand circle-text hidden-xs"><a href="<?php echo get_site_url(); ?>">MAD</a></div>
-      <div id="mission" class="hidden-xs col-lg-8 col-sm-10">A community of chefs, cooks and farmers with an appetite for knowledge.</div>
-
+        <div class="navbar-brand circle-text hidden-xs col-sm-2"><a href="<?php echo get_site_url(); ?>">MAD</a></div>
+        <div id="mission" class="hidden-xs col-md-7 col-sm-8">A community of chefs, cooks and farmers with an appetite for knowledge.</div>
 
 
       <div class="collapse navbar-collapse hidden-xs">

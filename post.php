@@ -50,6 +50,7 @@
 
 			</div>
 		</div>
+		<?php include( INC . 'share-links.php' ); ?>
 	</div>
 </section>
 
