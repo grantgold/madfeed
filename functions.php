@@ -7,6 +7,7 @@ include_once 'functions/wp_enqueue_script.php';
 include_once 'functions/loop.php';
 include_once 'functions/videos.php';
 include_once 'functions/symposiums.php';
+include_once 'functions/contributors.php';
 include_once 'functions/related-video.php';
 
 // include_once 'functions/beta.php';
