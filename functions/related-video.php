@@ -1,7 +1,11 @@
 <?php
 add_action( 'add_meta_boxes', 'related_video_add' );
 function related_video_add() {
-  add_meta_box( 'related-video-id', 'Related Video', 'related_video', 'video', 'normal', 'high' );
+  $types = array( 'post', 'page', 'video' );
+
+  foreach( $types as $type ) {
+    add_meta_box( 'related-video-id', 'Related Video', 'related_video', $type, 'normal', 'high' );
+  }
 }
 
 function related_video( $post ) {

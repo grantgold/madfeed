@@ -10,7 +10,7 @@ include_once 'functions/related-video.php';
 
 // include_once 'functions/beta.php';
 
-// include_once 'functions/images.php';
+include_once 'functions/images.php';
 // include_once 'functions/related-link.php';
 // include_once 'functions/kicker.php';
 
