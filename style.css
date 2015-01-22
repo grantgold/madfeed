@@ -366,6 +366,11 @@ Modified Bootstrap
   font-weight: bold;
 }
 
+.navbar-nav-content > a:hover {
+  color: #303030;
+  text-decoration: none;
+}
+
 .collapsing, .collapse, .collapsed, .navbar-toggle {
   border: 0;
   box-shadow: 0 0 0 0;
