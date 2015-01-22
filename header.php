@@ -26,6 +26,3 @@
 
 </head>
 <body <?php body_class(); ?>>
-  
-  <?php include( INC . 'navbar.php' ); ?>
-  <?php //include( INC . 'head.php' ); ?>

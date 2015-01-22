@@ -4,6 +4,8 @@
 
 <?php include('header.php'); ?>
 
+<?php include( INC . 'navbar.php' ); ?>
+
 <section class="hidden-xs">
 	<div class="container">
 		<div class="row">

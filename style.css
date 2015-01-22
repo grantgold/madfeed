@@ -91,6 +91,7 @@ hr {
 .circle-text {
     width: 100%;
 }
+
 .circle-text:after {
     content: "";
     display: block;
@@ -102,16 +103,47 @@ hr {
     -webkit-border-radius: 50%; 
     border-radius: 50%;
 }
+
+.circle-text-content:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height:0;
+    margin-top: -18px;
+    padding-bottom: 100%;
+    background: #255715; 
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+    position: relative;
+    top: 45px;
+}
+
 .circle-text a {
     float:left;
-    width:100%;
+    width: 100%;
     padding-top:50%;
     line-height:1em;
     margin-top:-0.5em;
     text-align:center;
-    color:white;
+    color: white;
     font-family: futura;
     font-size: 100%;
+}
+
+.circle-text-content a {
+    float:left;
+    width: 86px;
+    padding-top:50%;
+    line-height:1em;
+    margin-top:-0.5em;
+    text-align:center;
+    color: white;
+    font-family: futura;
+    font-size: 18px;
+    z-index: 10;
+    position: relative;
+    top: 45px;
 }
 
 .brand-text {
@@ -216,7 +248,7 @@ hr {
 }
 
 .post-meta {
-  margin-top: 50px;
+  margin-top: 54px;
   margin-left: -30px;
   padding-right: 40px;
 }
@@ -259,6 +291,12 @@ hr {
   background-color: #000;
 }
 
+#blog {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /*
 
@@ -299,6 +337,28 @@ Modified Bootstrap
   text-transform: uppercase;
   color: #4A4A4A;
   text-align: right;
+  font-weight: bold;
+}
+
+.navbar-content {
+  background-color: #fff;
+  margin-bottom: 0px;
+  border: none;
+  width: 100%;
+  height: 50px;
+}
+
+.navbar-nav-content {
+  padding-top: 26px;
+  float: right;
+}
+
+.navbar-nav-content > a {
+  padding-top: 0px;
+  padding-left: 40px;
+  text-transform: uppercase;
+  color: #4A4A4A;
+  text-align: center;
   font-weight: bold;
 }
 

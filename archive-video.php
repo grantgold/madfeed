@@ -1,4 +1,5 @@
 <?php include('header.php'); ?>
+<?php include( INC . 'navbar.php' ); ?>
 
 <div class="row hidden-xs">
 
