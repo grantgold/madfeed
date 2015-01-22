@@ -11,8 +11,15 @@
         madfeed_get_featured_image('large');
       } ?>
         <div class="col-xs-12">
-          <div class="col-xs-12 col-sm-2 vertical">
+          <div class="col-xs-12 col-sm-3 post-meta">
+            <div class="subtitle">WRITTEN BY</div>
+            <div class="byline">Gabe Ulla</div>
+            <div class="subtitle"><a href="https://twitter.com/gabeulla">@gabeulla</a></div>
+            <hr>
+            <div class="subtitle">SHARE</div>
             <?php include( INC . 'share-links.php' ); ?>
+            <hr>
+            <div class="body"><?php echo get_the_date(); ?></div>
           </div>
 
           <div class="col-xs-12 col-sm-9">

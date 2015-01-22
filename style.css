@@ -18,11 +18,11 @@ body{
 }
 
 a{
-  color:#303030;
+  color: #303030;
 }
 a:hover{
- color:#c0c0c0; 
- text-decoration: none;
+  color: #303030;
+ text-decoration: underline;
 }
 
 p {
@@ -40,6 +40,10 @@ section {
 
 ul {
   list-style-type: none;
+}
+
+hr {
+  margin: 20px 0;
 }
 
 .subtitle {
@@ -165,6 +169,10 @@ ul {
   font-weight: 800;
 }
 
+.entry-title {
+  font-weight: 800;
+}
+
 .event-date {
   color: #bbb;
 }
@@ -199,11 +207,29 @@ ul {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
   font-style: none;
+  padding-bottom: 30px;
 }
 
 .profile-image img {
-  margin-top: 40px;
   display: inline;
+  padding-bottom: 30px;
+}
+
+.post-meta {
+  margin-top: 50px;
+  margin-left: -30px;
+  padding-right: 40px;
+}
+
+.post-meta .byline {
+  font-style: normal;
+  font-size: 18px;
+  color: #303030;
+}
+
+.post-meta .subtitle {
+  padding-top: 4px;
+  padding-bottom: 16px;
 }
 
 #mission {
@@ -215,9 +241,11 @@ ul {
   padding-top: 1.4%;
 }
 
-.vertical > section {
-  margin-top: 100px;
+#share-links {
+  margin-left: -12px;
+  padding-bottom: 0;
 }
+
 
 #related-posts{}
 #related-posts h3{
@@ -298,10 +326,6 @@ Modified Bootstrap
   background-color: #ddd;
 }
 
-.fa {
-  padding-left: 10px;
-}
-
 .btn {
   padding: 6px 16px 6px 6px;
   font-size: 18px;
@@ -332,14 +356,25 @@ Modified Bootstrap
   border-color: #255715;
 }
 
-.vertical > section > .btn-twitter,
-.vertical > section > .btn-tumblr {
-  margin-top: 30px;
-}
-
 .btn-fb {
+  padding: 8px 14px;
+  font-size: 18px;
   border-radius: 40px;
-  margin-right: 20px;
+  margin-right: 4px;
+} 
+
+.btn-twitter {
+  padding: 8px 10px;
+  font-size: 18px;
+  border-radius: 40px;
+  margin-right: 4px;
+} 
+
+.btn-tumblr {
+  padding: 8px 14px;
+  font-size: 18px;
+  border-radius: 40px;
+  margin-right: 4px;
 }
 
 .btn-fb:hover,
@@ -350,22 +385,12 @@ Modified Bootstrap
   border-color: #3B5998;
 }
 
-.btn-twitter {
-  border-radius: 40px;
-  margin-right: 20px;
-}
-
 .btn-twitter:hover,
 .btn-twitter:focus {
   color: #fff;
   background-color: #4099FF;
   text-decoration: none;
   border-color: #4099FF;
-}
-
-.btn-tumblr {
-  border-radius: 40px;
-  margin-right: 20px;
 }
 
 .btn-tumblr:hover,
