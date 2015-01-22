@@ -22,7 +22,7 @@ a{
 }
 a:hover{
   color: #303030;
- text-decoration: underline;
+  text-decoration: underline;
 }
 
 p {
@@ -90,6 +90,8 @@ hr {
 
 .circle-text {
     width: 100%;
+    font-size: 14px;
+    letter-spacing: .18em;
 }
 
 .circle-text:after {
@@ -128,7 +130,7 @@ hr {
     text-align:center;
     color: white;
     font-family: futura;
-    font-size: 100%;
+    text-decoration: none;
 }
 
 .circle-text-content a {
@@ -140,7 +142,9 @@ hr {
     text-align:center;
     color: white;
     font-family: futura;
+    text-decoration: none;
     font-size: 18px;
+    letter-spacing: .18em;
     z-index: 10;
     position: relative;
     top: 45px;
