@@ -103,7 +103,7 @@ function new_img_shortcode_filter($val, $attr, $content = null) {
   if ($width == 75 || $width == 163 ) { // if image doesn't need a caption
     return '<div class="photo w'.(0 + (int) $width).'">' . $img . '</div>';
   } else { // all other images
-    return '<div class="photo w'.(0 + (int) $width).'">' . $img . '<p class="caption">' . $caption . '</p></div>';
+    return '<div class="row photo-caption"><div class="caption"><hr>' . $caption . '</div><div class="photo w'.(0 + (int) $width).'">' . $img . '</div></div>';
   }
 }
 add_filter('img_caption_shortcode', 'new_img_shortcode_filter',10,3);

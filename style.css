@@ -72,6 +72,23 @@ hr {
   font-style: italic;
 }
 
+.caption {
+  width: 160px;
+  padding-right: 20px;
+  font-size: 14px;
+  text-align: right;
+  line-height: 18px;
+  color: #999;
+}
+
+.photo {
+  padding-bottom: 30px;
+}
+
+.photo-caption {
+  margin-left: -180px;
+}
+
 .home-grid-filter {
   color: #c0c0c0;
   margin: 0 18px;
