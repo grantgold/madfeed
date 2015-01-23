@@ -74,7 +74,7 @@ hr {
 
 .caption {
   width: 160px;
-  padding-right: 20px;
+  padding-right: 30px;
   font-size: 14px;
   text-align: right;
   line-height: 18px;
@@ -82,11 +82,12 @@ hr {
 }
 
 .photo {
-  padding-bottom: 30px;
+  
 }
 
 .photo-caption {
-  margin-left: -180px;
+  margin: 20px 0px;
+  margin-left: -240px;
 }
 
 .home-grid-filter {
