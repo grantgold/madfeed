@@ -3,9 +3,9 @@ add_action('init', 'cptui_register_my_taxes_contributors');
 function cptui_register_my_taxes_contributors() {
 register_taxonomy( 'contributors',array (
   0 => 'post',
-  1 => 'page',
-  2 => 'video',
-  3 => 'symposium',
+  1 => 'video',
+  // 2 => 'page',
+  // 3 => 'symposium',
 ),
 array( 'hierarchical' => true,
   'label' => 'Contributors',

@@ -102,6 +102,24 @@ function madfeed_entry_date( $echo = true ) {
 }
 endif;
 
+// Custom Taxonomies
+
+// get contributors terms with links
+function madfeed_contributors(){
+  $post_id = get_the_ID();
+  $terms = get_the_terms( $post_id, 'contributors' );        
+  if ( $terms && ! is_wp_error( $terms ) ) : 
+    $contributor_names = array();
+    foreach ( $terms as $term ) {
+      $contributor_names[] = '<a href="'. get_term_link( $term, 'contributors' ) . '">' . $term->name . '</a>';
+    }         
+    $contributors = join( ", <br>", $contributor_names );
+    return $contributors;
+
+endif;
+
+}
+
 
 
 // The Excerpt
