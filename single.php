@@ -15,7 +15,6 @@
             <div class="byline">
               <?php echo madfeed_contributors(); ?>
             </div>
-            <div class="subtitle"><a href="https://twitter.com/gabeulla">@gabeulla</a></div>
             <hr>
             <div class="subtitle">SHARE</div>
             <?php include( INC . 'share-links.php' ); ?>

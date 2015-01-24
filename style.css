@@ -72,6 +72,13 @@ hr {
   font-style: italic;
 }
 
+.twitter-handle {
+  font-size: 14px;
+  color: #303030;
+  padding-top: 16px;
+  margin-bottom: 0px;
+}
+
 .caption {
   width: 160px;
   padding-right: 30px;

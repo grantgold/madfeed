@@ -103,7 +103,6 @@ function madfeed_entry_date( $echo = true ) {
 endif;
 
 // Custom Taxonomies
-
 // get contributors terms with links
 function madfeed_contributors(){
   $post_id = get_the_ID();
@@ -111,16 +110,17 @@ function madfeed_contributors(){
   if ( $terms && ! is_wp_error( $terms ) ) : 
     $contributor_names = array();
     foreach ( $terms as $term ) {
-      $contributor_names[] = '<a href="'. get_term_link( $term, 'contributors' ) . '">' . $term->name . '</a>';
-    }         
-    $contributors = join( ", <br>", $contributor_names );
+      $t_id = $term->term_id;
+      $contributor_twitter = get_option( "taxonomy_$t_id" );
+      $handle = $contributor_twitter['twitter'];
+      $contributor_names[] = '<a href="'. get_term_link( $term, 'contributors' ) . '">' . $term->name . '</a>
+                              <br>
+                              <a class="twitter-handle" href="http://twitter.com/'.$handle.'" target="_blank">@'.$handle.'</a>';
+    }  
+    $contributors = join( "<br>", $contributor_names );
     return $contributors;
-
 endif;
-
 }
-
-
 
 // The Excerpt
 function entry_excerpt(){
@@ -215,10 +215,6 @@ function numeric_posts_nav($the_query) {
 
 }
 
-
-
-
 // Debugging Notes
 // echo INC;
 // print_r(INC);
-

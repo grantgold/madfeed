@@ -36,9 +36,9 @@ function madfeed_taxonomy_add_new_meta_field() {
 // this will add the custom meta field to the add new term page
 ?>
   <div class="form-field">
-    <label for="contributor_meta[custom_contributor_meta]"><?php _e( 'Profile Illustration', 'madfeed' ); ?></label>
-    <input type="text" name="contributor_meta[custom_contributor_meta]" id="contributor_meta[custom_contributor_meta]" value="">
-    <p class="description"><?php _e( 'Enter a value for this field','madfeed' ); ?></p>
+    <label for="contributor_meta[twitter]"><?php _e( 'Twitter Username @', 'madfeed' ); ?></label>
+    <input type="text" name="contributor_meta[twitter]" id="contributor_meta[twitter]" value="">
+    <p class="description"><?php _e( 'Example: @TheMADFeed','madfeed' ); ?></p>
   </div>
 <?php
 }
@@ -55,10 +55,10 @@ function madfeed_taxonomy_edit_meta_field($term) {
   // retrieve the existing value(s) for this meta field. This returns an array
   $contributor_meta = get_option( "taxonomy_$t_id" ); ?>
   <tr class="form-field">
-  <th scope="row" valign="top"><label for="contributor_meta[custom_contributor_meta]"><?php _e( 'Profile Illustration', 'madfeed' ); ?></label></th>
+  <th scope="row" valign="top"><label for="contributor_meta[twitter]"><?php _e( 'Twitter Username @', 'madfeed' ); ?></label></th>
     <td>
-      <input type="text" name="contributor_meta[custom_contributor_meta]" id="contributor_meta[custom_contributor_meta]" value="<?php echo esc_attr( $contributor_meta['custom_contributor_meta'] ) ? esc_attr( $contributor_meta['custom_contributor_meta'] ) : ''; ?>">
-      <p class="description"><?php _e( 'Enter a value for this field','madfeed' ); ?></p>
+      <input type="text" name="contributor_meta[twitter]" id="contributor_meta[twitter]" value="<?php echo esc_attr( $contributor_meta['twitter'] ) ? esc_attr( $contributor_meta['twitter'] ) : ''; ?>">
+      <p class="description"><?php _e( 'Example: TheMADFeed','madfeed' ); ?></p>
     </td>
   </tr>
 <?php
@@ -82,5 +82,3 @@ function save_taxonomy_custom_meta( $term_id ) {
 }  
 add_action( 'edited_contributors', 'save_taxonomy_custom_meta', 10, 2 );  
 add_action( 'create_contributors', 'save_taxonomy_custom_meta', 10, 2 );
-
-
