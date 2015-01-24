@@ -82,12 +82,13 @@ hr {
 }
 
 .photo {
-  
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .photo-caption {
-  margin: 20px 0px;
-  margin-left: -240px;
+  margin: 40px 0px;
+  margin-left: -200px;
 }
 
 .home-grid-filter {
@@ -215,6 +216,14 @@ hr {
   height: auto;
 }
 
+.feature {
+  display: block;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 .entry {
   margin-top: 40px;
 }
@@ -315,9 +324,7 @@ hr {
 }
 
 #blog {
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto;
 }
 
 
