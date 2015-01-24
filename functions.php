@@ -111,13 +111,13 @@ function madfeed_contributors(){
     $contributor_names = array();
     foreach ( $terms as $term ) {
       $t_id = $term->term_id;
-      $contributor_twitter = get_option( "taxonomy_$t_id" );
-      $handle = $contributor_twitter['twitter'];
+      $custom_meta = get_option( "taxonomy_$t_id" );
+      $handle = $custom_meta['twitter'];
       $contributor_names[] = '<a href="'. get_term_link( $term, 'contributors' ) . '">' . $term->name . '</a>
                               <br>
                               <a class="twitter-handle" href="http://twitter.com/'.$handle.'" target="_blank">@'.$handle.'</a>';
     }  
-    $contributors = join( "<br>", $contributor_names );
+    $contributors = join( "<br><br>", $contributor_names );
     return $contributors;
 endif;
 }
