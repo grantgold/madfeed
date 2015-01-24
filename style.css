@@ -276,6 +276,7 @@ hr {
 }
 
 .post-meta .byline {
+  margin-left: 0px;
   font-style: normal;
   font-size: 18px;
   color: #303030;

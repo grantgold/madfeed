@@ -20,7 +20,8 @@
         <div class="col-xs-12 col-sm-3 post-meta">
           <div class="col-xs-6 col-sm-12 profile-image">
             <img class="img-responsive" src="http://placehold.it/200x200" />
-            <div class="byline"><a href="#">Gabe Ulla</a></div>
+            <div class="post-meta byline"><a href="#">Gabe Ulla</a></div>
+            <div class="subtitle">Editor, USA</div>
             <hr>
           </div>
           <div class="col-xs-6 col-sm-12">
