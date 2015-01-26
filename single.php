@@ -2,7 +2,7 @@
 <?php include( INC . 'navbar-content.php' ); ?>
 
 <section id="blog">
-  <?php if ( empty(vimeo_id()) == true) { ?>
+  <?php if (empty(vimeo_id()) == TRUE) { ?>
         <iframe class="embed-responsive-item" src="//player.vimeo.com/video/<?php echo vimeo_id();?>?portrait=0&byline=0&title=0&color=006633" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       <?php } else {
         madfeed_get_featured_image('large');
