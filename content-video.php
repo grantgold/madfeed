@@ -12,7 +12,7 @@
         <div class="col-xs-12 col-sm-3 post-meta">
           <div class="col-xs-6 col-sm-12 profile-image">
             <img class="img-responsive" src="http://placehold.it/200x200" />
-            <div class="post-meta byline"><?php echo madfeed_contributors(); ?></div>
+            <div class="post-meta contributors-meta"><?php echo madfeed_contributors_meta(); ?></div>
             <hr>
           </div>
           <div class="col-xs-6 col-sm-12">

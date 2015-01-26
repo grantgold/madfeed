@@ -22,6 +22,9 @@
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
 
+    <!--Google Analytics -->
+    <?php include_once(INC . 'analyticstracking.php') ?>
+
     <?php wp_head(); ?>
 
 </head>

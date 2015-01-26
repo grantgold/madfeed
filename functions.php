@@ -112,6 +112,22 @@ function madfeed_contributors(){
     foreach ( $terms as $term ) {
       $t_id = $term->term_id;
       $custom_meta = get_option( "taxonomy_$t_id" );
+      $contributor_names[] = '<a href="'. get_term_link( $term, 'contributors' ) . '">' . $term->name . '</a>';
+    }  
+    $contributors = join( "<br><br>", $contributor_names );
+    return $contributors;
+endif;
+}
+
+// get contributors terms with links and meta
+function madfeed_contributors_meta(){
+  $post_id = get_the_ID();
+  $terms = get_the_terms( $post_id, 'contributors' );        
+  if ( $terms && ! is_wp_error( $terms ) ) : 
+    $contributor_names = array();
+    foreach ( $terms as $term ) {
+      $t_id = $term->term_id;
+      $custom_meta = get_option( "taxonomy_$t_id" );
       $handle = $custom_meta['twitter'];
 
       if ($handle == TRUE) {
