@@ -4,7 +4,7 @@ Theme URI:
 Description: A community of chefs, cooks and farmers with an appetite for knowledge.
 Version: 1.0
 Author: Grant Gold
-Author URI: http://madfeed.co
+Author URI: http://grantagold.com
 */
 
 
@@ -46,9 +46,53 @@ hr {
   margin: 20px 0;
 }
 
+/*
+
+Containers & Layout
+
+*/
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.row {
+  padding-bottom: 20px;
+}
+
+.img-responsive .pull-right {
+  padding-left: 20px;
+}
+
+.embed-responsive-item {
+  height: 320px;
+}
+
+/*
+
+Post Formatting 
+
+*/
+
+.blogpost {
+  font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+  margin-top: 12px;
+  margin-right: 12px;
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.1599999964237213px;
+  text-rendering: optimizelegibility;
+  word-break: break-word;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
 .subtitle {
   font-size: 14px;
-  color: #bbb;
+  color: #999;
   padding-top: 16px;
   margin-bottom: 0px;
 }
@@ -59,12 +103,6 @@ hr {
   padding-top: 20px;
   float: left;
 }
-.view-all {
-  font-size: 18px;
-  font-weight: regular;
-  padding-top: 32px;
-  float: right;
-}
 
 .byline {
   font-size: 14px;
@@ -72,16 +110,7 @@ hr {
   font-style: italic;
 }
 
-.twitter-handle {
-  font-size: 14px;
-  color: #303030;
-  padding-top: 16px;
-  margin-bottom: 0px;
-}
-
 .caption {
-  width: 160px;
-  padding-right: 30px;
   font-size: 14px;
   text-align: right;
   line-height: 18px;
@@ -90,24 +119,67 @@ hr {
 
 .photo-caption {
   margin: 40px 0px;
-  margin-left: -200px;
+  margin-left: -160px;
 }
 
-.home-grid-filter {
-  color: #c0c0c0;
-  margin: 0 18px;
+.photo-caption > .col-sm-2 {
+  padding-left: 0px;
 }
 
-.home-grid-filter:hover {
+.entry {
+  margin-top: 40px;
+}
+
+.entry-title,
+.entry-hed h1{
+  font-weight: 800;
+}
+
+.event-date {
+  color: #bbb;
+}
+
+/*
+
+Post Meta
+
+*/
+
+.profile {
+  margin-top: 90px;
+}
+
+.profile-image img {
+  display: inline;
+  padding-bottom: 30px;
+}
+
+.post-meta {
+  margin-top: 54px;
+  padding-right: 40px;
+}
+
+.post-meta .byline {
+  margin-left: 0px;
+  font-style: normal;
+  font-size: 18px;
   color: #303030;
 }
 
-.selected {
-  color: #303030;
-  font-weight: bold;
-  border-bottom: 1px solid black;
-  padding-bottom: 2px;
+.post-meta .subtitle {
+  padding-top: 4px;
+  padding-bottom: 16px;
 }
+
+.share-meta {
+  padding-right: 0;
+}
+
+/*
+
+Navigation
+
+*/
 
 .circle-text {
     width: 100%;
@@ -207,136 +279,6 @@ hr {
   color: #255715;
 }
 
-.video-title h4{
-  margin-bottom: 4px;
-  margin-top: 0px;
-}
-
-.video-feature-image img{
-  width: 100%;
-  max-width: 650px;
-  height: auto;
-}
-
-.entry {
-  margin-top: 40px;
-}
-
-.entry-hed h1{
-  font-weight: 800;
-}
-
-.entry-title {
-  font-weight: 800;
-}
-
-.event-date {
-  color: #bbb;
-}
-
-.blogpost {
-  font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
-  margin-top: 12px;
-  margin-right: 12px;
-  padding-bottom: 20px;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 33px;
-  letter-spacing: 0.1599999964237213px;
-  text-rendering: optimizelegibility;
-  word-break: break-word;
-  word-wrap: break-word;
-  -webkit-font-smoothing: antialiased;
-}
-
-.profile {
-  margin-top: 90px;
-}
-
-.profile > .profile-name {
-  font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
-  font-size: 32px;
-  line-height: 38px;
-  font-style: italic;
-}
-
-.profile > .profile-title {
-  font-family: 'Lato', sans-serif;
-  font-size: 18px;
-  font-style: none;
-  padding-bottom: 30px;
-}
-
-.profile-image img {
-  display: inline;
-  padding-bottom: 30px;
-}
-
-.post-meta {
-  margin-top: 54px;
-  margin-left: -30px;
-  padding-right: 40px;
-}
-
-.post-meta .byline {
-  margin-left: 0px;
-  font-style: normal;
-  font-size: 18px;
-  color: #303030;
-}
-
-.post-meta .subtitle {
-  padding-top: 4px;
-  padding-bottom: 16px;
-}
-
-#mission {
-  font-size: 34px;
-  line-height: 38px;
-  font-weight: bold;
-  float: left;
-  padding-left: 6%;
-  padding-top: 1.4%;
-}
-
-#share-links {
-  margin-left: -12px;
-  padding-bottom: 0;
-}
-
-
-#related-posts{}
-#related-posts h3{
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-#video {
-  margin-top: 20px;
-  padding-top: 30px;
-  background-color: #000;
-}
-
-#blog {
-  margin: 20px auto;
-}
-
-
-/*
-
-Modified Bootstrap
-
-*/
-
-.container-fluid {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.row {
-  padding-bottom: 20px;
-}
-
 .navbar {
   background-color: #fff;
   padding-top: 20px;
@@ -414,6 +356,82 @@ Modified Bootstrap
   color: #fff;
   background-color: #ddd;
 }
+
+.view-all {
+  font-size: 18px;
+  font-weight: regular;
+  padding-top: 32px;
+  float: right;
+}
+
+.twitter-handle {
+  font-size: 14px;
+  color: #303030;
+  padding-top: 16px;
+  margin-bottom: 0px;
+}
+
+.home-grid-filter {
+  color: #c0c0c0;
+  margin: 0 18px;
+}
+
+.home-grid-filter:hover {
+  color: #303030;
+}
+
+.selected {
+  color: #303030;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  padding-bottom: 2px;
+}
+
+.video-title h4{
+  margin-bottom: 4px;
+  margin-top: 0px;
+}
+
+.video-feature-image img{
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+}
+
+#mission {
+  font-size: 34px;
+  line-height: 38px;
+  font-weight: bold;
+  float: left;
+  padding-left: 6%;
+  padding-top: 1.4%;
+}
+
+#share-links {
+  margin-left: -12px;
+  padding-bottom: 0;
+}
+
+#related-posts{}
+#related-posts h3{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#video {
+  margin-top: 20px;
+  background-color: #000;
+}
+
+#blog {
+  margin: 20px auto;
+}
+
+/*
+
+Buttons & Fields
+
+*/
 
 .btn {
   padding: 6px 16px 6px 6px;
@@ -535,14 +553,6 @@ Modified Bootstrap
   color: #e5e5e5;
 }
 
-.img-responsive .pull-right {
-  padding-left: 20px;
-}
-
-.embed-responsive-item {
-  height: 320px;
-}
-
 /*
 
 Spacing / Color Classes
@@ -580,9 +590,9 @@ Media Queries
     width: 720px;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 780px) {
   .container {
-    width: 940px;
+    width: 760px;
   }
   .form-control {
     width: 290px;
@@ -612,7 +622,12 @@ Media Queries
     line-height: 24px;
   }
   .embed-responsive-item {
-  height: 500px;
+    height: 500px;
+  }
+}
+@media (min-width: 860px) {
+  .container {
+    width: 840px;
   }
 }
 @media (min-width: 1040px) {

@@ -11,18 +11,22 @@
     <div class="row">
         <div class="col-xs-12">
           <div class="col-xs-12 col-sm-3 post-meta">
-            <div class="subtitle">WRITTEN BY</div>
-            <div class="byline">
-              <?php echo madfeed_contributors(); ?>
+            <div class="col-xs-6 col-sm-12">
+              <div class="subtitle">WRITTEN BY</div>
+              <div class="byline">
+                <?php echo madfeed_contributors(); ?>
+              </div>
+              <hr>
             </div>
-            <hr>
-            <div class="subtitle">SHARE</div>
-            <?php include( INC . 'share-links.php' ); ?>
-            <hr>
-            <div class="body"><?php echo get_the_date(); ?></div>
+            <div class="col-xs-6 col-sm-12 share-meta">
+              <div class="subtitle">SHARE</div>
+              <?php include( INC . 'share-links.php' ); ?>
+              <hr>
+              <div class="body"><?php echo get_the_date(); ?></div>
+            </div>
           </div>
 
-          <div class="col-xs-12 col-sm-9">
+          <div class="col-xs-12 col-sm-8">
             <?php loop(); ?>
           </div>
         </div>
@@ -30,8 +34,6 @@
   </div>
 </section>
 
-
 <?php include( INC . 'related-posts.php' ); ?>
-
 
 <?php include('footer.php'); ?>

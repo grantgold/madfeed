@@ -5,12 +5,19 @@
 // add_image_size('NAME', WIDTH, HEIGHT, true/false CONSTRAIN PROPORTIONS );
 
 add_image_size('w75', 75, 75, true ); // 75 pixels wide x 75 pixels tall
-
+add_image_size('w480', 480, 360, true );
+add_image_size('w640', 640, 480, true );
+add_image_size('w1024', 1024, 768, true );
+add_image_size('w1440', 1440, 900, true );
 
 
 // These are the sizes that show up in the Admin
 $madfeed_imgsizes = array(
-  "w75S" => __("Thumb (75)")
+  "w75S" => __("Thumb (75)"),
+  "w480" => __("Standard (480)"),
+  "w640" => __("Featured (640)"),
+  "w1024" => __("Large (1024)"),
+  "w1440" => __("Fullscreen (1440)")
 );
 
 function madfeed_custom_image_choose( $args ) {
