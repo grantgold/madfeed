@@ -54,6 +54,14 @@ Containers & Layout
 
 */
 
+.container,
+.container-fluid {
+  -moz-transition:all 0.5s ease-in-out;
+  -o-transition:all 0.5s ease-in-out;
+  transition:all 0.5s ease-in-out;
+  -webkit-transition:all 0.5s ease-in-out;
+}
+
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
@@ -166,7 +174,7 @@ Post Formatting
 
 .feature-image {
   width: 100%;
-  height: 140px;
+  height: 2%;
   overflow: hidden;
 }
 
@@ -237,6 +245,29 @@ Post Meta
 
 .share-meta {
   padding-right: 0;
+}
+
+/*
+
+Carousel
+
+*/
+
+#madfeed-carousel {
+
+}
+
+.owl-item {
+  margin-right: 20px;
+}
+
+.carousel-item {
+  width: 420px;
+}
+
+.carousel-item img {
+  width: 420px;
+  height: auto;
 }
 
 /*
@@ -473,9 +504,8 @@ Navigation
 
 #meta-bar {
   background: rgba(255, 255, 255, 0.98);
-  font-size: 22px;
+  font-size: 14px;
   font-weight: 800;
-  padding-top: 14px;
   width: 100%;
   height: 60px;
   position: fixed;
@@ -499,9 +529,13 @@ Navigation
    -webkit-transition:all 0.5s ease-in-out;
 }
 
+#meta-bar .entry-title {
+  padding-top: 8px;
+}
+
 #meta-bar .subtitle {
   text-align: right;
-  padding-top: 3px;
+  padding-top: 16px;
 }
 
 #meta-bar .button {
@@ -509,10 +543,11 @@ Navigation
   font-weight: 500;
   text-align: center;
   color: rgba(0, 0, 0, 0.18);
+  height: 60px;
+  padding-top: 16px;
   border-left-color: rgba(0, 0, 0, 0.14902);
   border-left-style: solid;
   border-left-width: 1px;
-  padding-top: 3px;
 }
 
 /*
@@ -720,6 +755,9 @@ Media Queries
   .container {
     width: 840px;
   }
+  #meta-bar {
+    font-size: 16px;
+  }
 }
 @media (min-width: 1040px) {
   .container {
@@ -739,5 +777,8 @@ Media Queries
   }
   .circle-text a {
     font-size: 180%;
+  }
+  #meta-bar {
+    font-size: 22px;
   }
 }

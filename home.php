@@ -31,11 +31,11 @@
 
 		<?php 
 				$i = 1;
-				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+				//$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 				$args = array(
 					'post_type' => 'post',
 					'posts_per_page' => 8,
-					'paged' => $paged
+					//'paged' => $paged
 				);
 				$the_query = new WP_Query($args);
 				if ( $the_query->have_posts() ) {
