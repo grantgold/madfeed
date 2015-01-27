@@ -73,7 +73,12 @@ function madfeed_get_featured_image($size){
 	}
 }
 
-
+add_filter('embed_oembed_html', 'wrap_embed_with_div', 10, 4);
+add_filter('video_embed_html', 'wrap_embed_with_div' );
+function wrap_embed_with_div($html, $url, $attr, $post_id) {
+  $return = '<div class="video-container">' . $html . '</div>';
+  return $return;
+}
 
 // // Controls the Image HTML by modifying the WordPress Image shortcode.
 // // http://codex.wordpress.org/Function_Reference/add_filter
@@ -113,7 +118,7 @@ function new_img_shortcode_filter($val, $attr, $content = null) {
     return '<div class="row photo-caption"><div class="col-xs-12 col-sm-2"><div class="caption"><hr>' . $caption . '</div></div><div class="col-xs-12 col-sm-10"><div class="photo w'.(0 + (int) $width).'">' . $img . '</div></div></div>';
   }
 }
-add_filter('img_caption_shortcode', 'new_img_shortcode_filter',10,3);
+add_filter('img_caption_shortcode', 'new_img_shortcode_filter', 10, 3);
 
 
 ?>

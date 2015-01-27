@@ -3,7 +3,9 @@
 
 <section id="blog">
   <?php if (vimeo_id() == TRUE) { ?>
+    <section id="video">
         <iframe class="embed-responsive-item" src="//player.vimeo.com/video/<?php echo vimeo_id();?>?portrait=0&byline=0&title=0&color=006633" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </section>
       <?php } else {
         madfeed_get_featured_image('large');
       ?>
