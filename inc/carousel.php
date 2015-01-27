@@ -1,4 +1,4 @@
-<section id="madfeed-carousel">
+<div id="madfeed-carousel" class="small-top-btm-padding">
 	<div class="first owl-carousel">
 		<?php 
 				$i = 1;
@@ -21,8 +21,8 @@
 				}
 			?>
 	</div>
-</section>
-<section id="madfeed-carousel">
+</div>
+<div id="madfeed-carousel">
 	<div class="second owl-carousel">
 		<?php 
 				$i = 1;
@@ -45,11 +45,11 @@
 				}
 			?>
 	</div>
-</section>
+</div>
 	<script>
 		jQuery(document).ready(function(){
-			var owl = jQuery('.first.owl-carousel');
-				owl.owlCarousel({
+			var owl1 = jQuery('.first.owl-carousel');
+				owl1.owlCarousel({
 					center:true,
 				    items:3.5,
 				    loop:true,
@@ -60,14 +60,15 @@
 				    autoplayHoverPause:true,
 				    lazyLoad:true
     			});
-				owl.trigger('owl.play', 4000);
+				owl1.trigger('owl.play', 4000);
 		  		jQuery(".first.owl-carousel").owlCarousel();
 		});
 	</script>
 	<script>
 		jQuery(document).ready(function(){
-			var owl = jQuery('.second.owl-carousel');
-				owl.owlCarousel({
+			var owl2 = jQuery('.second.owl-carousel');
+				owl2.owlCarousel({
+					rtl:true,
 					center:true,
 				    items:3.5,
 				    loop:true,
@@ -77,7 +78,7 @@
 				    autoplayTimeout:1000,
 				    autoplayHoverPause:true
 				});
-				owl.trigger('owl.play',5000);
+				owl2.trigger('owl.play',5000);
 			  	jQuery(".second.owl-carousel").owlCarousel();
 		});
 	</script>
