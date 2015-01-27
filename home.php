@@ -1,5 +1,5 @@
 <?php 
-	// This is the HOMEPAGE
+/* Template Name: Home */
 ?>
 
 <?php include('header.php'); ?>
