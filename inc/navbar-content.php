@@ -1,4 +1,4 @@
-<nav class="container-fluid navbar-default navbar-content" role="navigation">
+<nav id="scrolling-nav" class="container-fluid navbar-default navbar-content" role="navigation">
   <div class="col-xs-12">
     <!-- Brand and Mobile Nav -->
     <div class="navbar-header">
@@ -41,3 +41,17 @@
 
   </div><!-- /.container -->
 </nav>
+<script>
+  jQuery(function(){
+      jQuery(window).scroll(function(){  
+          if(jQuery(document).scrollTop() > 200)
+          {    
+              jQuery('#scrolling-nav').addClass("drop");
+          }
+          else
+          {
+              jQuery('#scrolling-nav').removeClass("drop");
+          }
+      });
+  });
+</script>
