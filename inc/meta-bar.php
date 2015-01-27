@@ -22,7 +22,7 @@
 	      <?php include( INC . 'share-links.php' ); ?> 
 	  </div>
 	  <div class="col-sm-2 button pull-right">
-	    <?php previous_post('%','Hello Anna', 'no'); ?>
+	    <?php previous_post('%','Read Next', 'no'); ?>
 	  </div>
 	</div> 
 </div>
