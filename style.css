@@ -52,6 +52,14 @@ hr {
   margin: 20px 0;
 }
 
+blockquote {
+  font-style: italic;
+  line-height: 28px;
+  border-left-width: 2px;
+  border-left-color: #255715;
+  padding-left: 40px;
+}
+
 /*
 
 Containers & Layout
