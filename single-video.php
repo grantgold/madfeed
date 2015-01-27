@@ -1,5 +1,6 @@
 <?php include('header.php'); ?>
 <?php include( INC . 'navbar-content.php' ); ?>
+<?php include( INC . 'meta-bar.php' ); ?>
 
 	<?php loop(); ?>
 
