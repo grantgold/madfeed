@@ -50,15 +50,45 @@
 		jQuery(document).ready(function(){
 			var owl1 = jQuery('.first.owl-carousel');
 				owl1.owlCarousel({
+					itemsCustom : [
+				        [0, 0],
+				        [450, 0],
+				        [600, 1.5],
+				        [700, 1.5],
+				        [1000, 2.5],
+				        [1100, 2.4],
+				        [1200, 2.8],
+				        [1400, 3.5],
+				        [1600, 3.5]
+				      ],
+				    responsive : {
+					    // breakpoint from 0 up
+					    0 : {
+					        option1 : value,
+					        option2 : value,
+					        ...
+					    },
+					    // breakpoint from 480 up
+					    480 : {
+					        option1 : value,
+					        option2 : value,
+					        ...
+					    },
+					    // breakpoint from 768 up
+					    768 : {
+					        option1 : value,
+					        option2 : value,
+					        ...
+					    }
+					}
 					center:true,
-				    items:3.5,
 				    loop:true,
 				    margin:0,
 				    nav:false,
 				    autoplay:true,
 				    autoplayTimeout:1000,
 				    autoplayHoverPause:true,
-				    lazyLoad:true
+				    lazyLoad:true,
     			});
 				owl1.trigger('owl.play', 4000);
 		  		jQuery(".first.owl-carousel").owlCarousel();
