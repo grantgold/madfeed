@@ -17,15 +17,7 @@
       
 
     <!-- Hidden mobile nav -->
-      <div class="hidden-lg hidden-md hidden-sm collapse" id="collapsed-nav">
-        <ul class="mobile-nav">
-          <a href="<?php echo get_site_url(); ?>/video">Watch</a>
-            <li><a href="#">Read</a></li>
-            <li><a href="#">Attend</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
       
-      </div>
 
     </div>
 
@@ -40,6 +32,15 @@
     </div>
 
   </div><!-- /.container -->
+  <div class="hidden-lg hidden-md hidden-sm collapse" id="collapsed-nav">
+        <ul class="mobile-nav">
+          <a href="<?php echo get_site_url(); ?>/video">Watch</a>
+            <li><a href="#">Read</a></li>
+            <li><a href="#">Attend</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+      
+      </div>
 </nav>
 <script>
   jQuery(function(){

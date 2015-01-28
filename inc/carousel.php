@@ -47,68 +47,50 @@
 	</div>
 </div>
 	<script>
-		jQuery(document).ready(function(){
-			var owl1 = jQuery('.first.owl-carousel');
-				owl1.owlCarousel({
-					itemsCustom : [
-				        [0, 0],
-				        [450, 0],
-				        [600, 1.5],
-				        [700, 1.5],
-				        [1000, 2.5],
-				        [1100, 2.4],
-				        [1200, 2.8],
-				        [1400, 3.5],
-				        [1600, 3.5]
-				      ],
-				    responsive : {
-					    // breakpoint from 0 up
-					    0 : {
-					        option1 : value,
-					        option2 : value,
-					        ...
-					    },
-					    // breakpoint from 480 up
-					    480 : {
-					        option1 : value,
-					        option2 : value,
-					        ...
-					    },
-					    // breakpoint from 768 up
-					    768 : {
-					        option1 : value,
-					        option2 : value,
-					        ...
+		(function($) {
+			$(document).ready(function(){
+				var owl1 = $('.first.owl-carousel');
+					owl1.owlCarousel({
+						items:3.5,
+						center:true,
+					    loop:true,
+					    margin:15,
+					    nav:false,
+					    animateOut:'fadeOut',
+					    autoplay:true,
+					    autoplayTimeout:1000,
+					    autoplayHoverPause:true,
+					    lazyLoad:true,
+					    responsiveClass:true,
+					    responsive:{
+					        0:{
+					            items:1
+					        },
+					        600:{
+					            items:3
+					        },
+					        1000:{
+					            items:5
+					        }
 					    }
-					}
-					center:true,
-				    loop:true,
-				    margin:0,
-				    nav:false,
-				    autoplay:true,
-				    autoplayTimeout:1000,
-				    autoplayHoverPause:true,
-				    lazyLoad:true,
-    			});
-				owl1.trigger('owl.play', 4000);
-		  		jQuery(".first.owl-carousel").owlCarousel();
-		});
-	</script>
-	<script>
-		jQuery(document).ready(function(){
-			var owl2 = jQuery('.second.owl-carousel');
-				owl2.owlCarousel({
-					rtl:true,
-					center:true,
-				    items:3.5,
-				    loop:true,
-				    margin:0,
-				    nav:false,
-				    autoplay:true,
-				    autoplayTimeout:1000,
-				    autoplayHoverPause:true
-				});
-				owl2.trigger('owl.play',5000);
-			  	jQuery(".second.owl-carousel").owlCarousel();
-		});
+					});
+					owl1.trigger('owl.play', 4000);
+			});
+			$(document).ready(function(){
+				var owl2 = $('.second.owl-carousel');
+					owl2.owlCarousel({
+						items: 3.5,
+						center:true,
+					    loop:true,
+					    margin:15,
+					    nav:false,
+					    autoplay:true,
+					    autoplayTimeout:1000,
+					    autoplayHoverPause:true,
+					    lazyLoad:true,
+					    responsiveClass:true
+					});
+					owl2.trigger('owl.play',5500);
+			});
+		})(jQuery);
 	</script>
