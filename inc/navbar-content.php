@@ -9,10 +9,10 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <div class="navbar-brand mobile-brand"><a class="brand-text" href="<?php echo get_site_url(); ?>">MAD</a></div>
+        <!-- <div class="navbar-brand mobile-brand"><a class="brand-text" href="<?php echo get_site_url(); ?>">MAD</a></div> -->
       </nav>
 
-      <div class="circle-text-content hidden-xs"><a href="<?php echo get_site_url(); ?>">MAD</a></div>
+      <div class="circle-text-content col-xs-3 col-sm-12"><a href="<?php echo get_site_url(); ?>">MAD</a></div>
 
       
 
