@@ -23,7 +23,7 @@
 
         <div class="col-xs-12 col-sm-9">
           <article class="entry">
-            <div class="entry-hed">
+            <div id="post-title" class="entry-hed">
               <h1><?php the_title(); ?></h1>
             </div>
             <div class="event-date">MAD • 2014</div>

@@ -14,8 +14,17 @@
 
 <script>
   jQuery(function(){
-      jQuery(window).scroll(function(){  
-          if(jQuery(document).scrollTop() > 200)
+    viewport_height()
+      jQuery(document).scroll(function(){ 
+          scroll_check()
+      });
+      jQuery(window).resize(function(){ 
+          viewport_height()
+      });
+  });
+
+  function viewport_height() {
+    if(jQuery('#post-title').offset().top < jQuery(window).height() - jQuery('#post-title').height())
           {    
               jQuery('#meta-bar').addClass("shrink");
           }
@@ -23,6 +32,17 @@
           {
               jQuery('#meta-bar').removeClass("shrink");
           }
-      });
-  });
+  }
+
+
+  function scroll_check() {
+    if(jQuery(document).scrollTop() > jQuery('#post-title').offset().top - jQuery(window).height() + jQuery('#post-title').height()) 
+          {    
+              jQuery('#meta-bar').addClass("shrink");
+          }
+          else
+          {
+              jQuery('#meta-bar').removeClass("shrink");
+          }
+  }
 </script>

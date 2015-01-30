@@ -1,5 +1,5 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('entry'); ?>>
-	<header class="entry-header">
+	<header id="post-title" class="entry-header">
 
 		<?php //madfeed_the_kicker(); ?>
 
