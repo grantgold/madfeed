@@ -2,7 +2,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-4 col-sm-3 col-md-2">
-					<a class="navbar-brand" href="<?php echo get_site_url(); ?>"><div class="footer-brand-text"><div>MAD</div></div></a>
+					<div class="circle-logo">
+				        <a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/icons/mad-logo.svg" width="90px" height="90px" alt="MAD Feed"></a>
+				    </div>
 				</div>
 				<div class="col-xs-4 col-sm-3 col-md-2 small-top-btm-padding"><b>This Site</b>
 					<ul class="list-unstyled">
@@ -36,6 +38,13 @@
 		    	<b>Get MAD email</b>
 		    	<p class="subtitle medium-top-btm-padding">Subscribe to receive email notifications about news or events</p>
 				<a class="btn btn-primary" href="http://eepurl.com/utvuX" target="_blank">Subscribe <i class="fa fa-angle-right"></i></a>
+			</div>
+
+			<div class="col-xs-12">
+				<div class="credit">
+					&copy; MAD <?php echo date("Y"); ?><br>
+					Site designed and maintained by <a href="http://www.grantagold.com/" target="_blank">Grant Gold</a>.
+				</div>
 			</div>
 
 		</div>

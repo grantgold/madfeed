@@ -4,7 +4,9 @@
 
 <?php include('header.php'); ?>
 
+<div id="navigation">
 <?php include( INC . 'navbar.php' ); ?>
+</div>
 
 <section class="hidden-xs">
 	<div class="container">
@@ -73,6 +75,5 @@
 		<?php include( INC . 'about-summary.php' ); ?>
 	</div>
 </section>
-
 
 <?php include('footer.php'); ?>

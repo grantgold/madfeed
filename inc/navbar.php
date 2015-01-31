@@ -9,12 +9,10 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <div class="navbar-brand mobile-brand"><a class="brand-text" href="<?php echo get_site_url(); ?>">MAD</a></div>
       </nav>
 
-        <div class="navbar-brand circle-text hidden-xs col-sm-2"><a href="<?php echo get_site_url(); ?>">MAD</a></div>
-        <div id="mission" class="hidden-xs col-md-7 col-sm-8">A community of chefs, cooks and farmers with an appetite for knowledge.</div>
-
+      <a class="circle-logo" href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/icons/mad-logo.svg" width="90px" height="90px" alt="MAD Feed"></a>
+      <div id="mission" class="hidden-xs col-md-7 col-sm-8">A community of chefs, cooks and farmers with an appetite for knowledge.</div>
 
       <div class="collapse navbar-collapse hidden-xs">
         <ul class="nav navbar-nav navbar-right">

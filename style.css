@@ -101,6 +101,10 @@ Containers & Layout
   margin: 70px auto;
 }
 
+#symposium {
+  margin-top: 70px;
+}
+
 /*
 
 Post Formatting 
@@ -145,6 +149,24 @@ Post Formatting
   font-weight: bold;
   padding-top: 20px;
   float: left;
+}
+
+.symposium-text {
+  font-size:46px;
+  font-weight: 800;
+  color: rgb(255,255,255);
+  z-index:100;
+  position:absolute;    
+  left:10%;
+  right:10%;
+  top: 50%;
+  text-align: center;
+  text-shadow: 0em .1em .4em rgba(0,0,0,0.3);
+}
+
+.symposium-text .byline {
+  color: #fff;
+  text-shadow: 0em .08em .2em rgba(0,0,0,0.3);
 }
 
 .byline,
@@ -324,70 +346,14 @@ Navigation
 
 */
 
-.circle-text {
-    width: 100%;
-    font-size: 14px;
-    letter-spacing: .18em;
+.circle-logo {
+  width: 90px;
+  height: 90px;
+  padding-top: 26px;
+  float:left;
+  z-index: 200;
 }
-
-.circle-text a {
-    float:left;
-    width: 90px;
-    padding-top:50%;
-    line-height:1em;
-    margin-top:-0.5em;
-    text-align:center;
-    color: white;
-    font-family: futura;
-    text-decoration: none;
-}
-
-.circle-text:after {
-    content: "";
-    display: block;
-    width: 90px;
-    height:0;
-    padding-bottom: 100%;
-    background: #255715; 
-    -moz-border-radius: 50%; 
-    -webkit-border-radius: 50%; 
-    border-radius: 50%;
-}
-
-.circle-text-content a {
-    float:left;
-    width: 90px;
-    height: auto;
-    padding-top:30%;
-    padding-left:.2em;
-    line-height:1em;
-    margin-top:-0.5em;
-    text-align:center;
-    color: white;
-    font-family: futura;
-    text-decoration: none;
-    font-size: 1.3em;
-    letter-spacing: .18em;
-    z-index: 10;
-    position: relative;
-    top: 45px;
-}
-
-.circle-text-content:after {
-    content: "";
-    display: block;
-    width: 90px;
-    height:90px;
-    margin-top: -18px;
-    padding-bottom: 100%;
-    background: #255715; 
-    -moz-border-radius: 50%; 
-    -webkit-border-radius: 50%; 
-    border-radius: 50%;
-    position: relative;
-    top: 45px;
-}
-
+/*
 .brand-text {
   float:left;
   width: 100%;
@@ -395,11 +361,11 @@ Navigation
   font-family: futura;
   font-size: 48px;
   color: #255715;
-}
+}*/
 
-.mobile-brand > .brand-text {
+/*.mobile-brand > .brand-text {
   font-size: 28px;
-}
+}*/
 
 .mobile-nav {
   padding-top: 200px;
@@ -429,12 +395,8 @@ Navigation
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 }
 
-.footer-brand-text {
-  float:left;
-  width: 100%;
-  font-family: futura;
-  font-size: 30px;
-  color: #255715;
+#footer .circle-logo {
+  padding-top: 10px;
 }
 
 .navbar {

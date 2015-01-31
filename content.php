@@ -27,10 +27,6 @@
 		</div><!-- .entry-content -->
 	<?php endif; ?>
 
-	<footer class="entry-meta">
-	  <?php madfeed_entry_meta($post->ID); ?>
-	</footer><!-- .entry-meta -->
-
 	<!-- Comments Start here -->
 	<?php if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) { ?>
 		<?php //comments_template(); ?>

@@ -9,12 +9,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <!-- <div class="navbar-brand mobile-brand"><a class="brand-text" href="<?php echo get_site_url(); ?>">MAD</a></div> -->
       </nav>
 
-      <div class="circle-text-content col-xs-3 col-sm-12"><a href="<?php echo get_site_url(); ?>">MAD</a></div>
-
-      
+      <div class="circle-logo">
+        <a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/icons/mad-logo.svg" width="90px" height="90px" alt="MAD Feed"></a>
+      </div>
 
     <!-- Hidden mobile nav -->
       
@@ -42,6 +41,7 @@
       
       </div>
 </nav>
+<!-- 
 <script>
   jQuery(function(){
       jQuery(window).scroll(function(){  
@@ -55,4 +55,4 @@
           }
       });
   });
-</script>
+</script> -->
