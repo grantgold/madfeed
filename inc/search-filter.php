@@ -21,7 +21,7 @@
 				  </ul>
 		</div>
 		<div class="btn-group hidden-xs">
-		    <button class="btn btn-primary dropdown-toggle" id="events" type="button" data-toggle="dropdown" aria-expanded="false">
+		    <button class="btn btn-primary dropdown-toggle" id="eventlist" type="button" data-toggle="dropdown" aria-expanded="false">
 					    Events <span class="caret"></span>
 			</button>
 					<ul class="dropdown-menu" role="menu" aria-labelledby="events">

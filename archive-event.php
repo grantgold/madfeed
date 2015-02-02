@@ -8,7 +8,7 @@
 				$i = 1;
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 				$args = array(
-					'post_type' => 'symposium',
+					'post_type' => 'event',
 					'posts_per_page' => 8,
 					'paged' => $paged
 				);
@@ -17,7 +17,7 @@
 					while ( $the_query->have_posts() ) {
 						$the_query->the_post(); ?>
 						<?php
-							get_template_part('content', 'symposiums' ); // uses content-symposiums.php
+							get_template_part('content', 'events' ); // uses content-events.php
 						
 							if ($i % 4 == 0){
 								echo "</div></div>";

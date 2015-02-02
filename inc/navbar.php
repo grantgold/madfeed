@@ -18,7 +18,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="<?php echo get_site_url(); ?>/video">Watch</a>
             <a href="#">Read</a>
-            <a href="#">Attend</a>
+            <a href="<?php echo get_site_url(); ?>/event">Attend</a>
             <a href="#">About</a>
           </li>
         </ul>
@@ -30,7 +30,7 @@
         <ul class="mobile-nav">
           <li><a href="<?php echo get_site_url(); ?>/video">Watch</a></li>
             <li><a href="#">Read</a></li>
-            <li><a href="#">Attend</a></li>
+            <li><a href="<?php echo get_site_url(); ?>/event">Attend</a></li>
             <li><a href="#">About</a></li>
         </ul>
       
