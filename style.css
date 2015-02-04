@@ -62,7 +62,7 @@ blockquote {
 
 /*
 
-Containers & Layout
+Containers, Layout, and Sections
 
 */
 
@@ -105,6 +105,10 @@ Containers & Layout
   margin-top: 70px;
 }
 
+#events {
+  font-size: 32px;
+}
+
 /*
 
 Post Formatting 
@@ -138,37 +142,19 @@ Post Formatting
   margin-top: 0px;
 }
 
-.subtitle {
-  font-size: 14px;
-  color: #999;
-  padding-top: 16px;
-  margin-bottom: 0px;
-}
-
 .section-title {
   font-size: 30px;
   font-weight: bold;
   padding-top: 20px;
   float: left;
 }
-/*
-.symposium-text {
-  font-size:46px;
-  font-weight: 800;
-  color: rgb(255,255,255);
-  z-index:100;
-  position:absolute;    
-  left:10%;
-  right:10%;
-  top: 50%;
-  text-align: center;
-  text-shadow: 0em .1em .4em rgba(0,0,0,0.3);
-}
 
-.symposium-text .byline {
-  color: #fff;
-  text-shadow: 0em .08em .2em rgba(0,0,0,0.3);
-}*/
+.subtitle {
+  font-size: 14px;
+  color: #999;
+  padding-top: 16px;
+  margin-bottom: 0px;
+}
 
 .byline,
 .byline a{
@@ -178,12 +164,12 @@ Post Formatting
   font-weight: 500;
 }
 
-.entry {
-  margin-top: 40px;
-}
-
 .event-date {
   color: #bbb;
+}
+
+.entry {
+  margin-top: 40px;
 }
 
 .caption {
@@ -198,11 +184,11 @@ Post Formatting
   height: auto;
 }
 
-.photo-caption {
+.photo-w-caption {
   margin: 40px 0;
 }
 
-.photo-caption > .col-sm-2 {
+.photo-w-caption > .col-sm-2 {
   margin-bottom: 40px;
   padding-left: 0px;
 }
@@ -246,10 +232,6 @@ Post Formatting
   -webkit-transition-duration: 0.2s, 0.2s;
 }
 
-#events {
-  font-size: 32px;
-}
-
 /*
 
 Post Meta
@@ -284,6 +266,13 @@ Post Meta
 
 .share-meta {
   padding-right: 0;
+}
+
+.twitter-handle {
+  font-size: 14px;
+  color: #303030;
+  padding-top: 16px;
+  margin-bottom: 0px;
 }
 
 /*
@@ -324,7 +313,6 @@ Carousel
   background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.6)); /*Standard*/
 }
 
-
 .carousel-text {
   font-size:24px;
   color: rgb(255,255,255);
@@ -333,7 +321,6 @@ Carousel
   left:20px;
   bottom:20px;
   padding-right: 20px;
-  
 }
 
 .carousel-text .byline a{
@@ -358,19 +345,6 @@ Navigation
   float:left;
   z-index: 200;
 }
-/*
-.brand-text {
-  float:left;
-  width: 100%;
-  margin-top: 0.1em;
-  font-family: futura;
-  font-size: 48px;
-  color: #255715;
-}*/
-
-/*.mobile-brand > .brand-text {
-  font-size: 28px;
-}*/
 
 .mobile-nav {
   padding-top: 200px;
@@ -481,13 +455,6 @@ Navigation
   font-weight: regular;
   padding-top: 32px;
   float: right;
-}
-
-.twitter-handle {
-  font-size: 14px;
-  color: #303030;
-  padding-top: 16px;
-  margin-bottom: 0px;
 }
 
 .home-grid-filter {
