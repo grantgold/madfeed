@@ -184,11 +184,11 @@ Post Formatting
   height: auto;
 }
 
-.photo-w-caption {
+.photo-caption {
   margin: 40px 0;
 }
 
-.photo-w-caption > .col-sm-2 {
+.photo-caption > .col-sm-2 {
   margin-bottom: 40px;
   padding-left: 0px;
 }

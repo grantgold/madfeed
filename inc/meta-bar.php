@@ -17,6 +17,7 @@
     viewport_height()
       jQuery(document).scroll(function(){ 
           scroll_check()
+          console.log("scrolling")
       });
       jQuery(window).resize(function(){ 
           viewport_height()

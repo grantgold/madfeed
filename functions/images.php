@@ -108,17 +108,16 @@ function new_img_shortcode_filter($val, $attr, $content = null) {
 		$id = 'id="' . $id . '"';
 	}
 
-  else if ($width < 400) {
-    '<div class="row"><div class="pull-right photo w'.(0 + (int) $width).'">' . $img . '</div></div>';
-  }
   
   $raw = do_shortcode( $content );
   $img = preg_replace( '/(width|height)="\d*"\s/', "", $raw); // Removes Height and Width from images
   $img = str_replace('class="', 'class="img-responsive ', $img); // adds in the .img-responsive class to all images
   if ($width == 75 || $width == 163 ) { // if image doesn't need a caption
     return '<div class="photo w'.(0 + (int) $width).'">' . $img . '</div>';
+  } else if ($width < 300) {
+    '<div class="row"><div class="pull-right photo w'.(0 + (int) $width).'">' . $img . '</div></div>';
   } else { // all other images
-    return '<div class="row photo-w-caption"><div class="col-xs-12 col-sm-2"><div class="caption"><hr>' . $caption . '</div></div><div class="col-xs-12 col-sm-10"><div class="photo w'.(0 + (int) $width).'">' . $img . '</div></div></div>';
+    return '<div class="row photo-caption"><div class="col-xs-12 col-sm-2"><div class="caption"><hr>' . $caption . '</div></div><div class="col-xs-12 col-sm-10"><div class="photo w'.(0 + (int) $width).'">' . $img . '</div></div></div>';
   }
 }
 add_filter('img_caption_shortcode', 'new_img_shortcode_filter', 10, 3);
