@@ -14,21 +14,23 @@
   <div class="container">
     <div class="row">
         <div class="col-xs-12">
-          <div class="col-xs-12 col-sm-3 post-meta">
-            <div class="col-xs-6 col-sm-12">
+          <div class="col-sm-3 post-meta hidden-xs">
+            <div class="col-sm-12">
               <div class="subtitle">WRITTEN BY</div>
               <div class="contributors-meta">
                 <?php echo madfeed_contributors_meta(); ?>
               </div>
               <hr>
             </div>
-            <div class="col-xs-6 col-sm-12 share-meta">
+            <div class="hidden-xs col-sm-12 share-meta">
               <div class="subtitle">SHARE</div>
               <?php include( INC . 'share-links.php' ); ?>
               <hr>
               <div class="body"><?php echo get_the_date(); ?></div>
             </div>
           </div>
+
+          
 
           <div class="col-xs-12 col-sm-8">
             <?php loop(); ?>

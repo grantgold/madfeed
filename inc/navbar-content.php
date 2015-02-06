@@ -1,45 +1,27 @@
-<nav id="scrolling-nav" class="container-fluid navbar-default navbar-content" role="navigation">
+<nav class="scrolling-nav container-fluid navbar-default navbar-content hidden-xs" role="navigation">
   <div class="col-xs-12">
     <!-- Brand and Mobile Nav -->
     <div class="navbar-header">
-      <nav class="hidden-lg hidden-md hidden-sm">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsed-nav">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </nav>
-
       <div class="circle-logo">
         <a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/icons/mad-logo.svg" width="90px" height="90px" alt="MAD Feed"></a>
       </div>
-
-    <!-- Hidden mobile nav -->
-      
-
     </div>
-
-    <div class="collapse navbar-collapse hidden-xs">
+    <div class="collapse navbar-collapse">
         <ul class="navbar-nav-content">
           <a href="<?php echo get_site_url(); ?>/video">Watch</a>
           <a href="#">Read</a>
           <a href="<?php echo get_site_url(); ?>/event">Attend</a>
           <a href="#">About</a>
         </ul>
-      
     </div>
+  </div>
+</nav>
 
-  </div><!-- /.container -->
-  <div class="hidden-lg hidden-md hidden-sm collapse" id="collapsed-nav">
-        <ul class="mobile-nav">
-          <a href="<?php echo get_site_url(); ?>/video">Watch</a>
-            <li><a href="#">Read</a></li>
-            <li><a href="<?php echo get_site_url(); ?>/event">Attend</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-      
-      </div>
+<!-- Mobile Nav -->
+<nav class="scrolling-nav container-fluid navbar-default hidden-sm hidden-md hidden-lg">
+  <div class="mobile-logo">
+    <a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/icons/mad-logo.svg" width="50px" height="50px" alt="MAD Feed"></a>
+  </div>
 </nav>
 
 <script>
@@ -47,11 +29,11 @@
       jQuery(window).scroll(function(){  
           if(jQuery(document).scrollTop() > 200)
           {    
-              jQuery('#scrolling-nav').addClass("drop");
+              jQuery('.scrolling-nav').addClass("drop");
           }
           else
           {
-              jQuery('#scrolling-nav').removeClass("drop");
+              jQuery('.scrolling-nav').removeClass("drop");
           }
       });
   });
