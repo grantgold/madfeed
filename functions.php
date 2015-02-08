@@ -9,7 +9,7 @@ include_once 'functions/videos.php';
 include_once 'functions/events.php';
 include_once 'functions/contributors.php';
 include_once 'functions/related-video.php';
-include_once 'functions/event-date.php';
+include_once 'functions/event-details.php';
 
 // include_once 'functions/beta.php';
 
@@ -172,6 +172,11 @@ function vimeo_id(){
 function get_event_date(){
   $date = get_post_meta( get_the_ID(), 'event_date_url', true );
   return $date;
+}
+
+function get_event_location(){
+  $location = get_post_meta( get_the_ID(), 'event_location_url', true );
+  return $location;
 }
 
 function numeric_posts_nav($the_query) {

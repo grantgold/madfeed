@@ -4,7 +4,7 @@
 		<h1 class="featured-event"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
 	</div>
 	<div class="col-xs-12 col-md-9">
-		<h3>Refshaleøen, Copenhagen</h3>
+		<h3><?php echo get_event_location() ?></h3>
 		<p class="entry-title"><?php echo get_event_date() ?></p>
 		<p><?php the_excerpt(); ?></p>
 	</div>
