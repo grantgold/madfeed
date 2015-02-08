@@ -4,9 +4,9 @@
 			$imgid = vimeo_id();
 			$hash = unserialize(file_get_contents("http://vimeo.com/api/v2/video/$imgid.php"));
 		?>
-			<a class="owl-item carousel-item" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo $hash[0]['thumbnail_large']; ?>"></a>
+			<a class="owl-item carousel-item img-resposive" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo $hash[0]['thumbnail_large']; ?>"></a>
 		<?php } else { ?>
-		  	<a class="owl-item carousel-item" href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+		  	<a class="owl-item carousel-item img-responsive" href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 		<?php } ?>
 	</div>
 	<div class="carousel-text">

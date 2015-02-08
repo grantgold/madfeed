@@ -117,7 +117,7 @@ function new_img_shortcode_filter($val, $attr, $content = null) {
   } else if ($width < 280) {
     '<div class="row"><div class="pull-left photo w'.(0 + (int) $width).'">' . $img . '</div></div>';
   } else { // all other images
-    return '<div class="row photo-caption"><div class="hidden-xs col-sm-2"><div class="caption"><hr>' . $caption . '</div></div><div class="col-xs-12 col-sm-10"><div class="photo w'.(0 + (int) $width).'">' . $img . '</div></div><div class="hidden-sm hidden-md hidden-lg col-xs-12"><div class="caption"><hr>' . $caption . '</div></div></div>';
+    return '<div class="row photo-caption"><div class="hidden-xs col-sm-2"><div class="caption">' . $caption . '</div></div><div class="col-xs-12 col-sm-10"><div class="photo w'.(0 + (int) $width).'">' . $img . '</div></div><div class="hidden-sm hidden-md hidden-lg col-xs-12"><div class="caption">' . $caption . '</div></div></div>';
   }
 }
 add_filter('img_caption_shortcode', 'new_img_shortcode_filter', 10, 3);

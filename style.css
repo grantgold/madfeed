@@ -19,6 +19,8 @@ body{
   /*font-size: 18px;*/
   color:#4A4A4A;
   padding-bottom: 100px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a{
@@ -32,6 +34,10 @@ a:hover{
 p {
   font-size: 18px;
   font-weight: 300; 
+}
+
+p img {
+  margin: 30px 0;
 }
 
 h4 {
@@ -181,6 +187,19 @@ Post Formatting
   text-align: right;
   line-height: 18px;
   color: #999;
+  padding-top: 20px;
+}
+
+.caption:before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 0;
+  height: 1px;
+  width: 33%;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #f0f0f0;
 }
 
 .photo img {
@@ -197,11 +216,11 @@ Post Formatting
   padding-left: 0px;
 }
 
-.feature-image {
+/*.feature-image {
   width: 100%;
   height: 2%;
   overflow: hidden;
-}
+}*/
 
 .feature-image img{
   width: 100%;
@@ -286,7 +305,8 @@ Carousel
 */
 
 #madfeed-carousel {
-
+  max-width: 100% !important;
+  overflow-x: hidden;
 }
 
 .owl-item {
@@ -300,21 +320,10 @@ Carousel
 }
 
 .carousel-item img {
-  width: 420px;
+  width: 100%;
   height: auto;
-  position: absolute;
   z-index: -10;
-}
-
-.carousel-gradient{
-  display: block;
-  width: 420px;
-  height: 236px;
-  z-index:80;
-  background: -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.6)); /*Safari 5.1-6*/
-  background: -o-linear-gradient(bottom,rgba(0,0,0,0),rgba(0,0,0,0.6)); /*Opera 11.1-12*/
-  background: -moz-linear-gradient(bottom,rgba(0,0,0,0),rgba(0,0,0,0.6)); /*Fx 3.6-15*/
-  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.6)); /*Standard*/
+  overflow: hidden;
 }
 
 .carousel-text {
@@ -334,6 +343,15 @@ Carousel
 .carousel-text a{
   color: #fff;
   font-weight:800;
+}
+
+.first {
+  width: 115%;
+}
+
+.second {
+  margin-left: -100px;
+  width: 115%;
 }
 
 /*
@@ -512,6 +530,7 @@ Navigation
 
 .home-grid-filter:hover {
   color: #303030;
+  text-decoration: none;
 }
 
 .selected {
@@ -772,7 +791,7 @@ Media Queries
     width: 720px;
   }
   .photo-caption {
-    margin-left: -160px;
+    margin-left: -180px;
   }
 }
 @media (min-width: 780px) {
