@@ -141,13 +141,20 @@ Post Formatting
 }
 
 .entry-title,
-.entry-hed h1{
-
+.entry-hed h1 {
   font-weight: 800;
   line-height: 44px;
 }
 
+.thumbnail-title {
+  padding: 12px 0;
+  font-weight: 800;
+  line-height: 26px;
+  font-size: 20px;
+}
+
 .video-title h4{
+  font-weight: 800;
   margin-bottom: 4px;
   margin-top: 0px;
 }
@@ -216,15 +223,20 @@ Post Formatting
   padding-left: 0px;
 }
 
-.feature-image {
+.feature-image.video-thumbnail {
   width: 228px;
   height: 152px;
   overflow: hidden;
 }
 
-.feature-image img{
+.feature-image.video-thumbnail img {
   width: auto;
   height: 100%;
+}
+
+.feature-image img{
+  width: 100%;
+  height: auto;
 }
 
 .video-container { 
@@ -456,6 +468,7 @@ Navigation
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  z-index: 200;
 }
 
 .navbar-brand {
@@ -590,7 +603,8 @@ Navigation
 
 #related-posts{}
 #related-posts h3{
-  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
   margin-bottom: 10px;
 }
 
