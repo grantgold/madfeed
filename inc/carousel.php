@@ -51,7 +51,7 @@
 			$(document).ready(function(){
 				var owl1 = $('.first.owl-carousel');
 					owl1.owlCarousel({
-						items:4.5,
+						items:4,
 					    loop:true,
 					    margin:15,
 					    nav:false,
@@ -66,7 +66,7 @@
 			$(document).ready(function(){
 				var owl2 = $('.second.owl-carousel');
 					owl2.owlCarousel({
-						items: 4.5,
+						items: 4,
 					    loop:true,
 					    margin:15,
 					    nav:false,
