@@ -223,6 +223,11 @@ Post Formatting
   padding-left: 0px;
 }
 
+.feature-image img{
+  width: 100%;
+  height: auto;
+}
+
 .feature-image.video-thumbnail {
   width: 228px;
   height: 152px;
@@ -232,11 +237,6 @@ Post Formatting
 .feature-image.video-thumbnail img {
   width: auto;
   height: 100%;
-}
-
-.feature-image img{
-  width: 100%;
-  height: auto;
 }
 
 .video-container { 

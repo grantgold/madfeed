@@ -4,11 +4,11 @@
 			$imgid = vimeo_id();
 			$hash = unserialize(file_get_contents("http://vimeo.com/api/v2/video/$imgid.php"));
 		?>
-        <div class="feature-image img-responsive">
+        <div class="feature-image video-thumbnail img-responsive">
           <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo $hash[0]['thumbnail_large']; ?>"></a>
         </div>
   <?php } else { ?>
-  		<div class="feature-image img-responsive"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail(); ?></a></div>
+  		<div class="feature-image video-thumbnail img-responsive"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail(); ?></a></div>
   <?php } ?>
     <p class="subtitle"><?php echo madfeed_contributors() ?></p>
     <div class="video-title">
