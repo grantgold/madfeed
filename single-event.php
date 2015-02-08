@@ -1,18 +1,20 @@
 <?php include('header.php'); ?>
 <?php include( INC . 'navbar-content.php' ); ?>
 
-<div class="container">
-	<div class="row">
-		<?php loop(); ?>
-	</div>
-</div>
+<section id="event">
+<!-- 	<div class="container"> -->
+		<div class="row">
+			<?php loop(); ?>
+		</div>
+<!-- 	</div> -->
+</section>
 
 <section id="related-posts">
 	<div class="container">
 		<div class="row small-top-btm-padding">
 			<div class="col-xs-12">
-				<p class="section-title">More Events</p>
-			<p class="view-all"><a href="#">View All</a></p>
+				<p class="section-title"><a href="<?php echo get_site_url(); ?>/event">More Events</a></p>
+			<p class="view-all"><a href="<?php echo get_site_url(); ?>/event">View All</a></p>
 				<div style="clear: both;"></div>
 				<hr>
 				<?php 

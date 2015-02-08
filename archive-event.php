@@ -1,7 +1,3 @@
-<?php 
-/* Template Name: Events */
-?>
-
 <?php include('header.php'); ?>
 <?php include( INC . 'navbar.php' ); ?>
 

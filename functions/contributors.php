@@ -4,7 +4,7 @@ function cptui_register_my_taxes_contributors() {
 register_taxonomy( 'contributors',array (
   0 => 'post',
   1 => 'video',
-  // 2 => 'page',
+  2 => 'event'
   // 3 => 'symposium',
 ),
 array( 'hierarchical' => true,
@@ -39,6 +39,10 @@ function madfeed_taxonomy_add_new_meta_field() {
     <label for="contributor_meta[twitter]"><?php _e( 'Twitter Username @', 'madfeed' ); ?></label>
     <input type="text" name="contributor_meta[twitter]" id="contributor_meta[twitter]" value="">
     <p class="description"><?php _e( 'Example: @TheMADFeed','madfeed' ); ?></p>
+  </div>
+  <div class="form-field">
+    <label for="contributor_meta[profile_img]"><?php _e( 'Profile Image', 'madfeed' ); ?></label>
+    <input type="file" name="contributor_meta[profile_img]" id="contributor_meta[twitter]" value="">
   </div>
 <?php
 }

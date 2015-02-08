@@ -1,18 +1,27 @@
-<div class="col-xs-12">
-  <div id="event" class="col-xs-12 col-sm-5">
+<div class="col-xs-10 col-xs-offset-1">
+  <div id="event" class="col-xs-12 col-sm-6">
     <?php madfeed_get_featured_image('large'); ?>
   </div>
 
-  <div id="event" class="col-xs-12 col-sm-7">
-    <article class="entry">
-      <div class="entry-hed">
-        <h1><?php the_title(); ?></h1>
-      </div>
-      <div class="event-date"><?php echo get_event_date() ?></div>
+  <div id="event" class="col-xs-12 col-sm-6">
+    <article class="medium-top-btm-padding">
+      <h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
+      <h3><?php echo get_event_location() ?></h3>
+      <p class="entry-title"><?php echo get_event_date() ?></p>
+      <a class="btn btn-primary" ref="#">Sign Up <i class="fa fa-angle-right"></i></a>
+    </article>
+  </div>
+</div>
+<div id="event" class="col-xs-10 col-xs-offset-1">
+  <div class="col-xs-12 col-sm-6">
+    <div class="section-title">Speakers</div>
+
+  </div>
+  <div class="col-xs-12 col-sm-6">
+    <div class="section-title">About the event</div>
+    <div style="clear: both;"></div>
       <div class="entry-content blogpost">
         <?php the_content(); ?>
       </div>
-      <div class="entry-meta"></div>
-    </article>
   </div>
 </div>

@@ -144,7 +144,7 @@ endif;
 
 // The Excerpt
 function entry_excerpt(){
-  $e = get_the_excerpt() . ' <p><a class="more" href="'. get_permalink( get_the_ID() ) . '">Read&nbsp;More&nbsp;»</a></p>';
+  $e = get_the_excerpt() . ' <p><a class="more" href="'. get_permalink( get_the_ID() ) . '">Read&nbsp;More</a></p>';
   echo $e;
 }
 
