@@ -5,13 +5,14 @@
 <?php include('header.php'); ?>
 <?php include( INC . 'navbar.php' ); ?>
 
+<div class="hidden-sm hidden-md hidden-lg mobile-padding"></div>
 <div class="row hidden-xs">
 
 	<?php include( INC . 'search-filter.php' ); ?>
 
 </div>
 
-<div class="container">
+<div class="container fadein">
 	<div class="row">
 		<div class="col-xs-12">
 			<?php 

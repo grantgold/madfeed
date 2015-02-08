@@ -38,9 +38,9 @@ function madfeed_get_featured_image($size){
 		$thumb = preg_replace( '/(width|height)="\d*"\s/', "", $thumb ); // Removes height & width
 		$thumb = str_replace( 'class="', 'class="img-responsive ', $thumb );
 		if (is_single()) {
-			echo '<div class="photo '.$size.'">' . $thumb . '</div>';
+			echo '<div class="feature-image photo '.$size.'">' . $thumb . '</div>';
 		} else {
-			echo '<div class="photo '.$size.'"><a href="' . get_permalink() . '">' . $thumb . '</a></div>';
+			echo '<div class="feature-image photo '.$size.'"><a href="' . get_permalink() . '">' . $thumb . '</a></div>';
 		}
 		
 	}

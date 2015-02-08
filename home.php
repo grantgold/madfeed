@@ -4,10 +4,9 @@
 
 <?php include('header.php'); ?>
 
-<div id="navigation">
 <?php include( INC . 'navbar.php' ); ?>
-</div>
 
+<div class="hidden-sm hidden-md hidden-lg mobile-padding"></div>
 <section class="hidden-xs">
 	<div class="container">
 		<div class="row">
@@ -20,10 +19,10 @@
 
 	</div>
 </section>
-<section id="reads">
+<section id="reads" class="fadein">
 	<?php include( INC . 'latest-reads.php' ); ?>
 </section>
-<section id="events">
+<section id="events" class="fadein">
 	<div class="container large-top-btm-padding">
 
 		<?php include( INC . 'latest-events.php' ); ?>
