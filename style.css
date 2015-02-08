@@ -40,6 +40,14 @@ p img {
   margin: 30px 0;
 }
 
+h1 {
+  margin-top: 0;
+}
+
+h3 {
+  margin-top: 0;
+}
+
 h4 {
   font-size: 19px;
   margin-top: 16px;
@@ -226,11 +234,26 @@ Post Formatting
 .feature-image img{
   width: 100%;
   height: auto;
+  z-index: -10;
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
         -ms-animation: fadein 2s; /* Internet Explorer */
          -o-animation: fadein 2s; /* Opera < 12.1 */
             animation: fadein 2s;
+}
+
+.featured-event,
+.featured-event a {
+  font-size:36px;
+  font-weight: 800;
+  text-align:center;
+  color: rgb(255,255,255);
+  z-index:100;
+  position:relative;    
+  bottom:60px;
+  padding-left: 20px;
+  paddig-right: 20px;
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
 }
 
 .video-container { 
@@ -358,6 +381,7 @@ Carousel
   left:20px;
   bottom:20px;
   padding-right: 20px;
+  text-shadow: 0px 0px 6px rgba(0,0,0,0.3);
 }
 
 .carousel-text .byline a{
@@ -695,6 +719,10 @@ Buttons & Fields
   border-radius: 40px;
   background-color: #fff;
   color: #303030;
+}
+
+.btn-primary.button-list {
+  margin-bottom:20px;
 }
 
 .btn-primary:hover,

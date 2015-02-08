@@ -11,7 +11,7 @@
 	<div class="container">
 		<div class="row small-top-btm-padding">
 			<div class="col-xs-12">
-				<p class="section-title">Other Events</p>
+				<p class="section-title">More Events</p>
 			<p class="view-all"><a href="#">View All</a></p>
 				<div style="clear: both;"></div>
 				<hr>

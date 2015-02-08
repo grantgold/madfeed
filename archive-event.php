@@ -8,14 +8,41 @@
 <div class="hidden-sm hidden-md hidden-lg mobile-padding"></div>
 
 <div class="container">
-	<div class="row">
+	<div class="row medium-top-btm-padding">
 		<div class="col-xs-12">
+			<?php 
+				$args = array(
+					'post_type' => 'event',
+					'posts_per_page' => 1
+				);
+				$the_query = new WP_Query($args);
+				if ( $the_query->have_posts() ) {
+					while ( $the_query->have_posts() ) {
+						$the_query->the_post(); ?>
+						<?php
+							get_template_part('featured', 'event' ); // uses content-carousel.php
+					}?>
+					<?php
+
+				} else {
+					// get_template_part( 'content', 'none' );
+				}
+			?>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row medium-top-btm-padding">
+		<div class="col-xs-12">
+			<hr>
 			<?php 
 				$i = 1;
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 				$args = array(
 					'post_type' => 'event',
 					'posts_per_page' => 8,
+					'offset' => 1,
 					'paged' => $paged
 				);
 				$the_query = new WP_Query($args);
@@ -25,7 +52,7 @@
 						<?php
 							get_template_part('content', 'events' ); // uses content-events.php
 						
-							if ($i % 4 == 0){
+							if ($i % 2 == 0){
 								echo "</div></div>";
 								echo "<div class='row'><div class='col-xs-12'>";
 							}
