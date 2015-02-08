@@ -3,7 +3,7 @@
 </div>
 <div class="col-xs-12 col-md-6">
 	<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
-	<p class="byline">August 24-25 2014</p>
+	<p class="entry-title"><?php echo get_event_date() ?></p>
 	<p><?php the_excerpt(); ?></p>
 	<a class="btn btn-primary" ref="#">Sign Up <i class="fa fa-angle-right"></i></a>
 </div>

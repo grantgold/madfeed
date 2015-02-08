@@ -9,12 +9,11 @@ include_once 'functions/videos.php';
 include_once 'functions/events.php';
 include_once 'functions/contributors.php';
 include_once 'functions/related-video.php';
+include_once 'functions/event-date.php';
 
 // include_once 'functions/beta.php';
 
 include_once 'functions/images.php';
-// include_once 'functions/related-link.php';
-// include_once 'functions/kicker.php';
 
 // Variables
 $tdir = get_template_directory_uri();
@@ -170,6 +169,10 @@ function vimeo_id(){
   return $id;
 }
 
+function get_event_date(){
+  $date = get_post_meta( get_the_ID(), 'event_date_url', true );
+  return $date;
+}
 
 function numeric_posts_nav($the_query) {
   if( is_singular() )

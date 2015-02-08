@@ -1,7 +1,7 @@
 <?php
 add_action( 'add_meta_boxes', 'related_video_add' );
 function related_video_add() {
-  $types = array( 'post', 'page', 'video' );
+  $types = array( 'post', 'video' );
 
   foreach( $types as $type ) {
     add_meta_box( 'related-video-id', 'Related Video', 'related_video', $type, 'normal', 'high' );

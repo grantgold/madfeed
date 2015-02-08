@@ -5,7 +5,7 @@
 	</div>
 	<div class="col-xs-12 col-md-9">
 		<h3>Refshaleøen, Copenhagen</h3>
-		<p class="entry-title">August 24-25 2014</p>
+		<p class="entry-title"><?php echo get_event_date() ?></p>
 		<p><?php the_excerpt(); ?></p>
 	</div>
 	<div class="col-sm-12 col-md-3">

@@ -8,7 +8,7 @@
       <div class="entry-hed">
         <h1><?php the_title(); ?></h1>
       </div>
-      <div class="event-date">August 24-25, 2014</div>
+      <div class="event-date"><?php echo get_event_date() ?></div>
       <div class="entry-content blogpost">
         <?php the_content(); ?>
       </div>
