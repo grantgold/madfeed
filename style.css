@@ -334,7 +334,7 @@ Carousel
 */
 
 #madfeed-carousel {
-  max-width: 100% !important;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -394,13 +394,13 @@ Carousel
 }
 
 .first {
-  margin-left: 10px;
-  width: 110%;
+  margin-left: 12px;
+  width: 116%;
 }
 
 .second {
   margin-left: -160px;
-  width: 110%;
+  width: 116%;
 }
 
 /*

@@ -42,7 +42,7 @@ function madfeed_taxonomy_add_new_meta_field() {
   </div>
   <div class="form-field">
     <label for="contributor_meta[profile_img]"><?php _e( 'Profile Image', 'madfeed' ); ?></label>
-    <input type="file" name="contributor_meta[profile_img]" id="contributor_meta[twitter]" value="">
+    <input type="file" name="contributor_meta[profile_img]" id="contributor_meta[profile_img]" value="">
   </div>
 <?php
 }
@@ -63,6 +63,12 @@ function madfeed_taxonomy_edit_meta_field($term) {
     <td>
       <input type="text" name="contributor_meta[twitter]" id="contributor_meta[twitter]" value="<?php echo esc_attr( $contributor_meta['twitter'] ) ? esc_attr( $contributor_meta['twitter'] ) : ''; ?>">
       <p class="description"><?php _e( 'Example: TheMADFeed','madfeed' ); ?></p>
+    </td>
+  </tr>
+  <tr class="form-field">
+  <th scope="row" valign="top"><label for="contributor_meta[profile_img]"><?php _e( 'Profile Image', 'madfeed' ); ?></label></th>
+    <td>
+      <input type="file" name="contributor_meta[profile_img]" id="contributor_meta[profile_img]" value="<?php echo esc_attr( $contributor_meta['profile_img'] ) ? esc_attr( $contributor_meta['profile_img'] ) : ''; ?>">
     </td>
   </tr>
 <?php
