@@ -10,9 +10,9 @@
 					<ul class="list-unstyled">
 					<li><br></li>
 					<li><a href="<?php echo get_site_url(); ?>/video">WATCH</a></li>
-			        <li><a href="#">READ</a></li>
-			        <li><a href="#">ATTEND</a></li>
-			        <li><a href="#">ABOUT</a></li></ul>
+			        <li><a href="<?php echo get_site_url(); ?>/reads">READ</a></li>
+			        <li><a href="<?php echo get_site_url(); ?>/event">ATTEND</a></li>
+			        <li><a href="<?php echo get_site_url(); ?>/about">ABOUT</a></li></ul>
 			    </div>
 			    <div class="col-xs-4 col-sm-3 col-md-2 small-top-btm-padding"><b>Follow MAD</b>
 					<ul class="list-unstyled">

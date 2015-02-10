@@ -9,9 +9,9 @@
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav-content">
           <a href="<?php echo get_site_url(); ?>/video">Watch</a>
-          <a href="#">Read</a>
+          <a href="<?php echo get_site_url(); ?>/reads">Read</a>
           <a href="<?php echo get_site_url(); ?>/event">Attend</a>
-          <a href="#">About</a>
+          <a href="<?php echo get_site_url(); ?>/about">About</a>
         </ul>
     </div>
   </div>
@@ -34,9 +34,9 @@
 <div class="hidden-lg hidden-md hidden-sm collapse" id="collapsed-nav">
   <ul class="mobile-nav">
     <li><a href="<?php echo get_site_url(); ?>/video">Watch</a></li>
-      <li><a href="#">Read</a></li>
+      <li><a href="<?php echo get_site_url(); ?>/reads">Read</a></li>
       <li><a href="<?php echo get_site_url(); ?>/event">Attend</a></li>
-      <li><a href="#">About</a></li>
+      <li><a href="<?php echo get_site_url(); ?>/about">About</a></li>
   </ul>
 
 </div>

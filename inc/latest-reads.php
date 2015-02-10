@@ -3,8 +3,8 @@
 	<div class="row">
 	<div class="col-xs-12">
 
-		<p class="section-title">Latest Reads</p>
-		<p class="view-all"><a href="#">View All</a></p>
+		<p class="section-title"><a href="<?php echo get_site_url(); ?>/reads">Latest Reads</a></p>
+		<p class="view-all"><a href="<?php echo get_site_url(); ?>/reads">View All</a></p>
 		<div style="clear: both;"></div>
 		<hr>
 

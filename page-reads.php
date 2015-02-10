@@ -5,7 +5,7 @@
 <?php include('header.php'); ?>
 <?php include( INC . 'navbar.php' ); ?>
 <div class="row hidden-xs">
-	<?php include( INC . 'search-filter.php' ); ?>
+	<?php include( INC . 'filter-posts.php' ); ?>
 </div>
 <section>
 	<div class="container">

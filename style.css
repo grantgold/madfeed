@@ -492,6 +492,10 @@ Navigation
   padding-top: 10px;
 }
 
+#footer li {
+  line-height: 1.8em;
+}
+
 .navbar {
   background-color: #fff;
   padding-top: 20px;

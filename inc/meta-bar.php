@@ -7,7 +7,12 @@
 	      <?php include( INC . 'share-links.php' ); ?> 
 	  </div>
 	  <div class="col-sm-2 button pull-right">
-	    <?php previous_post('%','Read Next', 'no'); ?>
+
+      <?php if(get_previous_post()) {
+            previous_post('%','Read Next', 'no');
+            } else {
+            ?> <a href="<?php echo get_site_url(); ?>/reads">Read More</a> 
+            <?php } ?>
 	  </div>
 	</div> 
 </div>
