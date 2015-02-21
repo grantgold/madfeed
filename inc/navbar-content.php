@@ -19,14 +19,12 @@
 
 <!-- Mobile Nav -->
 <nav class="scrolling-nav container-fluid navbar-default hidden-sm hidden-md hidden-lg">
-  <div class="hidden-lg hidden-md hidden-sm">
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsed-nav">
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-  </div>
   <div class="mobile-logo">
     <a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/icons/mad-logo.svg" width="50px" height="50px" alt="MAD Feed"></a>
   </div>

@@ -337,7 +337,11 @@ Carousel
 
 */
 
-#madfeed-carousel {
+#carousel-package {
+
+}
+
+.madfeed-carousel {
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -352,7 +356,7 @@ Carousel
 }
 
 .carousel-item {
-  height: 236px;
+  height: 200px;
   overflow: hidden;
 }
 
@@ -367,7 +371,7 @@ Carousel
   line-height: 32px;
   color: rgb(255,255,255);
   width: 100%;
-  height: 236px;
+  height: 200px;
   padding: 24% 48px;
   background-color: #101010;
 }
@@ -398,13 +402,48 @@ Carousel
 }
 
 .first {
-  margin-left: 12px;
+  margin-left: 1%;
   width: 116%;
 }
 
 .second {
-  margin-left: -160px;
+  margin-left: -14%;
   width: 116%;
+}
+
+.carousel-next {
+  background-color: #000;
+  position:absolute;
+  padding: 182px 0 0 20px;
+  right: 0px;
+  top: 208px;
+  width: 100px;
+  height: 412px;
+  z-index: 100;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  background: -webkit-linear-gradient(left,rgba(0,0,0,0.6),rgba(0,0,0,0)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(0,0,0,0.6),rgba(0,0,0,0)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(0,0,0,0.6),rgba(0,0,0,0)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0)); /*Standard*/
+}
+.carousel-prev {
+  background-color: #000;
+  position:absolute;
+  padding: 182px 0 0 20px;
+  left: 0px;
+  top: 208px;
+  width: 100px;
+  height: 412px;
+  z-index: 100;
+  background: -webkit-linear-gradient(left,rgba(0,0,0,0.6),rgba(0,0,0,0)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(0,0,0,0.6),rgba(0,0,0,0)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(0,0,0,0.6),rgba(0,0,0,0)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0)); /*Standard*/
 }
 
 /*
@@ -425,7 +464,7 @@ Mobile
   float: none;
   width: 100%;
   background-color: #fff;
-  z-index:100;
+  z-index:400;
 }
 
 .mobile-nav a {
@@ -442,10 +481,11 @@ Mobile
 
 .mobile-meta-bar {
   background: rgba(255, 255, 255, 0.98);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 800;
   width: 100%;
-  height: 30%;
+  height: 8%;
+  padding-top: 18px;
   position: fixed;
   z-index:300;
   bottom: 0;
@@ -472,6 +512,14 @@ Mobile
   line-height: 36px;
   text-align: center;
   padding-top: 10%;
+}
+
+.mobile-meta-bar > .byline,
+.mobile-meta-bar > .byline a{
+  font-size: 18px;
+  color: #999;
+  font-style: italic;
+  font-weight: 500;
 }
 
 .mobile-padding {
@@ -872,6 +920,13 @@ Animation
         -ms-animation: fadein 2s; /* Internet Explorer */
          -o-animation: fadein 2s; /* Opera < 12.1 */
             animation: fadein 2s;
+}
+.fadeinSlow {
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 5s; /* Firefox < 16 */
+        -ms-animation: fadein 5s; /* Internet Explorer */
+         -o-animation: fadein 5s; /* Opera < 12.1 */
+            animation: fadein 5s;
 }
 
 @keyframes fadein {
