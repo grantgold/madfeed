@@ -6,7 +6,7 @@
 <?php include( INC . 'navbar.php' ); ?>
 
 <div class="hidden-sm hidden-md hidden-lg mobile-padding"></div>
-<div class="row hidden-xs">
+<div class="row hidden-xs fadein">
 
 	<?php include( INC . 'search-filter.php' ); ?>
 
@@ -15,6 +15,7 @@
 <div class="container fadein">
 	<div class="row">
 		<div class="col-xs-12">
+			<div class="row">
 			<?php 
 				$i = 1;
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -41,6 +42,7 @@
 					// get_template_part( 'content', 'none' );
 				}
 			?>
+		</div>
 		</div>
 	</div>
 	<?php numeric_posts_nav($the_query); ?>

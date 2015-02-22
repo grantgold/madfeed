@@ -27,5 +27,21 @@
 
     <?php wp_head(); ?>
 
+    <script>
+        jQuery(document).ready(function() {
+            print_width();
+
+            jQuery(window).resize(function() {
+                 print_width();
+            })
+        })
+
+        function print_width() {
+            wWidth = jQuery(window).width();
+            console.log(wWidth);
+        }
+    
+    </script>
+
 </head>
 <body <?php body_class(); ?>>

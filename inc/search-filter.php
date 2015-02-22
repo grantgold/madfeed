@@ -1,7 +1,7 @@
-<section class="background-grey">
+<section>
 	<div class="container">
 		<div class="btn-toolbar">
-		<div class="btn-group hidden-xs hidden-sm">
+		<div class="btn-group hidden-xs">
 			<input type="text" class="form-control" placeholder="Search">
 		</div>
 		<div class="btn-group">
@@ -34,7 +34,7 @@
 					    <li><a href="#">MAD Mondays</a></li>
 					</ul>
 		</div>
-		<div class="btn-group">
+		<div class="hidden-sm pull-right fadein">
 			<button class="btn btn-primary" type="button" >View All Speakers</button>
 		</div>
 		</div>

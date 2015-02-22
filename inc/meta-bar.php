@@ -32,6 +32,7 @@
 </div>
 
 <script>
+
   jQuery(function(){
     viewport_height()
       jQuery(document).scroll(function(){ 
@@ -57,7 +58,7 @@
   }
   
   function scroll_check() {
-    if(jQuery(document).scrollTop() > jQuery('#post-title').offset().top - jQuery(window).height() + jQuery('#post-title').height() && jQuery(document).scrollTop() < jQuery('#related-posts').offset().top - jQuery('#related-posts').height() + 80 ) 
+    if(jQuery(document).scrollTop() > jQuery('#post-title').offset().top - jQuery(window).height() + jQuery('#post-title').height() && jQuery(document).scrollTop() < jQuery('.entry-content').height() + 220 ) 
           {    
               jQuery('.meta-bar').addClass('shrink');
           }
