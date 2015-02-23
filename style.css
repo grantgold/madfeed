@@ -361,7 +361,7 @@ Carousel
 }
 
 .carousel-item img {
-  width: 420px;
+  width: 360px;
   height: auto;
   z-index: -10;
 }
@@ -904,6 +904,10 @@ Spacing / Color Classes
 
 .inset-left-right-padding {
   padding: 0px 110px 0px 110px;
+}
+
+.background-grey {
+  background-color: #EFEFEF;
 }
 
 
