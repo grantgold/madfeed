@@ -142,6 +142,27 @@ function madfeed_contributors_meta(){
 endif;
 }
 
+function madfeed_contributors_image(){
+  $post_id = get_the_ID();
+  $terms = get_the_terms( $post_id, 'contributors' );        
+  if ( $terms && ! is_wp_error( $terms ) ) : 
+    $contributor_names = array();
+    foreach ( $terms as $term ) {
+      $t_id = $term->term_id;
+      $custom_meta = get_option( "taxonomy_$t_id" );
+      $attachment = $custom_meta['attachment_id'];
+
+      if ($attachment == TRUE) {
+        $contributor_names[] = '
+        <img href="'. wp_get_attachment_link( $attachment ).'">';
+      } else {
+        return;
+      }
+    }  
+    return $contributor_names;
+endif;
+}
+
 // The Excerpt
 function entry_excerpt(){
   $e = get_the_excerpt() . ' <p><a class="more" href="'. get_permalink( get_the_ID() ) . '">Read&nbsp;More</a></p>';

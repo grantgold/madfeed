@@ -55,6 +55,8 @@ function madfeed_taxonomy_edit_meta_field($term) {
  
   // put the term ID into a variable
   $t_id = $term->term_id;
+
+  wp_enqueue_media();
  
   // retrieve the existing value(s) for this meta field. This returns an array
   $contributor_meta = get_option( "taxonomy_$t_id" ); ?>
@@ -66,14 +68,48 @@ function madfeed_taxonomy_edit_meta_field($term) {
     </td>
   </tr>
   <tr class="form-field">
-  <th scope="row" valign="top"><label for="contributor_meta[profile_img]"><?php _e( 'Profile Image', 'madfeed' ); ?></label></th>
+  <th scope="row" valign="top"></th>
     <td>
-      <input type="file" name="contributor_meta[profile_img]" id="contributor_meta[profile_img]" value="<?php echo esc_attr( $contributor_meta['profile_img'] ) ? esc_attr( $contributor_meta['profile_img'] ) : ''; ?>">
+      <input type="hidden" name="contributor_meta[attachment_id]" value="">
+      <button type="button" class="open-select-frame">Upload</button>
     </td>
   </tr>
+  <script>
+  (function($) {
+  $(document).ready( function() {
+
+    $('.open-select-frame').on( 'click', function() {
+      // Accepts an optional object hash to override default values.
+      var frame = new wp.media.view.MediaFrame.Select({
+        // Modal title
+        title: 'Select a picture for the person',
+
+        // Enable/disable multiple select
+        multiple: false,
+
+        button: {
+          text: 'Select picture'
+        }
+      });
+
+      // Fires when a user has selected attachment(s) and clicked the select button.
+      // @see media.view.MediaFrame.Post.mainInsertToolbar()
+      frame.on( 'select', function() {
+        var selectionCollection = frame.state().get('selection');
+        var id = selectionCollection.first().get('id');
+        $('.contributor_meta[attachment_id]').val( id );
+        debugger;
+        // you should be able to parse out the ID name here,
+        // then jam it into something like <input type="hidden" name="picture_attachment_id">
+      } );
+      frame.open();
+    });
+  });
+})(jQuery);
+</script>
 <?php
 }
-add_action( 'contributors_edit_form_fields', 'madfeed_taxonomy_edit_meta_field', 10, 2 );
+add_action( 'contributors_edit_form_fields', 'madfeed_taxonomy_edit_meta_field', 10, 1 );
 
 // Save extra taxonomy fields callback function.
 function save_taxonomy_custom_meta( $term_id ) {

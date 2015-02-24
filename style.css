@@ -33,6 +33,10 @@ a:hover{
   text-decoration: underline;
 }
 
+p {
+  margin-bottom: 1em;
+}
+
 p img {
   margin: 30px 0;
 }
@@ -133,8 +137,8 @@ Post Formatting
   margin-right: 12px;
   padding-bottom: 20px;
   font-weight: 300;
-  font-size: 1.4em;
-  line-height: 1.8em;
+  font-size: 1.3em;
+  line-height: 1.9em;
   text-rendering: optimizelegibility;
   word-break: break-word;
   word-wrap: break-word;
