@@ -1,5 +1,5 @@
-<nav class="navbar navbar-default hidden-xs" role="navigation">
-  <div class="container-fluid col-xs-12">
+<nav class="navbar navbar-default container-fluid hidden-xs" role="navigation">
+  <div class="col-xs-12">
     <!-- Brand and Nav -->
     <div class="navbar-header">
       <div class="circle-logo"><a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/icons/mad-logo.svg" width="90px" height="90px" alt="MAD Feed"></a></div>

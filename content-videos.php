@@ -10,9 +10,9 @@
   <?php } else { ?>
   		<div class="feature-image img-responsive"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail(); ?></a></div>
   <?php } ?>
-    <p class="subtitle"><?php echo madfeed_contributors() ?></p>
+    <div class="subtitle"><?php echo madfeed_contributors() ?></div>
     <div class="video-title">
-      <h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><i class="fa fa-play-circle"></i> &nbsp;&nbsp;<?php the_title(); ?></a></h4>
+      <h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><i class="fa fa-play-circle"></i> &nbsp;<?php the_title(); ?></a></h4>
     </div>
     <p class="byline"><a href="<?php echo get_year_link(''); ?>"><?php the_time('Y'); ?></a></p>
     <p><?php the_excerpt() ?></p>

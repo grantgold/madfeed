@@ -25,6 +25,9 @@
     <!--Google Analytics -->
     <?php include_once(INC . 'analyticstracking.php') ?>
 
+    <!-- Hoefler -->
+    <link rel="stylesheet" type="text/css" href="http://cloud.typography.com/7609154/743106/css/fonts.css" />
+
     <?php wp_head(); ?>
 
     <script>
