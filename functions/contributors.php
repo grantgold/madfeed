@@ -92,3 +92,24 @@ function save_taxonomy_custom_meta( $term_id ) {
 }  
 add_action( 'edited_contributors', 'save_taxonomy_custom_meta', 10, 2 );  
 add_action( 'create_contributors', 'save_taxonomy_custom_meta', 10, 2 );
+
+
+
+$terms = get_terms( 'contributors' );
+if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
+  foreach ( $terms as $term ) {
+    // print_r($term);
+    $term_id = $term->term_id;
+    $name = $term->name;
+    $description = $term->description;
+    $meta = get_option("taxonomy_$term_id");
+    $twitter = '';
+    if (isset($meta['twitter'])) {
+      $twitter = $meta['twitter'];
+    }
+    echo <<< EOF
+    <div> Hello $name, nice to meet you! $twitter</div>
+EOF;
+    
+  }
+}

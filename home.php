@@ -6,6 +6,7 @@
 
 <?php include( INC . 'navbar.php' ); ?>
 
+
 <div class="hidden-sm hidden-md hidden-lg mobile-padding"></div>
 <section class="hidden-xs">
 
