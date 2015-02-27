@@ -33,10 +33,6 @@ a:hover{
   text-decoration: underline;
 }
 
-p {
-  margin-bottom: 1em;
-}
-
 p img {
   margin: 30px 0;
 }
@@ -56,7 +52,7 @@ h4 {
 }
 
 section {
-  padding-bottom: 20px;
+
 }
 
 ul {
@@ -137,8 +133,8 @@ Post Formatting
   margin-right: 12px;
   padding-bottom: 20px;
   font-weight: 300;
-  font-size: 1.3em;
-  line-height: 1.9em;
+  font-size: 1.1em;
+  line-height: 1.7em;
   text-rendering: optimizelegibility;
   word-break: break-word;
   word-wrap: break-word;
@@ -160,7 +156,7 @@ Post Formatting
 .entry-title,
 .entry-hed h1 {
   font-weight: 700;
-  line-height: 44px;
+  line-height: 1.3em;
 }
 
 .thumbnail-title {
@@ -733,7 +729,7 @@ Navigation
 }
 
 .meta-bar .entry-title {
-  padding-top: 8px;
+  padding-top: .7em;
 }
 
 .meta-bar .subtitle {
@@ -894,6 +890,16 @@ Buttons & Fields
   color: #e5e5e5;
 }
 
+/* 
+
+Sections
+
+*/
+
+.about-summary {
+  padding: 0 40px 0 40px;
+}
+
 /*
 
 Spacing / Color Classes
@@ -979,7 +985,7 @@ Media Queries
 
 @media (min-width: 736px) {
   .container {
-    width: 98%;
+    width: 96%;
   }
 }
 @media (min-width: 768px) {
@@ -1019,6 +1025,10 @@ Media Queries
   .form-control:focus {
     width: 362px;
   }
+  .blogpost {
+    font-size: 1.3em;
+    line-height: 1.8em;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -1030,6 +1040,9 @@ Media Queries
   .form-control:focus {
     width: 330px;
   }
+  .about-summary {
+  padding: 0 80px 0 80px;
+}
 }
 @media (min-width: 1200px) {
   .container {

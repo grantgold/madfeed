@@ -1,6 +1,6 @@
 <section>
 	<div class="large-top-btm-padding background-grey">
-		<div class="container text-center inset-left-right-padding">
+		<div class="container text-center about-summary">
 			<h1>About MAD</h1>
 			<p>Founded in 2011, MAD is a not-for-profit organization that 
 			aims to build a community of cooks, purveyors, and thinkers 

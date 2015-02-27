@@ -1,9 +1,9 @@
 <div class="meta-bar hidden-xs">
 	<div class="col-sm-12">
-	  <div class="col-sm-7 entry-title pull-left">
+	  <div class="col-sm-8 entry-title pull-left">
 	    <?php the_title(); ?>&nbsp;&nbsp;<span class="byline"> by <?php echo madfeed_contributors() ?></span>
 	  </div>
-	  <div class="col-sm-3 subtitle">
+	  <div class="col-sm-2 subtitle">
 	      <?php include( INC . 'share-links.php' ); ?> 
 	  </div>
 	  <div class="col-sm-2 button pull-right">
@@ -18,7 +18,7 @@
 </div>
 
 <div class="mobile-meta-bar col-sm-12 visible-xs">
-    <div class="col-sm-7 byline pull-left">
+    <div class="col-sm-8 byline pull-left">
       by <?php echo madfeed_contributors() ?>
     </div>
     <div class="col-sm-2 button pull-right">
