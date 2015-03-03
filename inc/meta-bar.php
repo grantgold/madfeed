@@ -1,9 +1,9 @@
 <div class="meta-bar hidden-xs">
 	<div class="col-sm-12">
-	  <div class="col-sm-8 entry-title pull-left">
+	  <div class="col-sm-7 entry-title pull-left">
 	    <?php the_title(); ?>&nbsp;&nbsp;<span class="byline"> by <?php echo madfeed_contributors() ?></span>
 	  </div>
-	  <div class="col-sm-2 subtitle">
+	  <div class="col-sm-3 subtitle">
 	      <?php include( INC . 'share-links.php' ); ?> 
 	  </div>
 	  <div class="col-sm-2 button pull-right">
@@ -16,7 +16,7 @@
 	  </div>
 	</div> 
 </div>
-
+<!-- 
 <div class="mobile-meta-bar col-sm-12 visible-xs">
     <div class="col-sm-8 byline pull-left">
       by <?php echo madfeed_contributors() ?>
@@ -29,7 +29,7 @@
             ?> <a href="<?php echo get_site_url(); ?>/reads">Read More</a> 
             <?php } ?>
     </div>
-</div>
+</div> -->
 
 <script>
 
@@ -58,7 +58,7 @@
   }
   
   function scroll_check() {
-    if(jQuery(document).scrollTop() > jQuery('#post-title').offset().top - jQuery(window).height() + jQuery('#post-title').height() && jQuery(document).scrollTop() < jQuery('.entry-content').height() + 220 ) 
+    if(jQuery(document).scrollTop() > jQuery('#post-title').offset().top - jQuery(window).height() + jQuery('#post-title').height() && jQuery(document).scrollTop() < jQuery('.entry-content').height() + jQuery('#related-posts').height() ) 
           {    
               jQuery('.meta-bar').addClass('shrink');
           }

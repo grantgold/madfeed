@@ -4,9 +4,9 @@
 		<?php //madfeed_the_kicker(); ?>
 
 		<?php if ( is_single() ) : ?>
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<h1 class="entry-title hidden-xs"><?php the_title(); ?></h1>
 		<?php else : ?>
-		<h2 class="entry-title">
+		<h2 class="entry-title hidden-xs">
 			<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 		</h2>
 		<?php endif; // is_single() ?>

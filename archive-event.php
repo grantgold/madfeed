@@ -1,7 +1,7 @@
 <?php include('header.php'); ?>
 <?php include( INC . 'navbar.php' ); ?>
 
-<div class="hidden-sm hidden-md hidden-lg mobile-padding"></div>
+<div class="visible-xs mobile-padding"></div>
 
 <div class="container">
 	<div class="row medium-top-btm-padding">

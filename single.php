@@ -2,6 +2,15 @@
 <?php include( INC . 'navbar-content.php' ); ?>
 <?php include( INC . 'meta-bar.php' ); ?>
 
+<section id="mobile-cover-card" class="visible-xs">
+  <div class="container mobile-padding mobile-cover">
+    <h1 class="entry-title"><?php the_title(); ?></h1>
+    <img src="<?php echo get_template_directory_uri()?>/img/choi.jpg"/>
+  </div>
+  <div class="contributors-meta">by <?php echo madfeed_contributors(); ?></div>
+</section>
+
+
 <section id="blog">
   <?php if (vimeo_id() == TRUE) { ?>
         <section id="video">
