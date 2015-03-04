@@ -5,7 +5,7 @@
 <section id="mobile-cover-card" class="visible-xs">
   <div class="container mobile-padding mobile-cover">
     <h1 class="entry-title"><?php the_title(); ?></h1>
-    <img src="<?php echo get_template_directory_uri()?>/img/choi.jpg"/>
+    <img src="<?php echo madfeed_contributors_image(); ?>">
   </div>
   <div class="contributors-meta">by <?php echo madfeed_contributors(); ?></div>
 </section>
@@ -23,6 +23,7 @@
   <div class="container">
     <div class="row">
         <div class="col-xs-12">
+          <div class="row">
           <div class="col-sm-3 post-meta hidden-xs">
             <div class="col-sm-12">
               <div class="subtitle">WRITTEN BY</div>
@@ -41,6 +42,7 @@
 
           <div class="col-xs-12 col-sm-8">
             <?php loop(); ?>
+          </div>
           </div>
         </div>
     </div>

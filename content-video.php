@@ -10,14 +10,18 @@
       <div class="col-xs-12">
         
         <div class="col-xs-12 col-sm-3 post-meta">
-          <div class="col-xs-6 col-sm-12">
-            <div class="profile-image"><?php echo madfeed_contributors_image(); ?></div>
+          <div class="row col-xs-6 col-sm-12">
+            <div class="row">
+            <div class="profile-image img-responsive"><img src="<?php echo madfeed_contributors_image(); ?>"></div>
             <div class="post-meta contributors-meta"><?php echo madfeed_contributors_meta(); ?></div>
             <hr>
           </div>
-          <div class="col-xs-6 col-sm-12">
+          <div class="row col-xs-6 col-sm-12">
+            <div class="row">
             <div class="subtitle">SHARE</div>
             <?php include( INC . 'share-links.php' ); ?>
+          </div>
+          </div>
           </div>
         </div>
 

@@ -110,7 +110,7 @@ function madfeed_contributors(){
     $contributor_names = array();
     foreach ( $terms as $term ) {
       $t_id = $term->term_id;
-      $custom_meta = get_option( "taxonomy_$t_id" );
+      $contributor_meta = get_option( 'taxonomy_$t_id' );
       $contributor_names[] = '<a href="'. get_term_link( $term, 'contributors' ) . '">' . $term->name . '</a>';
     }  
     $contributors = join( "<br><br>", $contributor_names );
@@ -126,8 +126,8 @@ function madfeed_contributors_meta(){
     $contributor_names = array();
     foreach ( $terms as $term ) {
       $t_id = $term->term_id;
-      $custom_meta = get_option( "taxonomy_$t_id" );
-      $handle = $custom_meta['twitter'];
+      $contributor_meta = get_option( 'taxonomy_$t_id' );
+      $handle = $contributor_meta['twitter'];
 
       if ($handle == TRUE) {
         $contributor_names[] = '<a href="'. get_term_link( $term, 'contributors' ) . '">' . $term->name . '</a>
@@ -142,24 +142,18 @@ function madfeed_contributors_meta(){
 endif;
 }
 
+// get contributors terms with images
 function madfeed_contributors_image(){
-  $post_id = get_the_ID();
-  $terms = get_the_terms( $post_id, 'contributors' );        
-  if ( $terms && ! is_wp_error( $terms ) ) : 
-    $contributor_names = array();
-    foreach ( $terms as $term ) {
-      $t_id = $term->term_id;
-      $custom_meta = get_option( "taxonomy_$t_id" );
-      $attachment = $custom_meta['attachment_id'];
 
-      if ($attachment == TRUE) {
-        $contributor_names[] = '
-        <img href="'. wp_get_attachment_link( $attachment ).'">';
-      } else {
-        return;
-      }
+  $post_id = get_the_ID();
+  $terms = get_the_terms( $post_id, 'contributors' );
+
+  if ( $terms && ! is_wp_error( $terms ) ) : 
+    foreach ( $terms as $term ) {
+      $image = the_field('profile_image', $term);
+
+      return $image;
     }  
-    return $contributor_names;
 endif;
 }
 

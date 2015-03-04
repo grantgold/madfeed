@@ -302,8 +302,10 @@ Post Meta
 }
 
 .profile-image img {
+  width: 150px;
+  height: 150px;
   display: inline;
-  padding-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .post-meta {

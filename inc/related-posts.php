@@ -5,6 +5,7 @@
 				<div class="section-title"><h3>Related Posts</h3></div>
 				<div style="clear: both;"></div>
 				<hr>
+				<div class="row">
 				<?php 
 					$i = 1;
 					$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -31,6 +32,7 @@
 						get_template_part( 'content' );
 					}
 				?>
+			</div>
 			</div>
 		</div>
 	</div>
