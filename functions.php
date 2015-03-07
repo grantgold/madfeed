@@ -127,12 +127,12 @@ function madfeed_contributors_meta(){
     foreach ( $terms as $term ) {
       $t_id = $term->term_id;
       $contributor_meta = get_option( 'taxonomy_$t_id' );
-      $handle = $contributor_meta['twitter'];
+      $twitter = $contributor_meta['twitter'];
 
-      if ($handle == TRUE) {
+      if ($twitter == TRUE) {
         $contributor_names[] = '<a href="'. get_term_link( $term, 'contributors' ) . '">' . $term->name . '</a>
         <br>
-        <a class="twitter-handle" href="http://twitter.com/'.$handle.'" target="_blank">@'.$handle.'</a>';
+        <a class="twitter-handle" href="http://twitter.com/'.$twitter.'" target="_blank">@'.$twitter.'</a>';
       } else {
         $contributor_names[] = '<a href="'. get_term_link( $term, 'contributors' ) . '">' . $term->name . '</a>';
       }

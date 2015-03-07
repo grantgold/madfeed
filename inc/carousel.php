@@ -1,4 +1,4 @@
-<div id="carousel-package">
+<div id="carousel-package" class="hidden">
 	<div class="madfeed-carousel small-top-btm-padding">
 		<div class="first owl-carousel">
 			<?php 
@@ -47,8 +47,8 @@
 				?>
 		</div>
 	</div>
-	<div class="carousel-prev fadeinSlow"><a href="#"><img src="<?php echo get_template_directory_uri();?>/img/icons/chevron.png"/></a></div>
-	<div class="carousel-next fadeinSlow"><a href="#"><img src="<?php echo get_template_directory_uri();?>/img/icons/chevron.png"/></a></div>
+	<div class="carousel-prev"><a href="#"><img src="<?php echo get_template_directory_uri();?>/img/icons/chevron.png"/></a></div>
+	<div class="carousel-next"><a href="#"><img src="<?php echo get_template_directory_uri();?>/img/icons/chevron.png"/></a></div>
 </div>
 	<script>
 		(function($) {
@@ -89,6 +89,11 @@
 				$('.carousel-prev').click(function() {
 					owl2.trigger('owl.prev');
 				});
+			});
+
+			$(window).load(function() {
+				$('#carousel-package').removeClass('hidden');
+				$('#carousel-package').addClass('fadein');
 			});
 		})(jQuery);
 

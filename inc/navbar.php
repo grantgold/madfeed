@@ -1,20 +1,22 @@
-<nav class="navbar navbar-default container-fluid hidden-xs" role="navigation">
-  <div class="col-xs-12">
-    <!-- Brand and Nav -->
-    <div class="navbar-header">
-      <div class="circle-logo"><a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/icons/mad-logo.svg" width="90px" height="90px" alt="MAD Feed"></a></div>
-      <div id="mission" class="hidden-xs col-md-7 col-sm-8">A community of chefs, cooks and farmers with an appetite for knowledge.</div>
-      <div class="collapse navbar-collapse hidden-xs">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="<?php echo get_site_url(); ?>/video">Watch</a>
-            <a href="<?php echo get_site_url(); ?>/reads">Read</a>
-            <a href="<?php echo get_site_url(); ?>/event">Attend</a>
-            <a href="<?php echo get_site_url(); ?>/about">About</a>
-          </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.navbar-header -->
-  </div><!-- /.container -->
+<nav class="navbar navbar-default container hidden-xs" role="navigation">
+  <div class="row">
+    <div class="col-xs-12">
+      <!-- Brand and Nav -->
+      <div class="navbar-header">
+        <div class="circle-logo"><a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/icons/mad-logo.svg" width="90px" height="90px" alt="MAD Feed"></a></div>
+        <div id="mission" class="hidden-xs col-md-7 col-sm-8">A community of chefs, cooks and farmers with an appetite for knowledge.</div>
+        <div class="collapse navbar-collapse hidden-xs">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="<?php echo get_site_url(); ?>/video">Watch</a>
+              <a href="<?php echo get_site_url(); ?>/reads">Read</a>
+              <a href="<?php echo get_site_url(); ?>/event">Attend</a>
+              <a href="<?php echo get_site_url(); ?>/about">About</a>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.navbar-header -->
+    </div><!-- /.container -->
+  </div>
 </nav>
 
 <!-- Mobile Nav -->

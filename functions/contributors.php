@@ -29,8 +29,6 @@ array( 'hierarchical' => true,
 ) ); 
 }
 
-
-
 // Add term page
 function madfeed_taxonomy_add_new_meta_field() {
 // this will add the custom meta field to the add new term page
@@ -44,15 +42,11 @@ function madfeed_taxonomy_add_new_meta_field() {
 }
 add_action( 'contributors_add_form_fields', 'madfeed_taxonomy_add_new_meta_field', 10, 2 );
 
-
-
 // Edit term page
 function madfeed_taxonomy_edit_meta_field($term) {
  
   // put the term ID into a variable
   $t_id = $term->term_id;
-
-  wp_enqueue_media();
  
   // retrieve the existing value(s) for this meta field. This returns an array
   $contributor_meta = get_option( "taxonomy_$t_id" ); ?>

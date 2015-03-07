@@ -3,11 +3,13 @@
 <?php include( INC . 'meta-bar.php' ); ?>
 
 <section id="mobile-cover-card" class="visible-xs">
-  <div class="container mobile-padding mobile-cover">
-    <h1 class="entry-title"><?php the_title(); ?></h1>
-    <img src="<?php echo madfeed_contributors_image(); ?>">
+  <div id="card-content">
+    <div class="container mobile-padding mobile-cover">
+      <h1 class="entry-title"><?php the_title(); ?></h1>
+      <img src="<?php echo madfeed_contributors_image(); ?>">
+    </div>
+    <div class="contributors-meta">by <?php echo madfeed_contributors(); ?></div>
   </div>
-  <div class="contributors-meta">by <?php echo madfeed_contributors(); ?></div>
 </section>
 
 
@@ -48,6 +50,59 @@
     </div>
   </div>
 </section>
+
+<script>
+  function getWindowHeight() {
+      var windowHeight = 0;
+      if (typeof(window.innerHeight) == 'number') {
+          windowHeight = window.innerHeight;
+      }
+      else {
+          if (document.documentElement && document.documentElement.clientHeight) {
+              windowHeight = document.documentElement.clientHeight;
+          }
+          else {
+              if (document.body && document.body.clientHeight) {
+                  windowHeight = document.body.clientHeight;
+              }
+          }
+      }
+      return windowHeight;
+  }
+  function setCard() {
+    var card;
+    if (document.getElementById) {
+      var windowHeight = getWindowHeight();
+      card = document.getElementById('mobile-cover-card');
+      card.style.height = windowHeight;
+    } else {
+
+    }
+    return card.style.height;
+  }
+  function setCardContent() {
+    if (document.getElementById) {
+      var cardHeight = setCard();
+      if (cardHeight > 0) {
+        var contentElement = document.getElementById('card-content');
+        var cardHeight = contentElement.offsetHeight;
+        if (windowHeight - cardHeight > 0) {
+            contentElement.style.position = 'relative';
+            contentElement.style.top = ((windowHeight / 2) - (cardHeight / 2)) + 'px';
+        }
+        else {
+            contentElement.style.position = 'static';
+        }
+      }
+    }
+  }
+  window.onload = function() {
+      setCardContent();
+  }
+  window.onresize = function() {
+      setCardContent();
+  }
+  </script>
 
 <?php include( INC . 'related-posts.php' ); ?>
 <?php include('footer.php'); ?>

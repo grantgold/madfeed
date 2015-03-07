@@ -570,8 +570,8 @@ Navigation
   margin-bottom: 0px;
   border: none;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+/*  padding-left: 15px;
+  padding-right: 15px;*/
   z-index: 200;
 }
 
@@ -591,6 +591,7 @@ Navigation
 
 .navbar-nav > li > a {
   padding-top: 0px;
+  padding-right: 0px;
   text-transform: uppercase;
   color: #4A4A4A;
   text-align: right;
@@ -743,7 +744,6 @@ Navigation
 }
 
 .meta-bar .entry-title {
-  padding-top: 1.4em;
    -moz-transition:all 0.5s ease-in-out;
    -o-transition:all 0.5s ease-in-out;
    transition:all 0.5s ease-in-out;
@@ -966,6 +966,9 @@ Animation
          -o-animation: fadein 5s; /* Opera < 12.1 */
             animation: fadein 5s;
 }
+.is-paused {
+  animation-play-state: paused;
+}
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -1016,8 +1019,8 @@ Media Queries
   }
   .navbar {
     height: 200px;
-    padding-left: 10%;
-    padding-right: 10%;
+/*    padding-left: 10%;
+    padding-right: 10%;*/
   }
   .circle-text a {
     font-size: 120%;
@@ -1059,9 +1062,6 @@ Media Queries
   .meta-bar {
     font-size: 1.2em;
   }
-  .meta-bar .entry-title {
-    padding-top: 1.2em;
-  } 
   .form-control:focus {
     width: 330px;
   }
@@ -1083,9 +1083,6 @@ Media Queries
   .meta-bar {
     font-size: 1.6em;
   }
-  .meta-bar .entry-title {
-    padding-top: .7em;
-  } 
   .form-control:focus {
     width: 360px;
   }

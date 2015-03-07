@@ -5,7 +5,7 @@
 <?php include('header.php'); ?>
 <?php include( INC . 'navbar.php' ); ?>
 
-<div class="hidden-sm hidden-md hidden-lg mobile-padding"></div>
+<div class="visible-xs mobile-padding"></div>
 <div class="row hidden-xs fadein">
 
 	<?php include( INC . 'search-filter.php' ); ?>

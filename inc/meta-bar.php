@@ -1,6 +1,6 @@
 <div class="meta-bar hidden-xs">
 	<div class="col-sm-12">
-	  <div class="col-sm-7 entry-title pull-left">
+	  <div id="meta-title" class="col-sm-7 entry-title pull-left">
 	    <?php the_title(); ?>&nbsp;&nbsp;<span class="byline"> by <?php echo madfeed_contributors() ?></span>
 	  </div>
 	  <div class="col-sm-3 subtitle">
@@ -16,30 +16,19 @@
 	  </div>
 	</div> 
 </div>
-<!-- 
-<div class="mobile-meta-bar col-sm-12 visible-xs">
-    <div class="col-sm-8 byline pull-left">
-      by <?php echo madfeed_contributors() ?>
-    </div>
-    <div class="col-sm-2 button pull-right">
-
-      <?php if(get_previous_post()) {
-            previous_post('%','Read Next', 'no');
-            } else {
-            ?> <a href="<?php echo get_site_url(); ?>/reads">Read More</a> 
-            <?php } ?>
-    </div>
-</div> -->
 
 <script>
 
   jQuery(function(){
     viewport_height()
+    setContent()
+
       jQuery(document).scroll(function(){ 
           scroll_check()
       });
       jQuery(window).resize(function(){ 
           viewport_height()
+          setContent()
       });
   });
   jQuery('button.navbar-toggle').click(function(){
@@ -66,5 +55,18 @@
           {
               jQuery('.meta-bar').removeClass('shrink');
           }
+  }
+
+  function setContent() {
+    var metabarHeight = 70;
+    var contentElement = document.getElementById('meta-title');
+    var contentHeight = contentElement.offsetHeight;
+    if (metabarHeight - contentHeight > 0) {
+        contentElement.style.position = 'relative';
+        contentElement.style.top = ((metabarHeight / 2) - (contentHeight / 2) - 4) + 'px';
+    }
+    else {
+        contentElement.style.position = 'static';
+    }
   }
 </script>
