@@ -13,7 +13,10 @@
           <div class="row col-xs-6 col-sm-12">
             <div class="row">
             <div class="profile-image img-responsive"><img src="<?php echo madfeed_contributors_image(); ?>"></div>
-            <div class="post-meta contributors-meta"><?php echo madfeed_contributors_meta(); ?></div>
+            <div class="post-meta contributors-meta">
+              <?php echo madfeed_contributors_name(); ?>
+              <?php echo madfeed_contributors_twitter(); ?>
+            </div>
             <hr>
           </div>
           <div class="row col-xs-6 col-sm-12">

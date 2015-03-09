@@ -11,7 +11,7 @@
   		<div class="feature-image"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail(); ?></a></div>
   <?php } ?>
 		<div class="thumbnail-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></div>
-		<div class="byline">by <?php echo madfeed_contributors() ?></div>
+		<div class="byline">by <?php echo madfeed_contributors_name() ?></div>
 		<p><?php the_excerpt() ?></p>
 		<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read More</a>
 	</div>

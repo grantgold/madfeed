@@ -1,7 +1,7 @@
 <div class="meta-bar hidden-xs">
 	<div class="col-sm-12">
 	  <div id="meta-title" class="col-sm-7 entry-title pull-left">
-	    <?php the_title(); ?>&nbsp;&nbsp;<span class="byline"> by <?php echo madfeed_contributors() ?></span>
+	    <?php madfeed_short_title(); ?>&nbsp;&nbsp;<span class="byline"> by <?php echo madfeed_contributors_name(); ?></span>
 	  </div>
 	  <div class="col-sm-3 subtitle">
 	      <?php include( INC . 'share-links.php' ); ?> 

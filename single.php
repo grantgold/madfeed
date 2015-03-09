@@ -6,9 +6,9 @@
   <div id="card-content">
     <div class="container mobile-padding mobile-cover">
       <h1 class="entry-title"><?php the_title(); ?></h1>
-      <img src="<?php echo madfeed_contributors_image(); ?>">
+      <?php echo madfeed_contributors_image(); ?>
     </div>
-    <div class="contributors-meta">by <?php echo madfeed_contributors(); ?></div>
+    <div class="contributors-meta">by <?php echo madfeed_contributors_name(); ?></div>
   </div>
 </section>
 
@@ -30,7 +30,8 @@
             <div class="col-sm-12">
               <div class="subtitle">WRITTEN BY</div>
               <div class="contributors-meta">
-                <?php echo madfeed_contributors_meta(); ?>
+                <?php echo madfeed_contributors_name(); ?>
+                <?php echo madfeed_contributors_twitter(); ?>
               </div>
               <hr>
             </div>

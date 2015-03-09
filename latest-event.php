@@ -4,7 +4,7 @@
 <div class="col-xs-12 col-md-6">
 	<p class="subtitle"><?php echo get_event_location() ?></p>
 	<h2 class="featured-event"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
-	<?php echo get_event_date() ?>
+	<p><?php echo get_event_date() ?></p>
 	<?php the_excerpt(); ?>
 	<a class="btn btn-primary" ref="#">Sign Up <i class="fa fa-angle-right"></i></a>
 </div>

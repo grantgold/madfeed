@@ -81,6 +81,14 @@ function madfeed_entry_meta($id) {
 }
 endif;
 
+function madfeed_short_title(){
+  $thetitle = get_the_title();
+  $getlength = strlen($thetitle);
+  $thelength = 48;
+  echo substr($thetitle, 0, $thelength);
+  if ($getlength > $thelength) echo "...";
+}
+
 // CATEGORY
 function madfeed_category(){
   if (!is_category()) {
@@ -101,58 +109,55 @@ function madfeed_entry_date( $echo = true ) {
 }
 endif;
 
-// Custom Taxonomies
-// get contributors terms with links
-function madfeed_contributors(){
+function madfeed_get_contributors(){
   $post_id = get_the_ID();
-  $terms = get_the_terms( $post_id, 'contributors' );        
-  if ( $terms && ! is_wp_error( $terms ) ) : 
-    $contributor_names = array();
-    foreach ( $terms as $term ) {
-      $t_id = $term->term_id;
-      $contributor_meta = get_option( 'taxonomy_$t_id' );
-      $contributor_names[] = '<a href="'. get_term_link( $term, 'contributors' ) . '">' . $term->name . '</a>';
-    }  
-    $contributors = join( "<br><br>", $contributor_names );
-    return $contributors;
-endif;
+  $terms = get_the_terms( $post_id, 'contributors' );
+  return $terms;
 }
 
-// get contributors terms with links and meta
-function madfeed_contributors_meta(){
-  $post_id = get_the_ID();
-  $terms = get_the_terms( $post_id, 'contributors' );        
-  if ( $terms && ! is_wp_error( $terms ) ) : 
+function madfeed_contributors_name(){
+  $terms = madfeed_get_contributors();
+  if ($terms && ! is_wp_error( $terms ) ) {
     $contributor_names = array();
-    foreach ( $terms as $term ) {
-      $t_id = $term->term_id;
-      $contributor_meta = get_option( 'taxonomy_$t_id' );
-      $twitter = $contributor_meta['twitter'];
-
-      if ($twitter == TRUE) {
-        $contributor_names[] = '<a href="'. get_term_link( $term, 'contributors' ) . '">' . $term->name . '</a>
-        <br>
-        <a class="twitter-handle" href="http://twitter.com/'.$twitter.'" target="_blank">@'.$twitter.'</a>';
-      } else {
-        $contributor_names[] = '<a href="'. get_term_link( $term, 'contributors' ) . '">' . $term->name . '</a>';
-      }
-    }  
+    foreach ($terms as $term) {
+      $name = $term->name;
+      $contributor_names[] = '<a href="'. get_term_link( $term, 'contributors' ) . '">' . $name . '</a>';  
+    }
     $contributors = join( "<br><br>", $contributor_names );
     return $contributors;
-endif;
+  } else {
+    return;
+  }
+}
+
+function madfeed_contributors_twitter(){
+  $terms = madfeed_get_contributors();
+  if ($terms && ! is_wp_error( $terms ) ) {
+    $contributor_twitters = array();
+    foreach ($terms as $term) {
+      $twitter = get_field('twitter_name', $term);
+      if ($twitter) {
+        $contributor_twitters[] = '<a class="twitter-name" href="http://twitter.com/'. $twitter .'">&#64;' . $twitter . '</a>';  
+      }
+      $twitters = join( "<br><br>", $contributor_twitters );
+      return $twitters;
+    }
+  } else {
+    return;
+  }
 }
 
 // get contributors terms with images
 function madfeed_contributors_image(){
-
-  $post_id = get_the_ID();
-  $terms = get_the_terms( $post_id, 'contributors' );
-
+  $terms = madfeed_get_contributors();
   if ( $terms && ! is_wp_error( $terms ) ) : 
     foreach ( $terms as $term ) {
-      $image = the_field('profile_image', $term);
-
-      return $image;
+      $image = get_field('profile_image', $term);
+      if ($image) {
+        return '<img src="'.$image.'"/>';
+      } else {
+        return;
+      }
     }  
 endif;
 }
