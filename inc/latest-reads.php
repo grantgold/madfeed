@@ -21,9 +21,9 @@
 					<?php
 					$type = get_post_type( get_the_ID() );
 						if ($type == 'post') {
-							get_template_part('content', 'posts'); // uses content-videos.php
+							get_template_part('content', 'posts'); // uses content-posts.php
 						} else {
-							get_template_part('content', 'videos');  // uses content-posts.php
+							get_template_part('content', 'videos');  // uses content-videos.php
 						}
 					
 						if ($i % 4 == 0){

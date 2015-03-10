@@ -20,7 +20,7 @@
 						while ( $the_query->have_posts() ) {
 							$the_query->the_post(); ?>
 							<?php
-								get_template_part('featured', 'post' ); // uses content-carousel.php
+								get_template_part('featured', 'post' ); // uses featured-post.php
 						}?>
 						<?php
 
@@ -31,7 +31,6 @@
 			</div>
 		</div>
 	</div>
-<!-- 	<?php include( INC . 'filter-posts.php' ); ?> -->
 	<div class="container">
 		<div class="row">
 		<div class="col-xs-12">

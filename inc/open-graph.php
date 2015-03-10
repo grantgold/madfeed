@@ -7,7 +7,7 @@
 
 
 <!-- Twitter -->
-<link rel="me" href="https://twitter.com/foodcoop" />
+<link rel="me" href="https://twitter.com/themadfeed" />
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@theMADFeed">
 <meta name="twitter:creator" content="@theMADFeed">

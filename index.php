@@ -5,11 +5,6 @@
 </div>
 
 <section class="hidden-xs">
-	<div class="container">
-		<div class="row">
-			<?php include( INC . 'topics.php' ); ?>
-		</div>
-	</div>
 	<div class="row">
 
 		<?php include( INC . 'carousel.php' ); ?>
