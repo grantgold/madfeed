@@ -130,6 +130,21 @@ function madfeed_contributors_name(){
   }
 }
 
+function madfeed_contributors_bio(){
+  $terms = madfeed_get_contributors();
+  if ($terms && ! is_wp_error( $terms ) ) {
+    $contributor_twitters = array();
+    foreach ($terms as $term) {
+      $bio = get_field('bio', $term);
+      if ($bio) {
+        return '<p>'. $bio .'</p>';  
+      } else continue;
+    }
+  } else {
+    return;
+  }
+}
+
 function madfeed_contributors_twitter(){
   $terms = madfeed_get_contributors();
   if ($terms && ! is_wp_error( $terms ) ) {

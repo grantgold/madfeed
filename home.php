@@ -28,11 +28,9 @@
 	</div>
 </section>
 <section id="contributors">
-	<div class="container">
 
 		<?php include( INC . 'latest-contributors.php' ); ?>
 
-	</div>
 </section>
 <section>
 	<div class="row">

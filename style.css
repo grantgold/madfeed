@@ -292,6 +292,28 @@ Post Meta
   margin-bottom: 20px;
 }
 
+.contributor {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.contributor p {
+  margin: 0;
+  font-weight: 400;
+  font-style: italic;
+  font-size: .7em;
+}
+
+.contributor img {
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
 .post-meta {
   margin-top: 54px;
   padding-right: 40px;

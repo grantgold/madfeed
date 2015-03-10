@@ -1,18 +1,25 @@
 <div class="container">
-	
 	<div class="col-xs-12">
 
-		<p class="section-title hidden-xs"><a href="<?php echo get_site_url(); ?>/reads">Latest Reads &amp; Talks</a></p>
+		<p class="section-title hidden-xs"><a href="<?php echo get_site_url(); ?>/reads">Recent Contributors</a></p>
 		<p class="view-all hidden-xs"><a href="<?php echo get_site_url(); ?>/reads">View All</a></p>
 		<div style="clear: both;"></div>
 		<hr class="hidden-xs">
 		<div class="row">
 
-	<?php 
+		<?php 
 			$i = 1;
 			$args = array(
 				'post_type' => array('post','video'),
 				'posts_per_page' => 12,
+				'tax_query' => array('relation' => 'AND',
+										array(
+										'taxonomy' => 'contributors',
+										'field'    => 'name',
+										'terms'    => array( 'mad' ),
+										'operator' => 'NOT IN'
+										),
+									),
 			);
 			$the_query = new WP_Query($args);
 			if ( $the_query->have_posts() ) {
@@ -20,11 +27,9 @@
 					$the_query->the_post(); ?>
 					<?php
 					$type = get_post_type( get_the_ID() );
-						if ($type == 'post') {
-							get_template_part('content', 'posts'); // uses content-videos.php
-						} else {
-							get_template_part('content', 'videos');  // uses content-posts.php
-						}
+
+
+					get_template_part('content', 'contributors' ); // uses content-contributors.php
 					
 						if ($i % 4 == 0){
 							echo "</div></div>";
@@ -34,11 +39,10 @@
 				$i++;
 				}
 			} else {
-				get_template_part( 'content' );
+				// get_template_part( 'content' );
 			}
 		?>
 	</div>
 	</div>
 
 </div>
-
