@@ -65,6 +65,18 @@ blockquote {
   padding-left: 40px;
 }
 
+.pagination > .active > a {
+  background-color: #006E3B;
+}
+
+.pagination > .active > a:hover {
+  background-color: #006E3B;
+}
+
+.pagination > li > a {
+  background-color: #F6F6F7;
+}
+
 /*
 
 Containers, Layout, and Sections
@@ -589,6 +601,10 @@ Navigation
   font-weight: 600;
 }
 
+#footer a.btn{
+  font-weight: 400;
+}
+
 .footer-title b {
   color: #999;
 }
@@ -833,10 +849,9 @@ Buttons & Fields
 .btn-primary:focus,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary{
-  color: #fff;
-  background-color: #006E3B;
-  text-decoration: none;
-  border-color: #006E3B;
+  color: #303030;
+  background-color: #fff;
+  border-color: #303030;
 }
 
 .btn-fb {
@@ -972,11 +987,7 @@ Spacing / Color Classes
 }
 
 .background-grey {
-<<<<<<< Updated upstream
-  background-color: #EFEFEF;
-=======
   background-color: #F6F6F7;
->>>>>>> Stashed changes
 }
 
 

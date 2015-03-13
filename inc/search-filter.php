@@ -35,7 +35,7 @@
 					</ul>
 		</div>
 		<div class="hidden-sm pull-right fadein">
-			<button class="btn btn-primary" type="button" >View All Speakers</button>
+			<a class="btn btn-primary" href="<?php echo get_site_url(); ?>/contributors">View All Speakers</a>
 		</div>
 		</div>
 	</div>

@@ -12,7 +12,7 @@
 					$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 					$args = array(
 						'post_type' => array('post','video'),
-						'posts_per_page' => 24,
+						'posts_per_page' => 4,
 						'paged' => $paged
 					);
 					$the_query = new WP_Query($args);

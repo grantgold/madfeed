@@ -40,7 +40,7 @@
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 				$args = array(
 					'post_type' => 'post',
-					'posts_per_page' => 16,
+					'posts_per_page' => 4,
 					'offset' => 1,
 					'paged' => $paged
 				);
@@ -65,6 +65,7 @@
 		</div>
 		</div>
 	</div>
+	<?php numeric_posts_nav($the_query); ?>
 </section>
 <section>
 	<div class="row">
