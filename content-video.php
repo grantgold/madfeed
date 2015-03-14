@@ -12,7 +12,7 @@
         <div class="col-xs-12 col-sm-3 post-meta">
           <div class="row col-xs-6 col-sm-12">
             <div class="row">
-            <div class="profile-image img-responsive"><img src="<?php echo madfeed_contributors_image(); ?>"></div>
+            <div class="profile-image img-responsive"><?php echo madfeed_contributors_image(); ?></div>
             <div class="post-meta contributors-meta">
               <?php echo madfeed_contributors_name(); ?>
               <?php echo madfeed_contributors_twitter(); ?>

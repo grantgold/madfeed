@@ -4,12 +4,13 @@
 		<?php //madfeed_the_kicker(); ?>
 
 		<?php if ( is_single() ) : ?>
-		<h1 class="entry-title hidden-xs"><?php the_title(); ?></h1>
+		<h1 class="entry-title"><?php the_title(); ?></h1>
 		<?php else : ?>
-		<h2 class="entry-title hidden-xs">
+		<h2 class="entry-title">
 			<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 		</h2>
 		<?php endif; // is_single() ?>
+		<div class="contributors-meta visible-xs">by <?php echo madfeed_contributors_name(); ?></div>
 	</header><!-- .entry-header -->
 
 	<?php if ( is_search() ) : // Only display Excerpts for Search ?>

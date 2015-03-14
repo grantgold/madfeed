@@ -133,11 +133,10 @@ function madfeed_contributors_name(){
 function madfeed_contributors_bio(){
   $terms = madfeed_get_contributors();
   if ($terms && ! is_wp_error( $terms ) ) {
-    $contributor_twitters = array();
     foreach ($terms as $term) {
       $bio = get_field('bio', $term);
       if ($bio) {
-        return '<p>'. $bio .'</p>';  
+        return '<div class="byline">'. $bio .'</div>';  
       } else continue;
     }
   } else {
@@ -169,7 +168,7 @@ function madfeed_contributors_image(){
     foreach ( $terms as $term ) {
       $image = get_field('profile_image', $term);
       if ($image) {
-        return '<img src="'.$image.'"/>';
+        return '<a href="'. get_term_link( $term, 'contributors' ) . '"><img src="'.$image.'"/></a>';
       } else {
         return;
       }
