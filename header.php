@@ -27,6 +27,7 @@
 
     <!-- Hoefler -->
     <link rel="stylesheet" type="text/css" href="http://cloud.typography.com/7609154/743106/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/fonts/brandon.css" />
 
     <?php wp_head(); ?>
 

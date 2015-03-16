@@ -118,6 +118,9 @@ Containers, Layout, and Sections
   margin: 70px auto 0 auto;
 }
 
+#event {
+  margin: 70px auto 0 auto;
+}
 
 
 /*
@@ -550,7 +553,7 @@ Mobile
 }
 
 .contributor-meta-card {
-  width: 60%;
+  width: 80%;
   height: 150px;
   margin-right: auto;
   margin-left: auto;

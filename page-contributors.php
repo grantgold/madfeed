@@ -7,20 +7,19 @@
 	<div class="row">
 		<div class="col-xs-12">
 			<div class="row">
-				<?php 
-					$i = 1;
-					$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-					$args = array(
-						'post_type' => array('post','video'),
-						'posts_per_page' => 4,
-						'paged' => $paged
-					);
-					$the_query = new WP_Query($args);
-					if ( $the_query->have_posts() ) {
-						while ( $the_query->have_posts() ) {
-							$the_query->the_post(); ?>
-							<?php
-								get_template_part('content', 'contributors' ); // uses content-contributors.php
+
+				<?php
+				$i = 1;
+				$terms = get_terms('contributors');
+				   foreach ($terms as $term) {
+				      $wpq = array ('taxonomy'=>'contributors','term'=>$term->slug);
+				      $myquery = new WP_Query ($wpq);
+				      $article_count = $myquery->post_count;
+
+				      if ($article_count) {
+				         while ($myquery->have_posts()) : $myquery->the_post();
+
+						 get_template_part('content', 'contributors' ); // uses content-contributors.php
 							
 								if ($i % 4 == 0){
 									echo "</div></div>";
@@ -28,15 +27,14 @@
 								}
 
 						$i++;
-						}
-					} else {
-						// get_template_part( 'content', 'none' );
-					}
+				         endwhile;
+				      } else return;
+				}
 				?>
+
 			</div>
 		</div>
 	</div>
-	<?php numeric_posts_nav($the_query); ?>
 </div>
 <section>
 	<div class="row">

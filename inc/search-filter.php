@@ -11,13 +11,16 @@
 				  <ul class="dropdown-menu" role="menu" aria-labelledby="topics">
 				  	<li><a href="#">All Topics</a></li>
 				  	<li class="divider"></li>
-				    <li><a href="#">Biodiversity</a></li>
-				    <li><a href="#">Chefs</a></li>
-				    <li><a href="#">Creativity</a></li>
-				    <li><a href="#">Environment</a></li>
-				    <li><a href="#">Farming</a></li>
-				    <li><a href="#">Microbiology</a></li>
-				    <li><a href="#">Vegetation</a></li>
+				    <?php 
+							$terms = get_terms('category'); 
+							if ($terms && ! is_wp_error( $terms ) ) {
+								foreach ($terms as $term) {
+									$name = $term->name;
+									$event = '<li><a href="'. get_term_link( $term, 'category' ) . '">' . $name . '</a></li>';
+									echo $event;
+								}
+							} else return;
+						?>
 				  </ul>
 		</div>
 		<div class="btn-group hidden-xs">
@@ -27,10 +30,16 @@
 					<ul class="dropdown-menu" role="menu" aria-labelledby="events">
 				  		<li><a href="#">All Events</a></li>
 					  	<li class="divider"></li>
-					    <li><a href="#">2011</a></li>
-					    <li><a href="#">2012</a></li>
-					    <li><a href="#">2013</a></li>
-					    <li><a href="#">2014</a></li>
+					    <?php 
+							$terms = get_terms('events'); 
+							if ($terms && ! is_wp_error( $terms ) ) {
+								foreach ($terms as $term) {
+									$name = $term->name;
+									$event = '<li><a href="'. get_term_link( $term, 'event' ) . '">' . $name . '</a></li>';
+									echo $event;
+								}
+							} else return;
+						?>
 					    <li><a href="#">MAD Mondays</a></li>
 					</ul>
 		</div>

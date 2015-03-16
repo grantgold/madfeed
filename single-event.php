@@ -14,9 +14,10 @@
 		<div class="row small-top-btm-padding">
 			<div class="col-xs-12">
 				<p class="section-title"><a href="<?php echo get_site_url(); ?>/event">More Events</a></p>
-			<p class="view-all"><a href="<?php echo get_site_url(); ?>/event">View All</a></p>
+				<p class="view-all"><a href="<?php echo get_site_url(); ?>/event">View All</a></p>
 				<div style="clear: both;"></div>
 				<hr>
+				<div class="row">
 				<?php 
 					$i = 1;
 					$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -43,6 +44,7 @@
 						get_template_part( 'content' );
 					}
 				?>
+				</div>
 			</div>
 		</div>
 	</div>

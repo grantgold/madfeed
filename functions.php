@@ -7,6 +7,7 @@ include_once 'functions/wp_enqueue_script.php';
 include_once 'functions/loop.php';
 include_once 'functions/videos.php';
 include_once 'functions/events.php';
+include_once 'functions/event.php';
 include_once 'functions/contributors.php';
 include_once 'functions/related-video.php';
 include_once 'functions/event-details.php';
@@ -108,6 +109,26 @@ function madfeed_entry_date( $echo = true ) {
   return $date;
 }
 endif;
+
+function madfeed_get_event(){
+  $post_id = get_the_ID();
+  $terms = get_the_terms( $post_id, 'events' );
+  return $terms;
+}
+
+function madfeed_event_date(){
+  $terms = madfeed_get_event();
+  if ($terms && ! is_wp_error( $terms ) ) {
+    foreach ($terms as $term) {
+      $name = $term->name;
+      if ($name) {
+        echo $name;  
+      } else return;
+    }
+  } else {
+    return;
+  }
+}
 
 function madfeed_get_contributors(){
   $post_id = get_the_ID();

@@ -9,37 +9,44 @@
     <div class="row">
       <div class="col-xs-12">
         
-        <div class="col-xs-12 col-sm-3 post-meta">
+        <div class="col-xs-12 col-sm-3 post-meta hidden-xs">
           <div class="row col-xs-6 col-sm-12">
             <div class="row">
-            <div class="profile-image img-responsive"><?php echo madfeed_contributors_image(); ?></div>
-            <div class="post-meta contributors-meta">
-              <?php echo madfeed_contributors_name(); ?>
-              <?php echo madfeed_contributors_twitter(); ?>
+              <div class="profile-image img-responsive"><?php echo madfeed_contributors_image(); ?></div>
+              <div class="post-meta contributors-meta">
+                <?php echo madfeed_contributors_name(); ?>
+                <?php echo madfeed_contributors_bio(); ?>
+                <?php echo madfeed_contributors_twitter(); ?>
+              </div>
+              <hr>
             </div>
-            <hr>
-          </div>
-          <div class="row col-xs-6 col-sm-12">
-            <div class="row">
-            <div class="subtitle">SHARE</div>
-            <?php include( INC . 'share-links.php' ); ?>
-          </div>
-          </div>
+            <div class="row col-xs-6 col-sm-12">
+              <div class="row">
+                <div class="subtitle">SHARE</div>
+                <?php include( INC . 'share-links.php' ); ?>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="col-xs-12 col-sm-9">
           <article class="entry">
             <div id="post-title" class="entry-hed">
+              <div class="visible-xs">
+                <div class="contributor-meta-card">
+                  <div class="contributors-image-mobile pull-left"><?php echo madfeed_contributors_image();?></div>
+                  <div class="contributors-meta contributors-meta-mobile pull-left">
+                    <?php echo madfeed_contributors_name(); ?>
+                    <?php echo madfeed_contributors_bio(); ?>
+                    <?php echo madfeed_contributors_twitter(); ?>
+                  </div>
+                </div>
+              </div>
               <h1><?php the_title(); ?></h1>
             </div>
-            <div class="event-date">MAD • 2014</div>
+            <div class="event-date"><?php madfeed_event_date(); ?></div>
             <div class="entry-content blogpost">
               <?php the_content(); ?>
-            </div>
-            
-            <div class="entry-meta">
-
             </div>
           </article>
         </div>

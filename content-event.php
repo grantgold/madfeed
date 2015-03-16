@@ -1,5 +1,4 @@
-<div class="col-xs-10 col-xs-offset-1">
-  <div id="event" class="col-xs-12 col-sm-6">
+  <section>
     <?php madfeed_get_featured_image('large'); ?>
   </div>
 
@@ -12,16 +11,20 @@
     </article>
   </div>
 </div>
-<div id="event" class="col-xs-10 col-xs-offset-1">
-  <div class="col-xs-12 col-sm-6">
-    <div class="section-title">Speakers</div>
-
-  </div>
-  <div class="col-xs-12 col-sm-6">
-    <div class="section-title">About the event</div>
-    <div style="clear: both;"></div>
-      <div class="entry-content blogpost">
-        <?php the_content(); ?>
+<div id="event" class="container">
+    <div class="col-xs-12 col-sm-6">
+      <div class="row">
+        <div class="section-title">Speakers</div>
       </div>
-  </div>
+
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <div class="row">
+        <div class="section-title">About the event</div>
+        <div style="clear: both;"></div>
+        <div class="entry-content blogpost">
+          <?php the_content(); ?>
+        </div>
+      </div>
+    </div>
 </div>
