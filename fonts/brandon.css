@@ -1,0 +1,53 @@
+/*
+ Stylesheet for Brandon Grotesque
+*/
+
+@font-face {
+  font-family: Brandon;
+  src: url("brandon/Brandon_med.otf") format('opentype');
+}
+
+@font-face {
+  font-family: Brandon;
+  font-style: italic;
+  src: url("brandon/Brandon_med_it.otf") format('opentype');
+}
+
+@font-face {
+  font-family: Brandon;
+  font-weight: bold;
+  src: url("brandon/Brandon_bld.otf") format('opentype');
+}
+
+@font-face {
+  font-family: Brandon;
+  font-weight: bold;
+  font-style: italic;
+  src: url("brandon/Brandon_bld_it.otf") format('opentype');
+}
+
+@font-face {
+  font-family: Brandon;
+  font-weight: 200;
+  src: url("brandon/Brandon_light.otf") format('opentype');
+}
+
+@font-face {
+  font-family: Brandon;
+  font-weight: 200;
+  font-style: italic;
+  src: url("brandon/Brandon_light_it.otf") format('opentype');
+}
+
+@font-face {
+  font-family: Brandon;
+  font-weight: 400;
+  src: url("brandon/Brandon_med.otf") format('opentype');
+}
+
+@font-face {
+  font-family: Brandon;
+  font-weight: 400;
+  font-style: italic;
+  src: url("brandon/Brandon_med_it.otf") format('opentype');
+}
