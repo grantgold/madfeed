@@ -7,7 +7,7 @@
       <h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
       <h3><?php echo get_event_location() ?></h3>
       <p class="entry-title"><?php echo get_event_date() ?></p>
-      <a class="btn btn-primary" ref="#">Sign Up <i class="fa fa-angle-right"></i></a>
+      <!-- <a class="btn btn-primary" ref="#">Sign Up <i class="fa fa-angle-right"></i></a> -->
     </article>
   </div>
 </div>

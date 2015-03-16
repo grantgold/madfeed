@@ -21,7 +21,7 @@
 	
 </section>
 <section id="events" class="fadein">
-	<div class="container large-top-btm-padding">
+	<div class="container">
 
 		<?php include( INC . 'latest-events.php' ); ?>
 

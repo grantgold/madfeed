@@ -37,12 +37,9 @@
 			<hr>
 		<?php 
 				$i = 1;
-				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 				$args = array(
 					'post_type' => 'post',
-					'posts_per_page' => 4,
-					'offset' => 1,
-					'paged' => $paged
+					'offset' => 1
 				);
 				$the_query = new WP_Query($args);
 				if ( $the_query->have_posts() ) {
@@ -65,7 +62,6 @@
 		</div>
 		</div>
 	</div>
-	<?php numeric_posts_nav($the_query); ?>
 </section>
 <section>
 	<div class="row">

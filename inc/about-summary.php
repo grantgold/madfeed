@@ -2,14 +2,7 @@
 	<div class="large-top-btm-padding background-grey">
 		<div class="container text-center about-summary">
 			<h1>About MAD</h1>
-			<p>Founded in 2011, MAD is a not-for-profit organization that 
-			aims to build a community of cooks, purveyors, and thinkers 
-			with an appetite for knowledge and a desire to improve the 
-			restaurant trade. The cornerstone of MAD is an annual symposium, 
-			held every summer, that brings 600 people into a circus tent 
-			along Copenhagen's harbor and features two days of talks from 
-			speakers from around the world. All videos of the talks are 
-			viewable online, for free.</p>
+			<p>Sitting at the intersection of cooking, culture, science, policy, and food production, MAD’s vision is to create an interdisciplinary conversation about sustainability and deliciousness. Embracing the forces that power today's most influential restaurants—creativity, collaboration, research, and innovation—MAD serves as an international platform for talking and thinking about topics at the forefront of cooking. From inspiring collaboration between chefs, producers, and academics to performing research into various culinary questions; MAD is a place where new knowledge is produced and shared without restrictions, and with the commitment to taking promising ideas from theory and putting them into practice.</p>
 		</div>
 		<div class="text-center medium-top-btm-padding">
 			<a class="btn btn-primary" ref="#">More About MAD <i class="fa fa-angle-right"></i></a>

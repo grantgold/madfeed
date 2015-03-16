@@ -11,6 +11,7 @@
   <?php } ?>
 </div>
 <div class="col-xs-12 col-md-6 featured-post">
+	<div class="subtitle">Featured</div>
 	<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
 	<div class="byline">by <?php echo madfeed_contributors_name() ?></div>
 	<p><?php the_excerpt(); ?></p>

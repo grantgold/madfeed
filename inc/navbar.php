@@ -1,21 +1,18 @@
 <nav class="navbar navbar-default container hidden-xs" role="navigation">
   <div class="row">
-    <div class="col-xs-12">
+ 
       <!-- Brand and Nav -->
-      <div class="navbar-header">
-        <div class="circle-logo"><a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/icons/mad-logo.svg" width="90px" height="90px" alt="MAD Feed"></a></div>
-        <div id="mission" class="hidden-xs col-md-7 col-sm-8">A community of chefs, cooks and farmers with an appetite for knowledge.</div>
-        <div class="collapse navbar-collapse hidden-xs">
+        <div class="col-sm-2 pull-left"><div class="circle-logo"><a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/icons/mad-logo.svg" width="90px" height="90px" alt="MAD Feed"></a></div></div>
+        <div id="mission" class="col-sm-8">For a <i>better</i> meal.</div>
+        <div class="col-sm-2 pull-right">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="<?php echo get_site_url(); ?>/video">Watch</a>
-              <a href="<?php echo get_site_url(); ?>/reads">Read</a>
-              <a href="<?php echo get_site_url(); ?>/event">Attend</a>
-              <a href="<?php echo get_site_url(); ?>/about">About</a>
-            </li>
+          <li><a href="<?php echo get_site_url(); ?>/learn">Learn</a>
+            <a href="<?php echo get_site_url(); ?>/event">Attend</a>
+            <a href="https://mad-online-shop.myshopify.com">Shop</a>
+            <a href="<?php echo get_site_url(); ?>/about">About</a>
+          </li>
           </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.navbar-header -->
-    </div><!-- /.container -->
+        </div>
   </div>
 </nav>
 
@@ -36,9 +33,9 @@
 
 <div class="hidden-lg hidden-md hidden-sm collapse" id="collapsed-nav">
   <ul class="mobile-nav">
-    <li><a href="<?php echo get_site_url(); ?>/video">Watch</a></li>
-      <li><a href="<?php echo get_site_url(); ?>/reads">Read</a></li>
+    <li><a href="<?php echo get_site_url(); ?>/learn">Learn</a></li>
       <li><a href="<?php echo get_site_url(); ?>/event">Attend</a></li>
+      <li><a href="https://mad-online-shop.myshopify.com">Shop</a></li>
       <li><a href="<?php echo get_site_url(); ?>/about">About</a></li>
   </ul>
 </div>

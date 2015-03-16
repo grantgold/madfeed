@@ -10,7 +10,7 @@
 			<?php the_excerpt(); ?>
 			<div class="medium-top-btm-padding">
 				<a class="btn btn-primary button-list" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Event Details <i class="fa fa-angle-right"></i></a>
-				<a class="btn btn-primary button-list" href="#">Sign Up <i class="fa fa-angle-right"></i></a>
+				<!-- <a class="btn btn-primary button-list" href="#">Sign Up <i class="fa fa-angle-right"></i></a> -->
 			</div>
 		</div>
 	</div>
