@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="col-xs-12">
-		<p class="section-title hidden-xs"><a href="<?php echo get_site_url(); ?>/reads">Latest Reads &amp; Talks</a></p>
-		<p class="view-all hidden-xs"><a href="<?php echo get_site_url(); ?>/reads">View All</a></p>
+		<p class="section-title hidden-xs"><a href="<?php echo get_site_url(); ?>/learn">Latest Reads &amp; Talks</a></p>
+		<p class="view-all hidden-xs"><a href="<?php echo get_site_url(); ?>/learn">View All</a></p>
 		<div style="clear: both;"></div>
 		<hr class="hidden-xs">
 		<div class="row">

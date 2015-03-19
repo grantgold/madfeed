@@ -1,16 +1,31 @@
+<!-- Open Graph -->
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Redesigning the Park Slope Food Coop" />
-<meta property="og:description" content="The Coop is redesigning its website and you’re a part of it." />
-<meta property="og:url" content="http://new.foodcoop.com/" />
-<meta property="og:site_name" content="Redesigning the Park Slope Food Coop" />
-<meta property="og:image" content="<?php echo THEME . '/img/art/building.png'; ?>" />
-
+<meta property="og:title" content="<?php the_title(); ?>" />
+<meta property="article:author" content="<?php echo esc_attr( madfeed_contributors_name()) ?>" />
+<meta property="og:description" content="<?php echo the_excerpt(); ?>" />
+<meta property="og:url" content="<?php echo get_site_url(); ?>" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="The MAD Feed" />
+<?php if (vimeo_id() == TRUE) { 
+			$imgid = vimeo_id();
+			$hash = unserialize(file_get_contents("http://vimeo.com/api/v2/video/$imgid.php"));
+		?>
+          	<meta property="og:image" content="<?php echo $hash[0]['thumbnail_large']; ?>" />
+  <?php } else { ?>
+  			<meta property="og:image" content="<?php madfeed_get_social_image(); ?>" />
+  <?php } ?>
 
 <!-- Twitter -->
-<link rel="me" href="https://twitter.com/themadfeed" />
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@theMADFeed">
 <meta name="twitter:creator" content="@theMADFeed">
-<meta name="twitter:title" content="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> <?php wp_title( '|', true, 'left' ); ?>">
-<meta name="twitter:description" content="The @theMADFeed is redesigning its website and you’re a part of it.">
-<meta property="og:image" content="<?php echo THEME . '/img/art/checkout.png'; ?>" />
+<meta name="twitter:title" content="<?php the_title(); ?>">
+<meta name="twitter:description" content="<?php the_excerpt(); ?>">
+<?php if (vimeo_id() == TRUE) { 
+			$imgid = vimeo_id();
+			$hash = unserialize(file_get_contents("http://vimeo.com/api/v2/video/$imgid.php"));
+		?>
+          	<meta name="twitter:image:src" content="<?php echo $hash[0]['thumbnail_large']; ?>" />
+  <?php } else { ?>
+  			<meta name="twitter:image:src" content="<?php madfeed_get_social_image(); ?>" />
+  <?php } ?>

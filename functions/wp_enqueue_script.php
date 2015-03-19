@@ -18,6 +18,7 @@ function scripts_styles() {
 	wp_enqueue_script('moment-js', get_template_directory_uri() . '/js/moment.min.js', array( 'jquery' ), $q, true );
 	wp_enqueue_script('common', get_template_directory_uri() . '/js/common.js', array( 'jquery' ), $q, true );
 	wp_enqueue_script('owl', get_template_directory_uri() . '/js/owl.carousel.min.js', array( 'jquery' ), $q, true );
+	wp_enqueue_script('share', get_template_directory_uri() . '/js/share.js', array( 'jquery' ), $q, true );
 
 }
 add_action( 'wp_enqueue_scripts', 'scripts_styles' );

@@ -142,7 +142,7 @@ function madfeed_contributors_name(){
     $contributor_names = array();
     foreach ($terms as $term) {
       $name = $term->name;
-      $contributor_names[] = '<a href="'. get_term_link( $term, 'contributors' ) . '">' . $name . '</a>';  
+      $contributor_names[] = $name;  
     }
     $contributors = join( "<br><br>", $contributor_names );
     return $contributors;

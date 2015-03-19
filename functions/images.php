@@ -46,6 +46,18 @@ function madfeed_get_featured_image($size){
 	}
 }
 
+function madfeed_get_social_image() {
+  global $post;
+  if ( has_post_thumbnail() ) {
+    $thumb = get_the_post_thumbnail( $post->ID, 'large' );
+    $str = array('<img src="', '"' );
+    $preg = array('/class="[\s\S]+"\s/', '/(width|height)="\d*"\s/', '/alt="[\s\S]+"\s/' );
+    $thumb = preg_replace( $preg, '', $thumb );
+    $thumb = str_replace( $str, '', $thumb );
+    print_r($thumb);
+  }
+}
+
 add_filter('embed_oembed_html', 'wrap_embed_with_div', 10, 4);
 add_filter('video_embed_html', 'wrap_embed_with_div' );
 function wrap_embed_with_div($html, $url, $attr, $post_id) {
