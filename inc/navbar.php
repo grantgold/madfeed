@@ -2,7 +2,7 @@
   <div class="row">
  
       <!-- Brand and Nav -->
-        <div class="col-sm-2 pull-left"><div class="circle-logo"><a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/icons/mad-logo.svg" width="90px" height="90px" alt="MAD Feed"></a></div></div>
+        <div class="pull-left"><div class="circle-logo"><a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/icons/mad-logo.svg" width="90px" height="90px" alt="MAD Feed"></a></div></div>
         <div id="mission" class="col-sm-8">For a <i>better</i> meal.</div>
         <div class="col-sm-2 pull-right">
           <ul class="nav navbar-nav navbar-right">

@@ -126,6 +126,10 @@ Containers, Layout, and Sections
   padding-bottom: 40px;
 }
 
+#about {
+  margin: 100px auto 100px auto;
+}
+
 
 /*
 
@@ -232,6 +236,27 @@ Post Formatting
   border-top-style: solid;
   border-top-width: 1px;
   border-top-color: #f0f0f0;
+}
+
+.about-light {
+  font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 400; font-style: normal;
+  color:#4A4A4A;
+  font-size:.8em;
+  font-weight: 300;
+}
+
+.about-medium {
+  font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 400; font-style: normal;
+  color:#4A4A4A;
+  font-size:1.4em;
+  font-weight: 400;
+}
+
+.about-heavy {
+  font-family: Brandon;
+  font-weight: 700;
+  line-height: 1.1em;
+  font-size: 8em;
 }
 
 .photo img {
@@ -754,7 +779,6 @@ Navigation
   line-height: 38px;
   font-weight: bold;
   float: left;
-  margin-left: -40px;
   padding-top: 48px;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1s; /* Firefox < 16 */
