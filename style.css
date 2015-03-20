@@ -130,6 +130,11 @@ Containers, Layout, and Sections
   margin: 100px auto 100px auto;
 }
 
+.about img {
+  width: 100%;
+  overflow: auto;
+}
+
 
 /*
 
@@ -495,6 +500,7 @@ Carousel
   background: -moz-linear-gradient(right,rgba(0,0,0,0.6),rgba(0,0,0,0)); /*Fx 3.6-15*/
   background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0)); /*Standard*/
 }
+
 .carousel-prev {
   background-color: #000;
   position:absolute;
@@ -620,6 +626,10 @@ Navigation
   padding-top: 26px;
   float:left;
   z-index: 200;
+}
+
+.circle-logo img {
+  margin-right: 40px;
 }
 
 #footer {
