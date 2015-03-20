@@ -127,7 +127,7 @@ Containers, Layout, and Sections
 }
 
 #about {
-  margin: 100px auto 100px auto;
+  margin: 120px auto 100px auto;
 }
 
 .about img {
@@ -261,7 +261,7 @@ Post Formatting
   font-family: Brandon;
   font-weight: 700;
   line-height: 1.1em;
-  font-size: 8em;
+  font-size: 7em;
 }
 
 .photo img {
