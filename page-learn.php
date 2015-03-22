@@ -45,6 +45,8 @@
 					$i = 1;
 					$args = array(
 						'post_type' => array('post','video'),
+						'paged' => $paged,
+						'posts_per_page' => 16,
 						'offset' => 1
 					);
 					$the_query = new WP_Query($args);
@@ -72,6 +74,7 @@
 				?>
 			</div>
 		</div>
+		<?php numeric_posts_nav($the_query); ?>
 	</div>
 </section>
 <section>

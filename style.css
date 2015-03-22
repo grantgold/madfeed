@@ -130,9 +130,8 @@ Containers, Layout, and Sections
   margin: 120px auto 100px auto;
 }
 
-.about img {
-  width: 100%;
-  overflow: auto;
+#team {
+  margin: 40px auto 100px auto;
 }
 
 
@@ -335,8 +334,18 @@ Post Meta
 
 */
 
+.about img {
+  margin-right: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
 .profile {
   margin-top: 90px;
+}
+
+.profile a:visited {
+  color:#4A4A4A;
 }
 
 .profile-image img {
@@ -398,6 +407,12 @@ Post Meta
   font-weight: 400;
   padding-top: 16px;
   margin-bottom: 0px;
+}
+
+.team {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 2px 0;
 }
 
 /*

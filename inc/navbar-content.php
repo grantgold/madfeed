@@ -10,7 +10,7 @@
         <ul class="navbar-nav-content">
           <a href="<?php echo get_site_url(); ?>/learn">Learn</a>
           <a href="<?php echo get_site_url(); ?>/event">Attend</a>
-          <a href="https://mad-online-shop.myshopify.com">Shop</a>
+          <a href="https://store.madfeed.co">Shop</a>
           <a href="<?php echo get_site_url(); ?>/about">About</a>
         </ul>
     </div>
