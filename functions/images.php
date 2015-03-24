@@ -60,6 +60,7 @@ function madfeed_get_social_image() {
 
 add_filter('embed_oembed_html', 'wrap_embed_with_div', 10, 4);
 add_filter('video_embed_html', 'wrap_embed_with_div' );
+
 function wrap_embed_with_div($html, $url, $attr, $post_id) {
   $return = '<div class="video-container">' . $html . '</div>';
   return $return;

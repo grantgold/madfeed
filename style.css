@@ -134,6 +134,9 @@ Containers, Layout, and Sections
   margin: 40px auto 100px auto;
 }
 
+#featured {
+  margin: 40px auto 0 auto;
+}
 
 /*
 
@@ -542,6 +545,15 @@ Mobile
   margin-left: 20px;
 }
 
+.mobile-header {
+  margin: 30px 60px 0 60px;
+}
+
+.mobile-header img {
+  width: 100%;
+  height: auto;
+}
+
 .mobile-nav {
   padding-top: 33%;
   padding-bottom: 33%;
@@ -549,6 +561,7 @@ Mobile
   float: none;
   width: 100%;
   background-color: #fff;
+  list-style-type: none;
   z-index:400;
 }
 

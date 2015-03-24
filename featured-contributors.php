@@ -1,7 +1,6 @@
 <div class="container">
 	<div class="col-xs-12">
-		<p class="section-title hidden-xs"><a href="<?php echo get_site_url(); ?>/contributors">Featured Contributors</a></p>
-
+		<p class="section-title hidden-xs">Featured Contributors</p>
 		<div style="clear: both;"></div>
 		<hr class="hidden-xs">
 		<div class="row">
@@ -9,7 +8,8 @@
 				$i = 1;
 				$args = array(
 					'post_type' => array('post','video'),
-					'posts_per_page' => 12,
+					'posts_per_page' => 8,
+					'category_name' => 'featured',
 					'tax_query' => array('relation' => 'AND',
 											array(
 											'taxonomy' => 'contributors',

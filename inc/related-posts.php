@@ -7,19 +7,26 @@
 				<hr>
 				<div class="row">
 				<?php 
+					$category = get_the_category_list();
+					$do_not_duplicate[] = $post->ID;
 					$i = 1;
-					$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 					$args = array(
-						'post_type' => 'post',
-						'posts_per_page' => 4,
-						'paged' => $paged
+						'post_type' => array('post','video'),
+						'category_name' => $category,
+						'post__not_in' => $do_not_duplicate,
+						'posts_per_page' => 4
 					);
 					$the_query = new WP_Query($args);
 					if ( $the_query->have_posts() ) {
 						while ( $the_query->have_posts() ) {
 							$the_query->the_post(); ?>
 							<?php
-								get_template_part('content', 'posts' ); // uses content-posts.php
+								$type = get_post_type( get_the_ID() );
+								if ($type == 'post') {
+									get_template_part('content', 'posts'); // uses content-posts.php
+								} else {
+									get_template_part('content', 'videos');  // uses content-videos.php
+								}
 							
 								if ($i % 4 == 0){
 									echo "</div></div>";
@@ -29,7 +36,7 @@
 						$i++;
 						}
 					} else {
-						get_template_part( 'content' );
+						// get_template_part( 'content' );
 					}
 				?>
 			</div>

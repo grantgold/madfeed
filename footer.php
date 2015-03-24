@@ -9,9 +9,9 @@
 				<div class="col-xs-6 col-sm-3 col-md-2 footer-title"><b>This Site</b>
 					<ul class="list-unstyled">
 					<li><br></li>
-					<li><a href="<?php echo get_site_url(); ?>/video">WATCH</a></li>
-			        <li><a href="<?php echo get_site_url(); ?>/reads">READ</a></li>
+					<li><a href="<?php echo get_site_url(); ?>/learn">LEARN</a></li>
 			        <li><a href="<?php echo get_site_url(); ?>/event">ATTEND</a></li>
+			        <li><a href="http://shop.madfeed.co">SHOP</a></li>
 			        <li><a href="<?php echo get_site_url(); ?>/about">ABOUT</a></li></ul>
 			    </div>
 			    <div class="col-xs-6 col-sm-3 col-md-2 footer-title"><b>Follow MAD</b>
@@ -19,7 +19,7 @@
 					<li><br></li>
 					<li><a href="https://twitter.com/TheMADFeed" target="_blank">Twitter</a></li>
 			        <li><a href="https://www.facebook.com/MADSymposium" target="_blank">Facebook</a></li>
-			        <li><a href="http://instagram.com/madsymposium" target="_blank">Instagram</a></li></ul>
+			        <li><a href="http://instagram.com/themadfeed" target="_blank">Instagram</a></li></ul>
 			    </div>
 			    <div class="col-xs-6 col-sm-3 col-md-2 footer-title"><b>Media</b>
 					<ul class="list-unstyled">
@@ -31,8 +31,8 @@
 			    <div class="col-xs-6 col-sm-3 col-md-2 footer-title"><b>Info</b>
 					<ul class="list-unstyled">
 					<li><br></li>
-					<li><a href="#">Contact</a></li>
-			        <li><a href="#">Press</a></li></ul>
+					<li><a href="<?php echo get_site_url(); ?>/about/#team">The Team</a></li>
+			        <li><a href="<?php echo get_site_url(); ?>/about/#contact-info">Contact/Press</a></li></ul>
 			    </div>
 		    	<div class="col-xs-6 col-sm-3 col-md-2">
 		    	<b>Get MAD email</b>

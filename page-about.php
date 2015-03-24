@@ -61,7 +61,7 @@
       </div>
     </div>
   </div>
-  <div id="team" class="container">
+  <div id="contact-info" class="container">
     <h1 class="entry-title">Contact Info</h1>
     <hr>
     <div class="row">

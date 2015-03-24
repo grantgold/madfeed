@@ -8,7 +8,7 @@
           <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo $hash[0]['thumbnail_large']; ?>"></a>
         </div>
   <?php } else { ?>
-  		<div class="feature-image img-responsive"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail(); ?></a></div>
+  		<div class="feature-image img-responsive"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('medium'); ?></a></div>
   <?php } ?>
     <div class="subtitle"><?php echo madfeed_contributors_name(); ?></div>
     <div class="video-title">
@@ -16,5 +16,6 @@
     </div>
     <p class="byline"><a href="<?php echo get_year_link(''); ?>"><?php the_time('Y'); ?></a></p>
     <p><?php the_excerpt() ?></p>
+    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><b>Watch Video</b></a>
   </div>
 </div>

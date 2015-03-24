@@ -8,11 +8,11 @@
           <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo $hash[0]['thumbnail_large']; ?>"></a>
         </div>
   <?php } else { ?>
-  		<div class="feature-image"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail(); ?></a></div>
+  		<div class="feature-image"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('medium'); ?></a></div>
   <?php } ?>
 		<div class="thumbnail-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></div>
 		<div class="byline">by <?php echo madfeed_contributors_name() ?></div>
 		<p><?php the_excerpt() ?></p>
-		<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read More</a>
+		<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><b>Read More</b></a>
 	</div>
 </div>
