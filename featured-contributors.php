@@ -8,8 +8,8 @@
 				$i = 1;
 				$args = array(
 					'post_type' => array('post','video'),
-					'posts_per_page' => 8,
-					'category_name' => 'featured',
+					'posts_per_page' => 1,
+					'orderby' => 'rand',
 					'tax_query' => array('relation' => 'AND',
 											array(
 											'taxonomy' => 'contributors',
@@ -27,7 +27,7 @@
 						$type = get_post_type( get_the_ID() );
 
 
-						get_template_part('content', 'contributors' ); // uses content-contributors.php
+						get_template_part('content', 'quote' ); // uses content-contributors.php
 						
 							if ($i % 4 == 0){
 								echo "</div></div>";
