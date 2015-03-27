@@ -7,15 +7,22 @@
 				<hr>
 				<div class="row">
 				<?php 
-					$category = get_the_category_list();
 					$do_not_duplicate[] = $post->ID;
 					$i = 1;
-					$args = array(
+					$categories = get_the_category($post->ID);
+					if ($categories) {
+					$category_ids = array();
+					foreach($categories as $individual_category) $category_ids[] = $individual_category->term_id;
+						$args=array(
 						'post_type' => array('post','video'),
-						'category_name' => $category,
+						'category__in' => $category_ids,
+						'post__not_in' => array($post->ID),
 						'post__not_in' => $do_not_duplicate,
-						'posts_per_page' => 4
-					);
+						'posts_per_page'=> 4, // Number of related posts that will be displayed.
+						'caller_get_posts'=>1,
+						'orderby'=>'rand' // Randomize the posts
+						);
+					}
 					$the_query = new WP_Query($args);
 					if ( $the_query->have_posts() ) {
 						while ( $the_query->have_posts() ) {
