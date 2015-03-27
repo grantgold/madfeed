@@ -7,34 +7,38 @@
 <div class="row hidden-xs">
 </div>
 <section>
-	<div id="blog" class="container">
-		<div class="row small-top-btm-padding">
-			<div class="col-xs-12">
-				<?php 
-					$do_not_duplicate = array();
-					$args = array(
-						'post_type' => array('post','video'),
-						'category_name' => 'featured-post',
-						'posts_per_page' => 1
-					);
-					$featured_query = new WP_Query($args);
-					if ( $featured_query->have_posts() ) {
-						while ( $featured_query->have_posts() ) {
-							$featured_query->the_post(); $do_not_duplicate[] = $post->ID; $type = get_post_type( get_the_ID() );
-							if ($type == 'post') {
-								get_template_part('featured', 'post'); // uses content-posts.php
-							} else {
-								get_template_part('featured', 'video');  // uses content-videos.php
+	<?php 
+		$do_not_duplicate = array();
+		if ( !is_paged() ) { ?>
+		
+		<div id="blog" class="container">
+			<div class="row small-top-btm-padding">
+				<div class="col-xs-12">
+					<?php 
+						$args = array(
+							'post_type' => array('post','video'),
+							'category_name' => 'featured-post',
+							'posts_per_page' => 1
+						);
+						$featured_query = new WP_Query($args);
+						if ( $featured_query->have_posts() ) {
+							while ( $featured_query->have_posts() ) {
+								$featured_query->the_post(); $do_not_duplicate[] = $post->ID; $type = get_post_type( get_the_ID() );
+								if ($type == 'post') {
+									get_template_part('featured', 'post'); // uses content-posts.php
+								} else {
+									get_template_part('featured', 'video');  // uses content-videos.php
+								}
 							}
-						}
 
-					} else {
-						// get_template_part( 'content', 'none' );
-					}
-				?>
+						} else {
+							// get_template_part( 'content', 'none' );
+						}
+					?>
+				</div>
 			</div>
 		</div>
-	</div>
+	<?php } ?>
 	<div class="container">
 		<div class="hidden-xs fadein">
 			<?php include( INC . 'search.php' ); ?>
@@ -78,6 +82,7 @@
 				?>
 			</div>
 		</div>
+		<?php next_posts_link('next',$the_query->max_num_pages); previous_posts_link('prev',$the_query->max_num_pages); ?>
 		<?php numeric_posts_nav($the_query); ?>
 	</div>
 </section>
