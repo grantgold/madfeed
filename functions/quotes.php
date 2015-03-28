@@ -19,7 +19,7 @@ function cptui_register_my_cpts() {
 		"hierarchical" => false,
 		"rewrite" => array( "slug" => "quote", "with_front" => true ),
 		"query_var" => true,
-						"supports" => array( "editor" ),		"taxonomies" => array( "contributors" )	);
+						"supports" => array( "editor" ), "taxonomies" => array( "contributors" )	);
 	register_post_type( "quote", $args );
 
 // End of cptui_register_my_cpts()

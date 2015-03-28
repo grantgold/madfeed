@@ -83,6 +83,15 @@ function madfeed_entry_meta($id) {
 }
 endif;
 
+function madfeed_quote(){
+  $content = get_the_content();
+  $content = '&#147;' . $content . '&#148;';
+  $content = apply_filters('the_content', $content);
+  $content = str_replace(']]>', ']]>', $content);
+  echo $content;
+
+}
+
 function madfeed_short_title(){
   $thetitle = get_the_title();
   $getlength = strlen($thetitle);
@@ -158,7 +167,7 @@ function madfeed_contributors_bio(){
     foreach ($terms as $term) {
       $bio = get_field('bio', $term);
       if ($bio) {
-        return '<div class="byline">'. $bio .'</div>';  
+        echo $bio;  
       } else continue;
     }
   } else {
@@ -190,7 +199,7 @@ function madfeed_contributors_image(){
     foreach ( $terms as $term ) {
       $image = get_field('profile_image', $term);
       if ($image) {
-        return '<a href="'. get_term_link( $term, 'contributors' ) . '"><img src="'.$image.'"/></a>';
+        return '<img src="'.$image.'"/>';
       } else {
         return;
       }

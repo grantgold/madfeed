@@ -138,6 +138,10 @@ Containers, Layout, and Sections
   margin: 40px auto 0 auto;
 }
 
+#page {
+  margin: 70px auto 0 auto;
+}
+
 /*
 
 Post Formatting 
@@ -243,6 +247,21 @@ Post Formatting
   border-top-style: solid;
   border-top-width: 1px;
   border-top-color: #f0f0f0;
+}
+
+.quote {
+  font-family: 'Mercury SSm A', 'Mercury SSm B'; font-style: normal;
+  margin-top: 20px;
+  margin-right: 12px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.9em;
+  line-height: 1.4em;
+  text-rendering: optimizelegibility;
+  word-break: break-word;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
 }
 
 .about-light {
@@ -380,7 +399,7 @@ Post Meta
 
 .contributor img {
   width: auto;
-  height: 100px;
+  height: 140px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;

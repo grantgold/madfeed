@@ -32,17 +32,17 @@
 	<?php include( INC . 'latest-reads.php' ); ?>
 	
 </section>
+<section id="contributors">
+
+		<?php include( 'random-quote.php' ); ?>
+
+</section>
 <section id="events" class="fadein">
 	<div class="container">
 
 		<?php include( INC . 'latest-events.php' ); ?>
 
 	</div>
-</section>
-<section id="contributors">
-
-		<?php include( 'featured-contributors.php' ); ?>
-
 </section>
 <section>
 	<div class="row">

@@ -37,54 +37,59 @@
 					?>
 				</div>
 			</div>
+			<hr>
 		</div>
-	<?php } ?>
-<!-- 	<div class="container">
-		<div class="hidden-xs fadein">
-			<?php include( INC . 'search.php' ); ?>
-		</div>
-	</div> -->
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<hr>
-				<?php 
-					$i = 1;
-					$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-					$args = array(
-						'post_type' => array('post','video'),
-						'paged' => $paged,
-						'post__not_in' => $do_not_duplicate,
-						'posts_per_page' => 8
-					);
-					$the_query = new WP_Query($args);
-					if ( $the_query->have_posts() ) {
-						while ( $the_query->have_posts() ) {
-							$the_query->the_post(); ?>
-							<?php
-								$type = get_post_type( get_the_ID() );
-								if ($type == 'post') {
-									get_template_part('content', 'posts'); // uses content-posts.php
-								} else {
-									get_template_part('content', 'videos');  // uses content-videos.php
-								}
-							
-								if ($i % 4 == 0){
-									echo "</div></div>";
-									echo "<div class='row'><div class='col-xs-12'>";
-								}
+	<?php } 
 
-						$i++;
+	if ( is_paged() ) { ?>
+	<div id="page"></div>
+	<?php } ?>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<?php 
+						$i = 1;
+						$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+						$args = array(
+							'post_type' => array('post','video'),
+							'paged' => $paged,
+							'post__not_in' => $do_not_duplicate,
+							'posts_per_page' => 8
+						);
+						$the_query = new WP_Query($args);
+						if ( $the_query->have_posts() ) {
+							while ( $the_query->have_posts() ) {
+								$the_query->the_post(); ?>
+								<?php
+									$type = get_post_type( get_the_ID() );
+									if ($type == 'post') {
+										get_template_part('content', 'posts'); // uses content-posts.php
+									} else {
+										get_template_part('content', 'videos');  // uses content-videos.php
+									}
+								
+									if ($i % 4 == 0){
+										echo "</div></div>";
+										echo "<div class='row'><div class='col-xs-12'>";
+									}
+
+							$i++;
+							}
+						} else {
+							get_template_part( 'content' );
 						}
-					} else {
-						get_template_part( 'content' );
-					}
-					wp_reset_query();
-				?>
+						wp_reset_query();
+					?>
+				</div>
 			</div>
-		</div>
-		<?php next_posts_link('more',$the_query->max_num_pages); previous_posts_link('prev',$the_query->max_num_pages); ?>
-		<?php numeric_posts_nav($the_query); ?>
+			<div class="pull-right medium-top-btm-padding">
+				<?php 
+					$next_link = '<div class="pagination">more</div>';
+					$prev_link = '<div class="pagination">previous</div>';
+					previous_posts_link($prev_link ,$the_query->max_num_pages); ?>
+				<?php next_posts_link($next_link ,$the_query->max_num_pages); ?> 
+			</div>
 	</div>
 </section>
 <section>

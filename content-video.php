@@ -15,7 +15,7 @@
               <div class="profile-image img-responsive"><?php echo madfeed_contributors_image(); ?></div>
               <div class="post-meta contributors-meta">
                 <?php echo madfeed_contributors_name(); ?>
-                <?php echo madfeed_contributors_bio(); ?>
+                <p class="byline"><?php echo madfeed_contributors_bio(); ?></p>
                 <?php echo madfeed_contributors_twitter(); ?>
               </div>
               <hr>

@@ -20,6 +20,7 @@
               <div class="subtitle">WRITTEN BY</div>
               <div class="contributors-meta">
                 <?php echo madfeed_contributors_name(); ?>
+                <br>
                 <?php echo madfeed_contributors_twitter(); ?>
               </div>
               <hr>

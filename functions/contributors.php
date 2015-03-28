@@ -4,7 +4,8 @@ function cptui_register_my_taxes_contributors() {
 register_taxonomy( 'contributors',array (
   0 => 'post',
   1 => 'video',
-  2 => 'event'
+  2 => 'event',
+  3 => 'quote'
 ),
 array( 'hierarchical' => true,
   'label' => 'Contributors',

@@ -1,13 +1,10 @@
 <div class="container">
-	<div class="col-xs-12">
-		<p class="section-title hidden-xs">Featured Contributors</p>
-		<div style="clear: both;"></div>
-		<hr class="hidden-xs">
+	<div class="col-xs-12 medium-top-btm-padding">
 		<div class="row">
 			<?php 
 				$i = 1;
 				$args = array(
-					'post_type' => array('post','video'),
+					'post_type' => 'quote',
 					'posts_per_page' => 1,
 					'orderby' => 'rand',
 					'tax_query' => array('relation' => 'AND',
@@ -40,6 +37,7 @@
 					// get_template_part( 'content' );
 				}
 			?>
+
 		</div>
 	</div>
 </div>
