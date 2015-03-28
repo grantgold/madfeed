@@ -343,6 +343,12 @@ Post Meta
   overflow: auto;
 }
 
+.about-illo img {
+  padding-right: 30px;
+  width: 100%;
+  overflow: auto;
+}
+
 .profile {
   margin-top: 90px;
 }

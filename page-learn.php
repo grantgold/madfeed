@@ -39,14 +39,15 @@
 			</div>
 		</div>
 	<?php } ?>
-	<div class="container">
+<!-- 	<div class="container">
 		<div class="hidden-xs fadein">
 			<?php include( INC . 'search.php' ); ?>
 		</div>
-	</div>
+	</div> -->
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
+				<hr>
 				<?php 
 					$i = 1;
 					$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -82,7 +83,7 @@
 				?>
 			</div>
 		</div>
-		<?php next_posts_link('next',$the_query->max_num_pages); previous_posts_link('prev',$the_query->max_num_pages); ?>
+		<?php next_posts_link('more',$the_query->max_num_pages); previous_posts_link('prev',$the_query->max_num_pages); ?>
 		<?php numeric_posts_nav($the_query); ?>
 	</div>
 </section>
