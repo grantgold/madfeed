@@ -146,13 +146,29 @@ function madfeed_get_contributors(){
   return $terms;
 }
 
+function madfeed_featured_speaker(){
+  $terms = madfeed_get_contributors();
+  if ($terms && ! is_wp_error( $terms ) ) {
+    foreach ($terms as $term) {
+      $name = $term->name;
+      $image = get_field('profile_image', $term);
+      $bio = get_field('bio', $term);
+
+      $featured_speaker = '<div class="col-xs-6 col-sm-3 medium-top-btm-padding"><div><img src="'.$image.'"></div><div><b>'.$name.'</b></div><p class="byline">'.$bio.'</p></div>';
+      echo $featured_speaker;
+    }
+  } else {
+    return;
+  }
+}
+
 function madfeed_contributors_name(){
   $terms = madfeed_get_contributors();
   if ($terms && ! is_wp_error( $terms ) ) {
     $contributor_names = array();
     foreach ($terms as $term) {
       $name = $term->name;
-      $contributor_names[] = $name;  
+      $contributor_names[] = $name; 
     }
     $contributors = join( "<br><br>", $contributor_names );
     return $contributors;

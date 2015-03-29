@@ -122,6 +122,12 @@ Containers, Layout, and Sections
   margin: 70px auto 0 auto;
 }
 
+#event-card {
+  text-align: center;
+  padding-top: 30px;
+
+}
+
 #events {
   padding-bottom: 40px;
 }

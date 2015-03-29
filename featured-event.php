@@ -6,7 +6,7 @@
 		<div class="col-xs-12 col-md-6">
 			<p class="subtitle"><?php echo get_event_location() ?></p>
 			<h1 class="featured-event"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
-			<?php echo get_event_date() ?>
+			<p class="byline"><?php echo get_event_date() ?></p>
 			<?php the_excerpt(); ?>
 			<div class="medium-top-btm-padding">
 				<a class="btn btn-primary button-list" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Event Details <i class="fa fa-angle-right"></i></a>

@@ -88,8 +88,8 @@
         <div class="img-responsive about"><a href="https://goo.gl/maps/JDSX1" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/map.jpg"></a></div>
       </div>
       <div class="col-xs-12 col-sm-3">
-        <div class="footer"><b>Address</b></div>
-        <p class="profile">MAD
+        <div><b>Address</b></div>
+        <p>MAD
           <br>c/o Noma
           <br><a href="https://goo.gl/maps/JDSX1" target="_blank">Strandgade 93
           <br>1401 København K.
@@ -97,8 +97,8 @@
           </p>
       </div>
       <div class="col-xs-12 col-sm-2">
-        <div class="footer"><b>Email</b></div>
-        <p class="profile"><a href="mailto:info@madfeed.co">info@madfeed.co</a>
+        <div><b>Email</b></div>
+        <p><a href="mailto:info@madfeed.co">info@madfeed.co</a>
           <br>
           <div class="footer"><b>Phone</b></div>
           <a href="tel://45-3296-3290">+45 3296 3290</a></p>
