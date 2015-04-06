@@ -9,6 +9,7 @@
 				$i = 1;
 				$args = array(
 					'post_type' => array('post','video'),
+					'post__not_in' => $do_not_duplicate,
 					'posts_per_page' => 12,
 				);
 				$the_query = new WP_Query($args);

@@ -8,6 +8,7 @@
 		<?php 
 			$args = array(
 				'post_type' => 'event',
+				'post__not_in' => $do_not_duplicate,
 				'posts_per_page' => 1
 			);
 			$the_query = new WP_Query($args);

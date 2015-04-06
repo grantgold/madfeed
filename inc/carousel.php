@@ -38,7 +38,11 @@
 							<?php
 								get_template_part('content', 'carousel' ); // uses content-carousel.php
 						}?>
-						<div class="carousel-item blank"></div>
+						<div class="carousel-item blank">
+							<div class="carousel-text">
+								<div class="video-title"><h4><a href="<?php echo get_site_url(); ?>/video">More Videos ></a></h4></div>
+							</div>
+						</div>
 						<?php
 
 					} else {

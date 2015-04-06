@@ -781,6 +781,7 @@ Navigation
 
 .pagination {
   float: right;
+  font-weight: 800;
 }
 
 .pagination > li > a,

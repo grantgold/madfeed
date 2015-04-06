@@ -84,11 +84,16 @@
 				</div>
 			</div>
 			<div class="pull-right medium-top-btm-padding">
+				<div class="navigation">
+					<ul class="pagination">
+						<li>
 				<?php 
-					$next_link = '<div class="pagination">more</div>';
-					$prev_link = '<div class="pagination">previous</div>';
-					previous_posts_link($prev_link ,$the_query->max_num_pages); ?>
-				<?php next_posts_link($next_link ,$the_query->max_num_pages); ?> 
+					$next_link = 'older&nbsp;&nbsp;<i class="fa fa-arrow-right"></i>';
+					$prev_link = '<i class="fa fa-arrow-left"></i>&nbsp;&nbsp;newer';
+					previous_posts_link($prev_link ,$the_query->max_num_pages); ?></li>
+					<li><?php next_posts_link($next_link ,$the_query->max_num_pages); ?> </li>
+					</ul>
+				</div>
 			</div>
 	</div>
 </section>
