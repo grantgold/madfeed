@@ -4,7 +4,7 @@
 <div class="visible-xs mobile-padding"></div>
 
 <div class="container">
-	<div class="row medium-top-btm-padding">
+	<div class="row small-top-btm-padding">
 		<div class="col-xs-12">
 			<div class="row">
 			<?php 
@@ -35,7 +35,7 @@
 		<div class="col-xs-12">
 			<div class="row">
 			<div class="col-xs-12">
-				<p class="section-title">Past Events</p>
+				<p class="section-title">More Events</p>
 				<div style="clear: both;"></div>
 				<hr>
 			</div>
@@ -69,7 +69,18 @@
 			</div>
 			</div>
 	</div>
-	<?php numeric_posts_nav($the_query); ?>
+	<div class="pull-right medium-top-btm-padding">
+		<div class="navigation">
+			<ul class="pagination">
+				<li>
+		<?php 
+			$next_link = 'older&nbsp;&nbsp;<i class="fa fa-arrow-right"></i>';
+			$prev_link = '<i class="fa fa-arrow-left"></i>&nbsp;&nbsp;newer';
+			previous_posts_link($prev_link ,$the_query->max_num_pages); ?></li>
+			<li><?php next_posts_link($next_link ,$the_query->max_num_pages); ?> </li>
+			</ul>
+		</div>
+	</div>
 </div>
 
 <section>

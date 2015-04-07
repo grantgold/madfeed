@@ -21,7 +21,7 @@
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 				$args = array(
 					'post_type' => 'video',
-					'posts_per_page' => 8,
+					'posts_per_page' => 24,
 					'paged' => $paged
 				);
 				$the_query = new WP_Query($args);
@@ -46,7 +46,18 @@
 		</div>
 		</div>
 	</div>
-	<?php numeric_posts_nav($the_query); ?>
+		<div class="pull-right medium-top-btm-padding">
+		<div class="navigation">
+			<ul class="pagination">
+				<li>
+		<?php 
+			$next_link = 'older&nbsp;&nbsp;<i class="fa fa-arrow-right"></i>';
+			$prev_link = '<i class="fa fa-arrow-left"></i>&nbsp;&nbsp;newer';
+			previous_posts_link($prev_link ,$the_query->max_num_pages); ?></li>
+			<li><?php next_posts_link($next_link ,$the_query->max_num_pages); ?> </li>
+			</ul>
+		</div>
+	</div>
 </div>
 
 <section>

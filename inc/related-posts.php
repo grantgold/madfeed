@@ -9,15 +9,17 @@
 				<?php 
 					$do_not_duplicate[] = $post->ID;
 					$i = 1;
-					$categories = get_the_category($post->ID);
-					if ($categories) {
-					$category_ids = array();
-					foreach($categories as $individual_category) $category_ids[] = $individual_category->term_id;
+					$tags = get_the_tags($post->ID);
+					$args = array();
+					if ($tags) {
+					$tag_ids = array();
+					foreach($tags as $individual_tag) $tag_ids[] = $individual_tag->term_id;
 						$args=array(
 						'post_type' => array('post','video'),
-						'category__in' => $category_ids,
+						'tag__in' => $tag_ids,
 						'post__not_in' => array($post->ID),
 						'post__not_in' => $do_not_duplicate,
+						'orderby' => 'rand',
 						'posts_per_page'=> 4, // Number of related posts that will be displayed.
 						'caller_get_posts'=>1,
 						'orderby'=>'rand' // Randomize the posts

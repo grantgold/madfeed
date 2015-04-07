@@ -55,7 +55,7 @@
 							'post_type' => array('post','video'),
 							'paged' => $paged,
 							'post__not_in' => $do_not_duplicate,
-							'posts_per_page' => 8
+							'posts_per_page' => 24
 						);
 						$the_query = new WP_Query($args);
 						if ( $the_query->have_posts() ) {
