@@ -39,16 +39,6 @@
           </div>
         </div>
     </div>
-    <div class="visible-xs">
-      <div class="contributor-meta-card">
-        <div class="contributors-image-mobile pull-left"><?php echo madfeed_contributors_image();?></div>
-        <div class="contributors-meta contributors-meta-mobile pull-left">
-          <?php echo madfeed_contributors_name(); ?>
-          <?php echo madfeed_contributors_bio(); ?>
-          <?php echo madfeed_contributors_twitter(); ?>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
