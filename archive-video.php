@@ -8,8 +8,6 @@
 <div class="visible-xs mobile-padding"></div>
 <div class="row hidden-xs fadein">
 
-<!-- 	<?php include( INC . 'search-filter.php' ); ?> -->
-
 </div>
 
 <div class="container fadein">
