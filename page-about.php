@@ -52,7 +52,7 @@
             <p>Arielle is MAD’s Head of Research. Her research focuses on flavor chemistry and cuisine, and she collaborates with chefs and other food authorities around the world. Originally from Boston, Arielle holds a PhD from UC Davis and joined the team in 2014.</p>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/gabe-ulla.png"></div>
+            <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/gabe-ulla.jpg"></div>
             <div class="team">Gabe Ulla</div>
             <a class="twitter-name" href="http://twitter.com/gabeulla">@gabeulla</a>
             <p>Gabe is Editor of the madfeed. His background is as a writer, contributing to Lucky Peach, Bon Appétit, Saveur, and WSJ. He previously served as features editor of Eater's New York and National sites. Gabe is based in New York City and joined MAD in 2013.</p>
@@ -73,6 +73,12 @@
             <div class="team">Ben Mervis</div>
             <a class="twitter-name" href="http://twitter.com/bmervis">@bmervis</a>
             <p>Ben works with creative development at MAD. An American, Ben studied medieval history in Glasgow and London, with a special interest in social ambition and power accumulation in medieval England. Naturally, Ben then started up an arts and music magazine before moving to Copenhagen and joining the MAD team in 2014.</p>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/johannes-bay.jpg"></div>
+            <div class="team">Johannes Bay</div>
+            <a class="twitter-name" href="http://twitter.com/johannesbay">@johannesbay</a>
+            <p>Johannes edits and consolidates MAD’s online videos, among other visual tasks. Originally from Hamburg, Germany, Johannes moved to New Zealand in 2009 where he has been studying Visual Communication Design and working in restaurants for the past 3 years. Johannes came on board with MAD in 2015.</p>
           </div>
           <div class="col-xs-12">
             <hr>
