@@ -177,6 +177,20 @@ function madfeed_contributors_name(){
   }
 }
 
+function madfeed_contributor_name(){
+  $terms = madfeed_get_contributors();
+  if ($terms && ! is_wp_error( $terms ) ) {
+    $contributor_names = array();
+    foreach ($terms as $term) {
+      $name = $term->name;
+      $contributor_names[] = $name; 
+    }
+    return $contributor_names[0];
+  } else {
+    return;
+  }
+}
+
 function madfeed_contributors_bio(){
   $terms = madfeed_get_contributors();
   if ($terms && ! is_wp_error( $terms ) ) {

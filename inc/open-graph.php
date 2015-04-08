@@ -1,7 +1,7 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:title" content="<?php the_title(); ?>" />
-<meta property="article:author" content="<?php echo esc_attr( madfeed_contributors_name()) ?>" />
+<meta property="article:author" content="<?php echo esc_attr( madfeed_contributor_name()) ?>" />
 <meta property="og:description" content="<?php echo the_excerpt(); ?>" />
 <meta property="og:url" content="<?php echo get_site_url(); ?>" />
 <meta property="og:locale" content="en_US" />

@@ -10,7 +10,10 @@
 		<?php } ?>
 	</div>
 	<div class="carousel-text">
-		<div class="byline"><?php echo madfeed_contributors_name() ?></div>
+		<?php
+		if (madfeed_contributors_name()) { ?>
+		<div class="byline">by <?php echo madfeed_contributor_name() ?></div>
+		<?php } else { }; ?>
 		<div class="video-title"><h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4></div>
 	</div>
 </div>

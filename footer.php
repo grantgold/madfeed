@@ -9,7 +9,7 @@
 				<div class="col-xs-6 col-sm-3 col-md-2 footer-title"><b>This Site</b>
 					<ul class="list-unstyled">
 					<li><br></li>
-					<li><a href="<?php echo get_site_url(); ?>/learn">LEARN</a></li>
+					<li><a href="<?php echo get_site_url(); ?>/read-and-watch">Read &amp; Watch</a></li>
 			        <li><a href="<?php echo get_site_url(); ?>/event">ATTEND</a></li>
 			        <li><a href="http://shop.madfeed.co">SHOP</a></li>
 			        <li><a href="<?php echo get_site_url(); ?>/about">ABOUT</a></li></ul>

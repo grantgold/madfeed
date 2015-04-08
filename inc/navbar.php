@@ -6,7 +6,7 @@
         <div id="mission" class="col-sm-8"><img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/illo/better_meal_head.svg"></div>
         <div class="col-sm-2 pull-right">
           <ul class="nav navbar-nav navbar-right">
-          <li><a href="<?php echo get_site_url(); ?>/learn">Learn</a>
+          <li><a href="<?php echo get_site_url(); ?>/read-and-watch">Read &amp; Watch</a>
             <a href="<?php echo get_site_url(); ?>/event">Attend</a>
             <a href="http://store.madfeed.co">Shop</a>
             <a href="<?php echo get_site_url(); ?>/about">About</a>
@@ -33,7 +33,7 @@
 
 <div class="hidden-lg hidden-md hidden-sm collapse" id="collapsed-nav">
   <div class="mobile-nav">
-    <li><a href="<?php echo get_site_url(); ?>/learn">Learn</a></li>
+    <li><a href="<?php echo get_site_url(); ?>/read-and-watch">Read <br>&amp; Watch</a></li>
       <li><a href="<?php echo get_site_url(); ?>/event">Attend</a></li>
       <li><a href="http://new.madfeed.co">Shop</a></li>
       <li><a href="<?php echo get_site_url(); ?>/about">About</a></li>
