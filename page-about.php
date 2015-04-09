@@ -8,7 +8,7 @@
     <div class="row">
       <div class="col-xs-12 col-sm-11 col-md-offset-1">
         <div class="entry-title about-heavy">For a better meal.</div>
-        <div class="entry-title about-heavy"><u>MAD</u>: <span class="about-light">(taken from the Danish word for “food”)</span> is a not-for-pro&#xFB01;t organization that works to expand knowledge of food to make every meal a better meal; <i>not just at restaurants,</i> but every meal cooked and served.</div>
+        <div class="entry-title about-heavy"><u>MAD</u>: <span class="about-light">(taken from the Danish word for “food”)</span> is a not-for-pro&#xFB01;t organization that works to expand knowledge of food to make every meal a better meal; <span class="about-light"><i>not just at restaurants, but every meal cooked and served.</i></span></div>
         <hr>
         <div class="col-xs-12 col-sm-5 medium-top-btm-padding img-responsive about-illo"><img src="<?php echo get_template_directory_uri(); ?>/img/illo/about.jpg"></div>
         <div class="col-xs-12 col-sm-7 medium-top-btm-padding about-medium">Good cooking and a healthy environment can and should go hand-in-hand, and the quest for a better meal can leave the world a better place than we found it. <br>MAD is committed to producing and sharing this knowledge and to taking promising ideas from theory to practice. 
