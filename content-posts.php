@@ -13,7 +13,7 @@
 		<div class="thumbnail-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></div>
 		<?php 
 		if (madfeed_contributors_name()) { ?>
-		<div class="byline">by <?php echo madfeed_contributors_name() ?></div>
+		<div class="byline">by <?php echo madfeed_contributor_name() ?></div>
 		<?php } else { }; ?>
 		<p><?php the_excerpt() ?></p>
 		<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><b>Read More</b></a>

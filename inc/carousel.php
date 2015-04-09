@@ -4,7 +4,7 @@
 			<?php 
 					$args = array(
 						'post_type' => 'video',
-						'posts_per_page' => 6
+						'posts_per_page' => 10
 					);
 					$the_query = new WP_Query($args);
 					if ( $the_query->have_posts() ) {
@@ -28,8 +28,8 @@
 			<?php 
 					$args = array(
 						'post_type' => 'video',
-						'posts_per_page' => 6,
-						'offset' => 6
+						'posts_per_page' => 10,
+						'offset' => 10
 					);
 					$second_query = new WP_Query($args);
 					if ( $second_query->have_posts() ) {

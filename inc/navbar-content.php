@@ -8,7 +8,7 @@
     </div>
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav-content">
-          <a href="<?php echo get_site_url(); ?>/learn">Learn</a>
+          <a href="<?php echo get_site_url(); ?>/read-and-watch">Read &amp; Watch</a>
           <a href="<?php echo get_site_url(); ?>/event">Attend</a>
           <a href="http://store.madfeed.co">Shop</a>
           <a href="<?php echo get_site_url(); ?>/about">About</a>
@@ -31,7 +31,7 @@
 </nav>
 <div class="hidden-lg hidden-md hidden-sm collapse" id="collapsed-nav">
   <div class="mobile-nav">
-    <li><a href="<?php echo get_site_url(); ?>/learn">Learn</a></li>
+    <li><a href="<?php echo get_site_url(); ?>/read-and-watch">Read <br>&amp; Watch</a></li>
       <li><a href="<?php echo get_site_url(); ?>/event">Attend</a></li>
       <li><a href="http://new.madfeed.co">Shop</a></li>
       <li><a href="<?php echo get_site_url(); ?>/about">About</a></li>
