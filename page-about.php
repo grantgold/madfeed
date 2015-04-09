@@ -6,15 +6,15 @@
 <section id="about" class="fadein">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-11 col-sm-offset-1">
+      <div class="col-xs-12 col-sm-11 col-md-offset-1">
         <div class="entry-title about-heavy">For a better meal.</div>
-        <div class="entry-title about-heavy"><u>MAD</u>: <span class="about-light">(taken from the Danish word for “food”)</span> is a not-for-pro&#xFB01;t organization with the mission to build a better world through a better meal.</div>
+        <div class="entry-title about-heavy"><u>MAD</u>: <span class="about-light">(taken from the Danish word for “food”)</span> is a not-for-pro&#xFB01;t organization that works to expand knowledge of food to make every meal a better meal; not just at restaurants, but every meal cooked and served.</div>
         <hr>
         <div class="col-xs-12 col-sm-5 medium-top-btm-padding img-responsive about-illo"><img src="<?php echo get_template_directory_uri(); ?>/img/illo/about.jpg"></div>
-        <div class="col-xs-12 col-sm-7 medium-top-btm-padding about-medium">Sitting at the intersection of cooking, culture, science, policy, and food production, MAD’s vision is to create an interdisciplinary conversation about sustainability and deliciousness. Embracing the forces that power today's most influential restaurants — creativity, collaboration, research, and innovation—MAD serves as an international platform for talking and thinking about topics at the forefront of cooking. From inspiring collaboration between chefs, producers, and academics to performing research into various culinary questions; MAD is a place where new knowledge is produced and shared without restrictions, and with the commitment to taking promising ideas from theory and putting them into practice.
-          <br>
-          <br>
-          We believe that a wider application of this interdisciplinary discourse in cooking can be the key to a more sustainable, healthy, delicious and bio-diverse future; not just for restaurants and producers, but for every meal cooked and served.
+        <div class="col-xs-12 col-sm-7 medium-top-btm-padding about-medium">Good cooking and a healthy environment can and should go hand-in-hand, and the quest for a better meal can leave the world a better place than we found it. <br>MAD is committed to producing and sharing this knowledge and to taking promising ideas from theory to practice. 
+          <hr>
+          <div class="about-small"><i>MAD was founded by René Redzepi in 2011</i> and holds offices in Copenhagen and New York City. MAD's legal entity, 'Komitéen for MAD Symposium’ is registered in Denmark as a not-for-profit association (in Danish: ‘forening’). Through our fiscal partnership with the Sustainable Food Alliance, donations to MAD are tax-exempt under the U.S. 501(c)3 scheme.
+          </div>
         </div>  
       </div>
     </div>
@@ -65,7 +65,7 @@
           <div class="col-xs-12 col-sm-4">
             <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/mikkel-westergaard.jpg"></div>
             <div class="team">Mikkel Westergaard</div>
-            <a class="twitter-name" href="http://twitter.com/mkkl_wstrgrd">@mkkl_wstrgrd</a>
+            <a class="twitter-name" href="http://twitter.com/mikwestergaard">@mikwestergaard</a>
             <p>Mikkel manages VILD MAD - our foraging initiative - and also works on general creative development. During his history studies in Copenhagen and Glasgow where he specialized in food systems and gastronomy, and joined the team in 2014.</p>
           </div>
           <div class="col-xs-12 col-sm-4">
@@ -79,11 +79,6 @@
             <div class="team">Johannes Bay</div>
             <a class="twitter-name" href="http://twitter.com/johannesbay">@johannesbay</a>
             <p>Johannes edits and consolidates MAD’s online videos, among other visual tasks. Originally from Hamburg, Germany, Johannes moved to New Zealand in 2009 where he has been studying Visual Communication Design and working in restaurants for the past 3 years. Johannes came on board with MAD in 2015.</p>
-          </div>
-          <div class="col-xs-12">
-            <hr>
-            <br>
-            <i>MAD was founded by René Redzepi in 2011</i> and holds offices in Copenhagen and New York City. MAD's legal entity, 'Komitéen for MAD Symposium’ is registered in Denmark as a not-for-profit association (in Danish: ‘forening’). Through our fiscal partnership with the Sustainable Food Alliance, donations to MAD are tax-exempt under the U.S. 501(c)3 scheme.
           </div>
         </div>
       </div>
