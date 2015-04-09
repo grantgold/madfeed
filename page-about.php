@@ -8,7 +8,7 @@
     <div class="row">
       <div class="col-xs-12 col-sm-11 col-md-offset-1">
         <div class="entry-title about-heavy">For a better meal.</div>
-        <div class="entry-title about-heavy"><u>MAD</u>: <span class="about-light">(taken from the Danish word for “food”)</span> is a not-for-pro&#xFB01;t organization that works to expand knowledge of food to make every meal a better meal; not just at restaurants, but every meal cooked and served.</div>
+        <div class="entry-title about-heavy"><u>MAD</u>: <span class="about-light">(taken from the Danish word for “food”)</span> is a not-for-pro&#xFB01;t organization that works to expand knowledge of food to make every meal a better meal; <i>not just at restaurants,</i> but every meal cooked and served.</div>
         <hr>
         <div class="col-xs-12 col-sm-5 medium-top-btm-padding img-responsive about-illo"><img src="<?php echo get_template_directory_uri(); ?>/img/illo/about.jpg"></div>
         <div class="col-xs-12 col-sm-7 medium-top-btm-padding about-medium">Good cooking and a healthy environment can and should go hand-in-hand, and the quest for a better meal can leave the world a better place than we found it. <br>MAD is committed to producing and sharing this knowledge and to taking promising ideas from theory to practice. 
@@ -28,19 +28,19 @@
           <div class="col-xs-12 col-sm-4">
             <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/rene-redzepi.png"></div>
             <div class="team">René Redzepi</div>
-            <a class="twitter-name" href="http://twitter.com/reneredzepinoma">@reneredzepinoma</a>
+            <a class="twitter-name" href="http://twitter.com/reneredzepinoma" target="_blank">@reneredzepinoma</a>
             <p>René is the founder of MAD and the chef-patron of Noma, a restaurant in Copenhagen that opened in 2003.</p>
           </div>
           <div class="col-xs-12 col-sm-4">
             <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/peter-kreiner.png"></div>
             <div class="team">Peter Kreiner</div>
-            <a class="twitter-name" href="http://twitter.com/peter_kreiner">@peter_kreiner</a>
+            <a class="twitter-name" href="http://twitter.com/peter_kreiner" target="_blank">@peter_kreiner</a>
             <p>Peter is the director of MAD (or technically speaking, ’Komitéen for MAD Symposium’, our given name) and the managing director of noma.</p>
           </div>
           <div class="col-xs-12 col-sm-4">
             <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/mark-emil.png"></div>
             <div class="team">Mark Emil T. Hermansen</div>
-            <a class="twitter-name" href="http://twitter.com/ariellejjohnson">@markemilh</a>
+            <a class="twitter-name" href="http://twitter.com/ariellejjohnson" target="_blank">@markemilh</a>
             <p>Mark Emil is MAD’s Head of Development and manages the organisation and MAD team on a daily basis. He is responsible for fundraising, strategic- and creative development. </p>
           </div>
         </div>
@@ -48,13 +48,13 @@
           <div class="col-xs-12 col-sm-4">
             <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/arielle-johnson.jpg"></div>
             <div class="team">Arielle Johnson</div>
-            <a class="twitter-name" href="http://twitter.com/markemilh">@ariellejjohnson</a>
+            <a class="twitter-name" href="http://twitter.com/markemilh" target="_blank">@ariellejjohnson</a>
             <p>Arielle is MAD’s Head of Research. Her research focuses on flavor chemistry and cuisine, and she collaborates with chefs and other food authorities around the world. Originally from Boston, Arielle holds a PhD from UC Davis and joined the team in 2014.</p>
           </div>
           <div class="col-xs-12 col-sm-4">
             <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/gabe-ulla.jpg"></div>
             <div class="team">Gabe Ulla</div>
-            <a class="twitter-name" href="http://twitter.com/gabeulla">@gabeulla</a>
+            <a class="twitter-name" href="http://twitter.com/gabeulla" target="_blank">@gabeulla</a>
             <p>Gabe is Editor of the madfeed. His background is as a writer, contributing to Lucky Peach, Bon Appétit, Saveur, and WSJ. He previously served as features editor of Eater's New York and National sites. Gabe is based in New York City and joined MAD in 2013.</p>
           </div>
           <div class="col-xs-12 col-sm-4">
@@ -65,19 +65,19 @@
           <div class="col-xs-12 col-sm-4">
             <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/mikkel-westergaard.jpg"></div>
             <div class="team">Mikkel Westergaard</div>
-            <a class="twitter-name" href="http://twitter.com/mikwestergaard">@mikwestergaard</a>
+            <a class="twitter-name" href="http://twitter.com/mikwestergaard" target="_blank">@mikwestergaard</a>
             <p>Mikkel manages VILD MAD - our foraging initiative - and also works on general creative development. During his history studies in Copenhagen and Glasgow where he specialized in food systems and gastronomy, and joined the team in 2014.</p>
           </div>
           <div class="col-xs-12 col-sm-4">
             <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/ben-mervis.jpg"></div>
             <div class="team">Ben Mervis</div>
-            <a class="twitter-name" href="http://twitter.com/bmervis">@bmervis</a>
+            <a class="twitter-name" href="http://twitter.com/bmervis" target="_blank">@bmervis</a>
             <p>Ben works with creative development at MAD. An American, Ben studied medieval history in Glasgow and London, with a special interest in social ambition and power accumulation in medieval England. Naturally, Ben then started up an arts and music magazine before moving to Copenhagen and joining the MAD team in 2014.</p>
           </div>
           <div class="col-xs-12 col-sm-4">
             <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/johannes-bay.jpg"></div>
             <div class="team">Johannes Bay</div>
-            <a class="twitter-name" href="http://twitter.com/johannesbay">@johannesbay</a>
+            <a class="twitter-name" href="http://twitter.com/johannesbay" target="_blank">@johannesbay</a>
             <p>Johannes edits and consolidates MAD’s online videos, among other visual tasks. Originally from Hamburg, Germany, Johannes moved to New Zealand in 2009 where he has been studying Visual Communication Design and working in restaurants for the past 3 years. Johannes came on board with MAD in 2015.</p>
           </div>
         </div>
