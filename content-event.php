@@ -23,6 +23,8 @@
           </div>
         </div>
 
+        <?php
+        if (madfeed_get_contributors()) { ?>
         <div class="col-xs-12">
           <div class="row">
             <div class="section-title">Featured Speakers</div>
@@ -31,6 +33,7 @@
               ?>
           </div>
         </div>
+        <?php } else {return;} ?>
     </div>
   </div>
 

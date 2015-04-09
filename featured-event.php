@@ -1,8 +1,11 @@
 <div class="col-xs-12">
 	<div class="row">
+		<?php 
+		if (the_post_thumbnail()) { ?>
 		<div class="col-xs-12 col-md-6">
 			<div class="feature-image"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail(); ?></a></div>
 		</div>
+		<?php } else { } ?>
 		<div class="col-xs-12 col-md-6">
 			<p class="subtitle"><?php echo get_event_location() ?></p>
 			<h1 class="featured-event"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
