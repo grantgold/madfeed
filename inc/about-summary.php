@@ -1,11 +1,14 @@
 <section>
 	<div class="large-top-btm-padding background-grey">
-		<div class="container text-center about-summary">
-			<h1>About MAD</h1>
-			<p>Sitting at the intersection of cooking, culture, science, policy, and food production, MAD’s vision is to create an interdisciplinary conversation about sustainability and deliciousness. Embracing the forces that power today's most influential restaurants — creativity, collaboration, research, and innovation—MAD serves as an international platform for talking and thinking about topics at the forefront of cooking. From inspiring collaboration between chefs, producers, and academics to performing research into various culinary questions; MAD is a place where new knowledge is produced and shared without restrictions, and with the commitment to taking promising ideas from theory and putting them into practice.</p>
-		</div>
-		<div class="text-center medium-top-btm-padding">
-			<a class="btn btn-primary" href="<?php echo get_site_url(); ?>/about">More About MAD <i class="fa fa-angle-right"></i></a>
+		<div class="container about-summary">
+			<div class="row">
+				<h1>About MAD</h1>
+				<p>Good cooking and a healthy environment can and should go hand-in-hand, and the quest for a better meal can leave the world a better place than we found it. 
+	MAD is committed to producing and sharing this knowledge and to taking promising ideas from theory to practice.</p>
+				<div class="medium-top-btm-padding">
+					<a class="btn btn-primary" href="<?php echo get_site_url(); ?>/about">More About MAD <i class="fa fa-angle-right"></i></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

@@ -39,18 +39,3 @@
       <li><a href="<?php echo get_site_url(); ?>/about">About</a></li>
   </div>
 </div>
-
-<script>
-  jQuery(function(){
-      jQuery(window).scroll(function(){  
-          if(jQuery(document).scrollTop() > 200)
-          {    
-              jQuery('.scrolling-nav').addClass("drop");
-          }
-          else
-          {
-              jQuery('.scrolling-nav').removeClass("drop");
-          }
-      });
-  });
-</script>

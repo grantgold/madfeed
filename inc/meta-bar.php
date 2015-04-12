@@ -1,15 +1,15 @@
 <div class="meta-bar hidden-xs">
 	<div class="col-sm-12">
-	  <div id="meta-title" class="col-sm-7 entry-title pull-left">
+	  <div id="meta-title" class="col-sm-8 entry-title pull-left">
 	    <?php madfeed_short_title(); ?>&nbsp;&nbsp;<span class="byline"> by <?php echo madfeed_contributors_name(); ?></span>
 	  </div>
 	  <div class="col-sm-3 subtitle">
 	      <?php include( INC . 'share-links.php' ); ?> 
 	  </div>
-	  <div class="col-sm-2 button pull-right">
+	  <div class="col-sm-1 button pull-right">
 
       <?php if(get_previous_post()) {
-            previous_post('%','Read Next', 'no');
+            previous_post('%','Next', 'no');
             } else {
             ?> <a href="<?php echo get_site_url(); ?>/reads">Read More</a> 
             <?php } ?>
