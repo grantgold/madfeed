@@ -14,6 +14,19 @@
         <div class="col-xs-12 col-sm-7 medium-top-btm-padding about-medium">Good cooking and a healthy environment can and should go hand-in-hand, and the quest for a better meal can leave the world a better place than we found it. <br>MAD is committed to producing and sharing this knowledge and to taking promising ideas from theory to practice. 
           <hr>
           <div class="about-small"><i>MAD was founded by René Redzepi in 2011</i> and holds offices in Copenhagen and New York City. MAD's legal entity, 'Komitéen for MAD Symposium’ is registered in Denmark as a not-for-profit association (in Danish: ‘forening’). Through our fiscal partnership with the Sustainable Food Alliance, donations to MAD are tax-exempt under the U.S. 501(c)3 scheme.
+            <br>
+            <br>
+            <div class="byline">
+              If you would like to help support us by making an online donation, please use our Paypal link here:
+              <br>
+              <br>
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="M7CEJWTX8FVYE">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+              </form>
+            </div>
           </div>
         </div>  
       </div>
