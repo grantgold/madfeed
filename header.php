@@ -12,7 +12,6 @@
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Temp data JSON -->
 
     <!-- Bookmark / Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="<?php bloginfo('template_directory'); ?>/img/icons/bookmarks/apple-icon-57x57.png">
