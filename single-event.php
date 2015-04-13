@@ -33,7 +33,7 @@
 							<?php
 								get_template_part('content', 'events' ); // uses content-events.php
 							
-								if ($i % 4 == 0){
+								if ($i % 2 == 0){
 									echo "</div></div>";
 									echo "<div class='row'><div class='col-xs-12'>";
 								}
