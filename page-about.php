@@ -75,6 +75,8 @@
             <div class="team">Anna Sesay</div>
             <p>Anna works on our food protection project and helps us extend our European outreach. Originally from Berlin, Anna has lived and worked in Cape Town and Amsterdam before moving to Copenhagen to do her master in Anthropology after which she joined the team in 2014.</p>
           </div>
+        </div>
+        <div class="row">
           <div class="col-xs-12 col-sm-4">
             <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/mikkel-westergaard.jpg"></div>
             <div class="team">Mikkel Westergaard</div>
