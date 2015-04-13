@@ -9,7 +9,7 @@
 			</div> 
 		<?php } else { } ?>
 		<div class="col-xs-12 col-sm-6">
-			<p class="subtitle"><?php echo get_event_location() ?></p>
+			<p class="subtitle no-padding"><?php echo get_event_location() ?></p>
 			<h1 class="featured-event"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
 			<p class="byline"><?php echo get_event_date() ?></p>
 			<?php the_excerpt(); ?>
