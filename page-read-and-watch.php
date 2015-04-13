@@ -1,5 +1,5 @@
 <?php 
-/* Template Name: Read-and-Watch */
+/* Template Name: Read and Watch */
 ?>
 
 <?php include('header.php'); ?>
