@@ -68,7 +68,7 @@
             <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/gabe-ulla.jpg"></div>
             <div class="team">Gabe Ulla</div>
             <a class="twitter-name" href="http://twitter.com/gabeulla" target="_blank">@gabeulla</a>
-            <p>Gabe is Editor of the madfeed. His background is as a writer, contributing to Lucky Peach, Bon Appétit, Saveur, and WSJ. He previously served as features editor of Eater's New York and National sites. Gabe is based in New York City and joined MAD in 2013.</p>
+            <p>Gabe is Editor of the MADfeed. He has contributed to Lucky Peach, Bon Appétit, Saveur, and WSJ. He previously served as features editor of Eater's New York and National sites. Gabe is based in New York City and joined MAD in 2013.</p>
           </div>
           <div class="col-xs-12 col-sm-4">
             <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/anna-sesay.jpg"></div>
