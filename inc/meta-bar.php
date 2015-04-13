@@ -1,7 +1,12 @@
 <div class="meta-bar hidden-xs">
 	<div class="col-sm-12">
 	  <div id="meta-title" class="col-sm-8 entry-title pull-left">
-	    <?php madfeed_short_title(); ?>&nbsp;&nbsp;<span class="byline"> by <?php echo madfeed_contributors_name(); ?></span>
+      <?php 
+      if (madfeed_contributors_name()) { ?>
+	     <?php madfeed_short_title(); ?>&nbsp;&nbsp;<span class="byline"> by <?php echo madfeed_contributors_name(); ?></span>
+       <?php } else {
+        madfeed_short_title();
+       } ?>
 	  </div>
 	  <div class="col-sm-3 subtitle">
 	      <?php include( INC . 'share-links.php' ); ?> 
@@ -11,7 +16,7 @@
       <?php if(get_previous_post()) {
             previous_post('%','Next', 'no');
             } else {
-            ?> <a href="<?php echo get_site_url(); ?>/reads">Read More</a> 
+            ?> <a href="<?php echo get_site_url(); ?>/reads">More</a> 
             <?php } ?>
 	  </div>
 	</div> 
