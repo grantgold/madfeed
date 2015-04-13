@@ -11,7 +11,7 @@
 					<li><br></li>
 					<li><a href="<?php echo get_site_url(); ?>/read-and-watch">Read &amp; Watch</a></li>
 			        <li><a href="<?php echo get_site_url(); ?>/event">ATTEND</a></li>
-			        <li><a href="http://shop.madfeed.co">SHOP</a></li>
+			        <li><a href="http://store.madfeed.co">SHOP</a></li>
 			        <li><a href="<?php echo get_site_url(); ?>/about">ABOUT</a></li></ul>
 			    </div>
 			    <div class="col-xs-6 col-sm-3 col-md-2 footer-title"><b>Follow MAD</b>
