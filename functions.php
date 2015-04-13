@@ -148,6 +148,7 @@ function madfeed_get_contributors(){
 
 function madfeed_featured_speaker(){
   $terms = madfeed_get_contributors();
+  $i = 1;
   if ($terms && ! is_wp_error( $terms ) ) {
     foreach ($terms as $term) {
       $name = $term->name;
@@ -156,6 +157,11 @@ function madfeed_featured_speaker(){
 
       $featured_speaker = '<div class="col-xs-6 col-sm-3 medium-top-btm-padding"><div><img src="'.$image.'"></div><div><b>'.$name.'</b></div><p class="byline">'.$bio.'</p></div>';
       echo $featured_speaker;
+      if ($i % 4 == 0){
+          echo "</div></div></div>";
+          echo "<div class='row'><div class='contributor'><div class='col-xs-12'>";
+        }
+      $i++;
     }
   } else {
     return;
