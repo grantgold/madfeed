@@ -33,7 +33,7 @@
   <div class="mobile-nav">
     <li><a href="<?php echo get_site_url(); ?>/read-and-watch">Read <br>&amp; Watch</a></li>
       <li><a href="<?php echo get_site_url(); ?>/event">Attend</a></li>
-      <li><a href="http://new.madfeed.co">Shop</a></li>
+      <li><a href="http://store.madfeed.co">Shop</a></li>
       <li><a href="<?php echo get_site_url(); ?>/about">About</a></li>
   </div>
 
