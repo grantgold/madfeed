@@ -2,11 +2,13 @@
 	<div class="madfeed-carousel small-top-btm-padding">
 		<div class="first owl-carousel">
 			<?php 
+					$category = get_category_by_slug('featured-home');
+					$featured = $category->term_id;
 					$carousel_duplicates = array();
 					$args = array(
 						'post_type' => 'video',
 						'orderby' => 'rand',
-						'cat' => -'featured-home',
+						'cat' => -$featured,
 						'posts_per_page' => 10
 					);
 					$the_query = new WP_Query($args);
@@ -31,9 +33,9 @@
 			<?php 
 					$args = array(
 						'post_type' => 'video',
-						'posts_per_page' => 10,
-						'cat' => -'featured-home',
-						'post__not_in' => $carousel_duplicates
+						'post__not_in' => $carousel_duplicates,
+						'cat' => -$featured,
+						'posts_per_page' => 10
 					);
 					$second_query = new WP_Query($args);
 					if ( $second_query->have_posts() ) {

@@ -1,8 +1,6 @@
 <div>
 	<div class="carousel-gradient">
-
-		  	<a class="owl-item carousel-item img-responsive" href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-
+		<a class="owl-item carousel-item img-responsive" href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 	</div>
 	<div class="carousel-text">
 		<?php
