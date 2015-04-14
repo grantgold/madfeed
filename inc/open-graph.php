@@ -10,7 +10,7 @@
 <?php } else { ?>
   <meta property="og:type" content="article" />
   <meta property="og:title" content="<?php the_title(); ?>" />
-  <meta property="og:description" content="<?php the_excerpt(); ?>" />
+  <meta property="og:description" content="<?php get_stripped_excerpt(); ?>" />
   <meta property="og:url" content="<?php the_permalink(); ?>" />
   <meta property="og:image" content="<?php madfeed_get_social_image(); ?>" />
 <?php } ?>
@@ -25,6 +25,6 @@
   <meta name="twitter:image:src" content="http://www.madfeed.co/wp-content/themes/madfeed/img/illo/social.jpg" />
 <?php } else { ?>
   <meta name="twitter:title" content="<?php the_title(); ?>">
-  <meta name="twitter:description" content="<?php the_excerpt(); ?>">
+  <meta name="twitter:description" content="<?php get_stripped_excerpt(); ?>">
   <meta name="twitter:image:src" content="<?php madfeed_get_social_image(); ?>" />
 <?php } ?>
