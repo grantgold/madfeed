@@ -1,7 +1,5 @@
 <div class="col-xs-12 col-md-6">
-
-  		<div class="feature-image img-responsive"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('large'); ?></a></div>
-
+  	<div class="feature-image img-responsive"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('large'); ?></a></div>
 </div>
 <div class="col-xs-12 col-md-6 featured-post">
 	<div class="subtitle">Featured Video</div>
