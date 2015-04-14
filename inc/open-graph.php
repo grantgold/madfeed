@@ -10,7 +10,6 @@
 <?php } else { ?>
   <meta property="og:type" content="article" />
   <meta property="og:title" content="<?php the_title(); ?>" />
-  <meta property="article:author" content="<?php echo esc_attr( madfeed_contributor_name()) ?>" />
   <meta property="og:description" content="<?php the_excerpt(); ?>" />
   <meta property="og:url" content="<?php the_permalink(); ?>" />
   <meta property="og:image" content="<?php madfeed_get_social_image(); ?>" />
