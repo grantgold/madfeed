@@ -25,5 +25,6 @@
   <meta name="twitter:image:src" content="http://www.madfeed.co/wp-content/themes/madfeed/img/illo/social.jpg" />
 <?php } else { ?>
   <meta name="twitter:title" content="<?php the_title(); ?>">
+  <meta name="twitter:description" content="<?php echo get_the_excerpt(); ?>" />
   <meta name="twitter:image:src" content="<?php madfeed_get_social_image(); ?>" />
 <?php } ?>
