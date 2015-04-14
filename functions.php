@@ -249,13 +249,6 @@ function entry_excerpt(){
   echo $e;
 }
 
-function get_stripped_excerpt(){
-  $excerpt = the_excerpt();
-  $excerpt = str_replace( '<p>', '', $excerpt );
-  $excerpt = str_replace( '</p>', '', $excerpt );
-  echo $excerpt;
-}
-
 function new_excerpt_more( $more ) {
   return '';
 }
