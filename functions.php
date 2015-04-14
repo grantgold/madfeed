@@ -251,8 +251,8 @@ function entry_excerpt(){
 
 function get_stripped_excerpt(){
   $excerpt = the_excerpt();
-  $excerpt = str_replace( '<p>', "", $excerpt );
-  $excerpt = str_replace( '</p>', "", $excerpt );
+  $excerpt = str_replace( '<p>', '', $excerpt );
+  $excerpt = str_replace( '</p>', '', $excerpt );
   echo $excerpt;
 }
 

@@ -3,7 +3,7 @@
   <meta property="og:site_name" content="The MAD Feed" />
 <?php if (is_home()) { ?>
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="<?php echo wp_title(); ?>" />
+  <meta property="og:title" content="<?php wp_title(); ?>" />
   <meta property="og:description" content="MAD is a not-for-profit organization that works to expand knowledge of food to make every meal a better meal." />
   <meta property="og:url" content="<?php echo get_site_url(); ?>" />
   <meta property="og:image" content="http://www.madfeed.co/wp-content/themes/madfeed/img/illo/social.jpg"/>
@@ -20,7 +20,7 @@
   <meta name="twitter:site" content="@theMADFeed">
   <meta name="twitter:creator" content="@theMADFeed">
 <?php if (is_home()) { ?>
-  <meta name="twitter:title" content="<?php echo wp_title(); ?>">
+  <meta name="twitter:title" content="<?php wp_title(); ?>">
   <meta name="twitter:description" content="MAD is a not-for-profit organization that works to expand knowledge of food to make every meal a better meal.">
   <meta name="twitter:image:src" content="http://www.madfeed.co/wp-content/themes/madfeed/img/illo/social.jpg" />
 <?php } else { ?>
