@@ -18,6 +18,7 @@
           <div class="col-sm-3 post-meta hidden-xs">
             <div class="col-sm-12">
               <div class="subtitle">WRITTEN BY</div>
+              <div class="profile-image img-responsive"><?php echo madfeed_contributors_image(); ?></div>
               <div class="contributors-meta">
                 <?php echo madfeed_contributors_name(); ?>
                 <br>
