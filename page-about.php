@@ -81,7 +81,7 @@
             <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/mikkel-westergaard.jpg"></div>
             <div class="team">Mikkel Westergaard</div>
             <a class="twitter-name" href="http://twitter.com/mikwestergaard" target="_blank">@mikwestergaard</a>
-            <p>Mikkel manages VILD MAD - our foraging initiative - and also works on general creative development. During his history studies in Copenhagen and Glasgow where he specialized in food systems and gastronomy, and joined the team in 2014.</p>
+            <p>Mikkel manages VILD MAD - our foraging initiative - and also works on general development. During his history studies in Copenhagen and Glasgow he specialized in food systems and gastronomy, and joined the team in 2014.</p>
           </div>
           <div class="col-xs-12 col-sm-4">
             <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/ben-mervis.jpg"></div>
