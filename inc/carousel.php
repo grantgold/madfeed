@@ -35,6 +35,7 @@
 						'post_type' => 'video',
 						'post__not_in' => $carousel_duplicates,
 						'cat' => -$featured,
+						'orderby' => 'rand',
 						'posts_per_page' => 10
 					);
 					$second_query = new WP_Query($args);
