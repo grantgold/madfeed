@@ -85,11 +85,9 @@ endif;
 
 function madfeed_quote(){
   $content = get_the_content();
-  $content = '&#147;' . $content . '&#148;';
   $content = apply_filters('the_content', $content);
   $content = str_replace(']]>', ']]>', $content);
   echo $content;
-
 }
 
 function madfeed_short_title(){
