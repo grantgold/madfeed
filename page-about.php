@@ -51,9 +51,9 @@
             <p>Peter is the director of MAD (or technically speaking, ’Komitéen for MAD Symposium’, our given name) and the managing director of noma.</p>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/mark-emil.png"></div>
+            <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/mark-emil.jpg"></div>
             <div class="team">Mark Emil T. Hermansen</div>
-            <a class="twitter-name" href="http://twitter.com/ariellejjohnson" target="_blank">@markemilh</a>
+            <a class="twitter-name" href="http://twitter.com/markemilh" target="_blank">@markemilh</a>
             <p>Mark Emil is MAD’s Head of Development and manages the organisation and MAD team on a daily basis. He is responsible for fundraising, strategic- and creative development. </p>
           </div>
         </div>
@@ -61,28 +61,22 @@
           <div class="col-xs-12 col-sm-4">
             <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/arielle-johnson.jpg"></div>
             <div class="team">Arielle Johnson</div>
-            <a class="twitter-name" href="http://twitter.com/markemilh" target="_blank">@ariellejjohnson</a>
+            <a class="twitter-name" href="http://twitter.com/ariellejjohnson" target="_blank">@ariellejjohnson</a>
             <p>Arielle is MAD’s Head of Research. Her research focuses on flavor chemistry and cuisine, and she collaborates with chefs and other food authorities around the world. Originally from Boston, Arielle holds a PhD from UC Davis and joined the team in 2014.</p>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/gabe-ulla.jpg"></div>
-            <div class="team">Gabe Ulla</div>
-            <a class="twitter-name" href="http://twitter.com/gabeulla" target="_blank">@gabeulla</a>
-            <p>Gabe is Editor of the MADfeed. He has contributed to Lucky Peach, Bon Appétit, Saveur, and WSJ. He previously served as features editor of Eater's New York and National sites. Gabe is based in New York City and joined MAD in 2013.</p>
           </div>
           <div class="col-xs-12 col-sm-4">
             <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/anna-sesay.jpg"></div>
             <div class="team">Anna Sesay</div>
             <p>Anna works on our food protection project and helps us extend our European outreach. Originally from Berlin, Anna has lived and worked in Cape Town and Amsterdam before moving to Copenhagen to do her master in Anthropology after which she joined the team in 2014.</p>
           </div>
-        </div>
-        <div class="row">
           <div class="col-xs-12 col-sm-4">
             <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/mikkel-westergaard.jpg"></div>
             <div class="team">Mikkel Westergaard</div>
             <a class="twitter-name" href="http://twitter.com/mikwestergaard" target="_blank">@mikwestergaard</a>
             <p>Mikkel manages VILD MAD - our foraging initiative - and also works on general development. During his history studies in Copenhagen and Glasgow he specialized in food systems and gastronomy, and joined the team in 2014.</p>
           </div>
+        </div>
+        <div class="row">
           <div class="col-xs-12 col-sm-4">
             <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/ben-mervis.jpg"></div>
             <div class="team">Ben Mervis</div>
