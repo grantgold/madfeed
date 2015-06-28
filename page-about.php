@@ -65,29 +65,16 @@
             <p>Arielle is MAD’s Head of Research. Her research focuses on flavor chemistry and cuisine, and she collaborates with chefs and other food authorities around the world. Originally from Boston, Arielle holds a PhD from UC Davis and joined the team in 2014.</p>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/anna-sesay.jpg"></div>
-            <div class="team">Anna Sesay</div>
-            <p>Anna works on our food protection project and helps us extend our European outreach. Originally from Berlin, Anna has lived and worked in Cape Town and Amsterdam before moving to Copenhagen to do her master in Anthropology after which she joined the team in 2014.</p>
-          </div>
-          <div class="col-xs-12 col-sm-4">
             <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/mikkel-westergaard.jpg"></div>
             <div class="team">Mikkel Westergaard</div>
             <a class="twitter-name" href="http://twitter.com/mikwestergaard" target="_blank">@mikwestergaard</a>
             <p>Mikkel manages VILD MAD - our foraging initiative - and also works on general development. During his history studies in Copenhagen and Glasgow he specialized in food systems and gastronomy, and joined the team in 2014.</p>
           </div>
-        </div>
-        <div class="row">
           <div class="col-xs-12 col-sm-4">
             <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/ben-mervis.jpg"></div>
             <div class="team">Ben Mervis</div>
             <a class="twitter-name" href="http://twitter.com/bmervis" target="_blank">@bmervis</a>
             <p>Ben works with creative development at MAD. An American, Ben studied medieval history in Glasgow and London, with a special interest in social ambition and power accumulation in medieval England. Naturally, Ben then started up an arts and music magazine before moving to Copenhagen and joining the MAD team in 2014.</p>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/johannes-bay.jpg"></div>
-            <div class="team">Johannes Bay</div>
-            <a class="twitter-name" href="http://twitter.com/johannesbay" target="_blank">@johannesbay</a>
-            <p>Johannes edits and consolidates MAD’s online videos, among other visual tasks. Originally from Hamburg, Germany, Johannes moved to New Zealand in 2009 where he has been studying Visual Communication Design and working in restaurants for the past 3 years. Johannes came on board with MAD in 2015.</p>
           </div>
         </div>
       </div>
