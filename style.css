@@ -964,6 +964,11 @@ Buttons & Fields
   border-color: #303030;
 }
 
+.btn-donate {
+  background-color: #255715;
+  border-color: #255715;
+}
+
 .btn-fb {
   padding: 8px 14px;
   font-size: 18px;

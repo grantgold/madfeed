@@ -20,7 +20,7 @@
               If you would like to help support us by making an online donation, please use the button below:
             </div>
             <div class="medium-top-btm-padding">
-                <a class="btn btn-primary" href="https://mad-gsrxi.formstack.com/forms/donate">Make a Donation <i class="fa fa-angle-right"></i></a>
+                <a class="btn btn-primary btn-donate" href="https://mad-gsrxi.formstack.com/forms/donate">Make a Donation <i class="fa fa-angle-right"></i></a>
             </div>
           </div>
         </div>  
