@@ -4,11 +4,12 @@
       <!-- Brand and Nav -->
         <div class="pull-left"><div class="circle-logo"><a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/icons/mad-logo.svg" width="90px" height="90px" alt="MAD Feed"></a></div></div>
         <div id="mission" class="col-sm-8"><img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/illo/better_meal_head.svg"></div>
-        <div class="col-sm-2 pull-right">
+        <div class="col-sm-3 pull-right">
           <ul class="nav navbar-nav navbar-right">
           <li><a href="<?php echo get_site_url(); ?>/read-and-watch">Read &amp; Watch</a>
             <a href="<?php echo get_site_url(); ?>/event">Attend</a>
             <a href="http://store.madfeed.co">Shop</a>
+            <!-- <a href="https://mad-gsrxi.formstack.com/forms/donate">Donate</a> -->
             <a href="<?php echo get_site_url(); ?>/about">About</a>
           </li>
           </ul>
