@@ -39,8 +39,6 @@
 			</div>
 			<hr>
 		</div>
-		<?php get_search_form( 'true' ); ?>
-	<!-- <?php include( INC . 'search-filter.php' ); ?> -->
 </section>
 
 <section>	
