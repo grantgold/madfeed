@@ -20,12 +20,14 @@ body{
 }
 
 a{
-
   color: #303030;
 }
 a:hover{
   color: #303030;
   text-decoration: underline;
+}
+a:visited{
+  color:#303030;
 }
 
 p img {
@@ -461,7 +463,7 @@ Carousel
 */
 
 #carousel-package {
-
+  margin-top: 60px;
 }
 
 .madfeed-carousel {
@@ -539,7 +541,7 @@ Carousel
   position:absolute;
   padding: 182px 0 0 20px;
   right: 0px;
-  top: 188px;
+  top: 68px;
   width: 100px;
   height: 412px;
   z-index: 100;
@@ -560,7 +562,7 @@ Carousel
   position:absolute;
   padding: 182px 0 0 20px;
   left: 0px;
-  top: 188px;
+  top: 68px;
   width: 100px;
   height: 412px;
   z-index: 100;
@@ -1047,15 +1049,26 @@ Buttons & Fields
   margin-right: 20px;
 }
 
+#search-module {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: none;
+}
+
+.category-toggle {
+  margin-top: 15px;
+}
+
 .form-control {
   display: block;
-  width: 300px;
+  width: 340px;
   height: 46px;
   padding: 10px 0px 12px 20px;
   font-size: 22px;
   line-height: 1.4;
   border: 1px;
   border-style: solid;
+  border-radius: 40px;
   border-color: #B2B2B2;
   color: #555;
    -moz-transition:all 0.5s ease-in-out;
@@ -1073,6 +1086,13 @@ Buttons & Fields
 }
 .form-control::-webkit-input-placeholder {
   color: #e5e5e5;
+}
+
+.search-submit {
+  margin-left: 20px;
+}
+.search-submit:focus {
+  outline: none;
 }
 
 /* 
@@ -1180,6 +1200,9 @@ Media Queries
   .container {
     width: 96%;
   }
+  #search-module {
+    display: block;
+  }
 }
 @media (min-width: 768px) {
   h1 {
@@ -1216,9 +1239,6 @@ Media Queries
   .embed-responsive-item {
     height: 640px;
   }
-  .form-control:focus {
-    width: 362px;
-  }
   .blogpost {
     font-size: 1.2em;
     line-height: 1.7em;
@@ -1237,8 +1257,9 @@ Media Queries
   .meta-bar {
     font-size: 1.2em;
   }
-  .form-control:focus {
-    width: 330px;
+  .form-control {
+    display: block;
+    width: 460px;
   }
   .about-summary {
     padding-right: 300px;
@@ -1258,7 +1279,8 @@ Media Queries
   .meta-bar {
     font-size: 1.6em;
   }
-  .form-control:focus {
-    width: 360px;
+  .form-control {
+    display: block;
+    width: 496px;
   }
 }

@@ -39,6 +39,8 @@
 			</div>
 			<hr>
 		</div>
+			<?php get_search_form( 'true' ); ?>
+		</div>
 </section>
 
 <section>	

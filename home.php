@@ -4,13 +4,13 @@
 
 <?php include('header.php'); ?>
 
-<?php include( INC . 'navbar.php' ); ?>
+<?php include( INC . 'navbar-content.php' ); ?>
 
 
 <div class="hidden-sm hidden-md hidden-lg mobile-padding"></div>
 <section class="hidden-xs">
 	<div class="row">
-
+	
 		<?php include( INC . 'carousel.php' ); ?>
 
 	</div>

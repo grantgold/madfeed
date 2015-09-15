@@ -11,6 +11,7 @@
           <a href="<?php echo get_site_url(); ?>/read-and-watch">Read &amp; Watch</a>
           <a href="<?php echo get_site_url(); ?>/event">Attend</a>
           <a href="http://store.madfeed.co">Shop</a>
+          <a href="http://madfeed.co/donate">Donate</a>
           <a href="<?php echo get_site_url(); ?>/about">About</a>
         </ul>
     </div>
@@ -34,6 +35,7 @@
     <li><a href="<?php echo get_site_url(); ?>/read-and-watch">Read <br>&amp; Watch</a></li>
       <li><a href="<?php echo get_site_url(); ?>/event">Attend</a></li>
       <li><a href="http://store.madfeed.co">Shop</a></li>
+      <li><a href="http://madfeed.co/donate">Donate</a></li>
       <li><a href="<?php echo get_site_url(); ?>/about">About</a></li>
   </div>
 
