@@ -53,6 +53,10 @@ ul {
   list-style-type: none;
 }
 
+li {
+  list-style-type: none;
+}
+
 hr {
   margin: 20px 0;
 }
@@ -1049,10 +1053,29 @@ Buttons & Fields
   margin-right: 20px;
 }
 
+/*
+
+Search
+
+*/
+
+.search-padding {
+  padding-top: 100px;
+}
+
 #search-module {
   padding-top: 20px;
   padding-bottom: 30px;
   display: none;
+}
+
+#category-list {
+}
+
+.category-styling {
+  margin-bottom: 30px;
+  padding: 40px 40px;
+  background-color: #F6F6F7;
 }
 
 .category-toggle {

@@ -42,7 +42,27 @@
 			<?php get_search_form( 'true' ); ?>
 		</div>
 </section>
+<div id="category-list" class="collapse">
+	<div class="category-styling row">
+		<div class="container">
+			    <?php 
+			    		$i = 1;
+			    		$taxonomies = array('post_tag');
+			    		$args = array(
+			    			'number'  => '12');
+						$terms = get_terms( $taxonomies, $args); 
+						if ($terms && ! is_wp_error( $terms ) ) {
+							foreach ($terms as $term) {
+								$name = $term->name;
+								$event = '<div class="col-sm-6 col-md-3"><a href="'. get_term_link( $term, 'post_tag' ) . '">' . $name . '</a></div>';
+								echo $event;
 
+						}
+						} else return;
+					?>
+		</div>
+	</div>
+</div>
 <section>	
 	<?php } 
 	if ( is_paged() ) { ?>

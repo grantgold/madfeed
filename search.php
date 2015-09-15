@@ -4,19 +4,31 @@
 
 <?php include('header.php'); ?>
 <?php include( INC . 'navbar-content.php' ); ?>
-<div class="row hidden-xs">
-</div>
-<div class="row hidden-xs">
-</div>
-<div class="row hidden-xs">
-</div>
 <section>
+<div class="search-padding"></div>
 	<?php 
 	get_search_form( 'true' );
 	if ( is_paged() ) { ?>
 	<div id="page"></div>
 	<?php } ?>
-
+<div id="category-list" class="collapse">
+	<div class="category-styling row">
+		<div class="container">
+			<div class="col-sm-12">
+			    <?php 
+						$terms = get_terms('category'); 
+						if ($terms && ! is_wp_error( $terms ) ) {
+							foreach ($terms as $term) {
+								$name = $term->name;
+								$event = '<li><a href="'. get_term_link( $term, 'category' ) . '">' . $name . '</a></li>';
+								echo $event;
+							}
+						} else return;
+					?>
+			</div>
+		</div>
+	</div>
+</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
