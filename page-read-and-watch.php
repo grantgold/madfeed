@@ -54,7 +54,7 @@
 						if ($terms && ! is_wp_error( $terms ) ) {
 							foreach ($terms as $term) {
 								$name = $term->name;
-								$event = '<div class="col-sm-6 col-md-3"><a href="'. get_term_link( $term, 'post_tag' ) . '">' . $name . '</a></div>';
+								$event = '<div class="col-xs-6 col-md-3 tag-link"><a href="'. get_term_link( $term, 'post_tag' ) . '">' . $name . '</a></div>';
 								echo $event;
 
 						}

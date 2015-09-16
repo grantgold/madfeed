@@ -1081,6 +1081,10 @@ Search
 .category-toggle {
   margin-top: 15px;
 }
+.tag-link {
+  font-weight: 700;
+  padding-bottom: 20px;
+}
 
 .form-control {
   display: block;
