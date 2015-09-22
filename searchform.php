@@ -6,7 +6,7 @@
 			</label>
 			<input type="submit" class="btn-primary search-submit" value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
 			<div class="category-toggle pull-right">
-				<a data-toggle="collapse" href="#category-list">Search Categories <i class="fa fa-caret-down"></i></a>
+				<a data-toggle="collapse" href="#tag-list">Search Categories <i class="fa fa-caret-down"></i></a>
 			</div>
 		</form>
 	</div>

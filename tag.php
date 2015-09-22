@@ -13,29 +13,16 @@
 	<?php } ?>
 <div class="container small-top-btm-padding">
 	<div class="col-xs-12">
-		<div class="col-xs-12">Searching for:<span class="tag-link">
+		<div class="col-xs-12">Searching for:<span class="tag-link-remove"><a href="<?php echo get_site_url(); ?>/read-and-watch">
 			<?php 
 				$tag = get_query_var('tag');
 				echo $tag;
-			?>
-			</span>
+			?> <i class="fa fa-times"></i></a></span>
 		</div>
 	</div>
 </div>
-<div id="category-list" class="collapse">
-	<div class="category-styling row">
-		<div class="container">
-			<?php 
-				$tags = get_tags();
-				if ($tags) {
-					foreach ($tags as $tag) {
-					echo '<div class="col-xs-6 col-md-3 tag-link"><a href="' . get_tag_link( $tag->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $tag->name ) . '" ' . '>' . $tag->name.'</a></div> ';
-					}
-				} else return;
-			?>
-		</div>
-	</div>
-</div>
+<div class="row"></div>
+<?php include( INC . 'tag-list.php' ); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
@@ -71,7 +58,7 @@
 						$i++;
 						}
 					} else {
-						get_template_part( 'content' );
+						include( INC . 'no-results.php' );
 					}
 					wp_reset_query();
 				?>

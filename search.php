@@ -11,24 +11,7 @@
 	if ( is_paged() ) { ?>
 	<div id="page"></div>
 	<?php } ?>
-<div id="category-list" class="collapse">
-	<div class="category-styling row">
-		<div class="container">
-			<div class="col-sm-12">
-			    <?php 
-						$terms = get_terms('category'); 
-						if ($terms && ! is_wp_error( $terms ) ) {
-							foreach ($terms as $term) {
-								$name = $term->name;
-								$event = '<li><a href="'. get_term_link( $term, 'category' ) . '">' . $name . '</a></li>';
-								echo $event;
-							}
-						} else return;
-					?>
-			</div>
-		</div>
-	</div>
-</div>
+<?php include( INC . 'tag-list.php' ); ?>
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
@@ -62,7 +45,7 @@
 							$i++;
 							}
 						} else {
-							get_template_part( 'content' );
+							include( INC . 'no-results.php' );
 						}
 						wp_reset_query();
 					?>

@@ -72,6 +72,19 @@
             <p>Ben works with creative development at MAD. An American, Ben studied medieval history in Glasgow and London, with a special interest in social ambition and power accumulation in medieval England. Naturally, Ben then started up an arts and music magazine before moving to Copenhagen and joining the MAD team in 2014.</p>
           </div>
         </div>
+        <div class=" row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/aurora-lea.jpg"></div>
+            <div class="team">Aurora Lea</div>
+            <a class="twitter-name" href="http://twitter.com/lea_aur" target="_blank">@lea_aur</a>
+            <p>Aurora moved from Norway to study architecture at the Royal Danish Academy in Copenhagen. She now holds a Master of Architecture and joined the MAD team in summer 2015 to work for the MAD kitchen project. Aurora has previously studied arts history and during her studies in Copenhagen she has been focusing on landscape architecture, geography, urban planning and sustainable architecture.</p>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="about profile-image"><img src="<?php echo get_template_directory_uri(); ?>/img/people/devin-mcgonigle.jpg"></div>
+            <div class="team">Devin McGonigle</div>
+            <a class="twitter-name" href="http://twitter.com/devinelizbeth" target="_blank">@devinelizbeth</a>
+            <p>Native to upstate NY, Devin has joined the team to help realize MAD's initiatives, most recently VILD MAD. She holds a BA in Cultural Anthropology and an MA in Cultural Analysis from the University of Copenhagen. As an ethnologist, she has focused her research on the dynamics between the culture of consumption and sustainability in a consumer society.</p>
+          </div>
       </div>
     </div>
   </div>

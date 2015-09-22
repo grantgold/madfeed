@@ -1069,7 +1069,7 @@ Search
   display: none;
 }
 
-#category-list {
+#tag-list {
 }
 
 .category-styling {
@@ -1083,7 +1083,26 @@ Search
 }
 .tag-link {
   font-weight: 700;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+}
+.tag-link>a {
+  text-decoration: none;
+  padding: 12px 20px;
+  background-color: #fff;
+  border-radius: 40px;
+}
+.tag-link>a:hover {
+  background-color: #006E3B;
+  color: #fff;
+}
+.tag-link-remove>a {
+  margin-left: 8px;
+  font-weight: 700;
+  color: #303030;
+  text-decoration: none;
+  padding: 12px 20px;
+  background-color: #F6F6F7;
+  border-radius: 40px;
 }
 
 .form-control {
@@ -1121,7 +1140,13 @@ Search
 .search-submit:focus {
   outline: none;
 }
-
+.no-results {
+  font-size: 34px;
+  text-align: center;
+}
+.no-results>a {
+  font-weight: 700;
+}
 /* 
 
 Sections
