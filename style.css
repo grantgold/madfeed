@@ -971,9 +971,9 @@ Buttons & Fields
 }
 
 .btn-donate {
-  color: #fff;
-  background-color: #006E3B;
-  border-color: #006E3B;
+  color: #303030;
+  background-color: #fff;
+  border-color: #303030;
 }
 
 .btn-donate:hover {
