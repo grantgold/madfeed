@@ -1123,6 +1123,13 @@ Search
    -webkit-transition:all 0.5s ease-in-out;
 }
 
+.small-search {
+  width: 300px !important;
+  height: 36px;
+  font-size: 20px;
+  margin-top: 24px;
+}
+
 .form-control::-moz-placeholder {
   color: #e5e5e5;
   opacity: 1;
