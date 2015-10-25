@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="col-xs-12">
 		<p class="section-title hidden-xs"><a href="<?php echo get_site_url(); ?>/read-and-watch">Latest Reads &amp; Talks</a></p>
-		<form role="search" method="get" class="search-form pull-right" action="<?php echo home_url( '/' ); ?>">
+		<form role="search" method="get" class="search-form pull-right hidden-sm" action="<?php echo home_url( '/' ); ?>">
 			<label>
 				<input type="search" class="search-field field form-control small-search" placeholder="<?php echo esc_attr_x( 'Search the archive', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
 			</label>
