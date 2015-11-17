@@ -32,6 +32,11 @@
 	<?php include( INC . 'latest-reads.php' ); ?>
 	
 </section>
+<section class="fadein">
+
+	<?php include( INC . 'initiatives.php' ); ?>
+	
+</section>
 <section id="contributors">
 
 		<?php include( 'random-quote.php' ); ?>

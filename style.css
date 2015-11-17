@@ -30,6 +30,10 @@ a:visited{
   color:#303030;
 }
 
+p {
+  margin-top: 12px;
+}
+
 p img {
   margin: 30px 0;
 }
@@ -365,6 +369,10 @@ Post Formatting
   background-color: rgba(255, 255, 255, 0.98);
   -webkit-transition-delay: 0s, 0s;
   -webkit-transition-duration: 0.2s, 0.2s;
+}
+
+.initiative {
+  max-width: 65%;
 }
 
 /*

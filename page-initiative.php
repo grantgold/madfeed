@@ -5,7 +5,7 @@
 <?php include( INC . 'navbar-content.php' ); ?>
 <div class="row large-top-btm-padding hidden-xs">
 </div>
-<div class="container fadein">
+<div class="container initiative fadein">
 	<?php loop(); ?>
 </div>
 <section>
@@ -15,5 +15,13 @@
 
 	</div>
 </section>
+
+<script>
+
+jQuery(function() {
+	jQuery('img').addClass('img-responsive');
+});
+
+</script>
 
 <?php include('footer.php'); ?>
