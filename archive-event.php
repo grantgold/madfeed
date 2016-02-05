@@ -4,7 +4,7 @@
 <div class="row hidden-xs">
 </div>
 
-<div class="container">
+<div id="blog" class="container">
 	<div class="row small-top-btm-padding">
 		<div class="col-xs-12">
 			<div class="row">
