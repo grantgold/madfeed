@@ -1,5 +1,5 @@
 <?php include('header.php'); ?>
-<?php include( INC . 'navbar.php' ); ?>
+<?php include( INC . 'navbar-content.php' ); ?>
 
 <div class="visible-xs mobile-padding"></div>
 
