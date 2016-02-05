@@ -1,7 +1,8 @@
 <?php include('header.php'); ?>
 <?php include( INC . 'navbar-content.php' ); ?>
 
-<div class="visible-xs mobile-padding"></div>
+<div class="row hidden-xs">
+</div>
 
 <div class="container">
 	<div class="row small-top-btm-padding">
